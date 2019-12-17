@@ -22,7 +22,7 @@ setup(
     name=About.NAME,
     version=About.VERSION,
     packages=find_packages(),
-    install_requires=['PyYAML'],
+    install_requires=[],
     extras_require={'test': ['pytest']},
     entry_points={'console_scripts': ['satya = annotate.annotator:main']},
 )
