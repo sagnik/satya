@@ -7,10 +7,11 @@
 ```
 pip install -e .
 ```
+You can run the program as a standalone code: you have to add this directory to your `PYTHONPATH`, cd `annotate` and run `python annotator.py config.yml/json`
 
 ### Requirements
 
--  python 3.x (This is tested on python 3.6)
+-  python 3.x (This is tested on python 3.6). If you want to use `yml` config files, install [PyYAML](https://pypi.org/project/PyYAML/).
 
 ### Usage
 
@@ -19,6 +20,7 @@ A small screen-capture intro is provided [here](https://youtu.be/50y_7i4x8u4) (t
 ```
 satya <config-file-name.yml/json>
 ```
+
 
 The sample config file defines the label names and keyboard shortcuts. A sample yml config file looks like:
 

@@ -2,7 +2,6 @@ import argparse
 import os
 import sys
 import json
-import yaml
 import tkinter as tk
 import platform
 from annotate.spanannotator import SpanAnnotatorFrame
@@ -21,6 +20,7 @@ def main():
     if config_file.endswith('json'):
         config_dict = json.load(open(config_file))
     elif config_file.endswith('yml') or config_file.endswith('yaml'):
+        import yaml
         config_dict = yaml.load(open(config_file))
     else:
         print(f'ERROR: unsupported format for {config_file}')
