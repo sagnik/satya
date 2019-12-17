@@ -8,135 +8,11 @@ from tkinter.filedialog import Open as tkfileopen
 from tkinter.font import Font
 from collections import deque
 from annotate.utils import biofy, de_biofy, is_labeled, towkf
-
-
-class AutocompleteEntry(tk.Toplevel, object):
-    """A container for `tk.Entry` and `tk.Listbox` widgets.
-
-    An instance of AutocompleteEntry is actually a `tk.Frame`, containing the `tk.Entry` and `tk.Listbox` widgets needed to display autocompletion entries. Thus, you can initialize it with the usual arguments to `tk.Frame`.
-    Constants:
-    LISTBOX_HEIGHT -- Default height for the `tk.Listbox` widget
-    LISTBOX_WIDTH -- Default width for the `tk.Listbox` widget
-    ENTRY_WIDTH -- Default width for the `tk.Entry` widget
-
-    Methods:
-    __init__ -- Set up the `tk.Listbox` and `tk.Entry` widgets
-    build -- Build a list of autocompletion entries
-    _update_autocomplete -- Internal method
-    _select_entry -- Internal method
-    _cycle_up -- Internal method
-    _cycle_down -- Internal method
-
-    Other attributes:
-    text -- StringVar object associated with the `tk.Entry` widget
-    entry -- The `tk.Entry` widget (access this directly if you
-             need to change styling)
-    listbox -- The `tk.Listbox` widget (access this directly if
-             you need to change stAutocompleteEntryyling)
-    """
-
-    def __init__(self, _, *args, **kwargs):
-        """Constructor.
-
-        Create the `self.entry` and `self.listbox` widgets.
-        Note that these widgets are not yet displayed and will only be visible when you call `self.build`.
-
-        Arguments:
-        master -- The master tkinter widget
-
-        Returns:
-        None
-        """
-        super(AutocompleteEntry, self).__init__(*args, **kwargs)
-        self.text_ = tk.StringVar()
-        self.entry = tk.Entry(self, textvariable=self.text_, width=TYPE_AHEAD_ENTRY_WIDTH)
-        self.listbox = tk.Listbox(
-            self, selectmode='browse', height=TYPE_AHEAD_LISTBOX_HEIGHT, width=TYPE_AHEAD_LISTBOX_WIDTH
-        )
-        self._case_sensitive = None
-        self._entries = None
-        self._no_results_message = None
-        self._listbox_height = None
-
-    def build(self, entries, max_entries=5, no_results_message=TYPE_AHEAD_NO_RESULTS_MESSAGE):
-        """Set up the autocompletion settings.
-
-        Binds <KeyRelease>, <<ListboxSelect>>, <Down> and <Up> for
-        smooth cycling between autocompletion entries.
-
-        Arguments:
-        entries -- An iterable containing autocompletion entries (strings)
-        max_entries -- [int] The maximum number of entries to display
-        no_results_message -- [str] Message to display when no entries
-                              match the current entry; you can use a
-                              formatting identifier '{}' which will be
-                              replaced with the entry at runtime
-
-        Returns:
-        None
-        """
-        self._entries = entries
-        self._no_results_message = no_results_message
-        self._listbox_height = max_entries
-
-        self.entry.bind("<KeyRelease>", self._update_autocomplete)
-        self.entry.focus()
-        self.entry.grid(column=0, row=0)
-
-        self.listbox.bind("<<ListboxSelect>>", self._select_entry)
-        self.listbox.grid(column=0, row=1)
-        self.listbox.grid_forget()
-        # Initially, the listbox widget doesn't show up.
-
-    def _update_autocomplete(self, event):
-        """Internal method.
-        Update `self.listbox` to display new matches.
-        """
-        self.listbox.delete(0, END)
-        self.listbox["height"] = self._listbox_height
-
-        text = self.text_.get()
-        if not text:
-            self.listbox.grid_forget()
-        else:
-            for entry in self._entries:
-                if text.lower() in entry.strip().lower():
-                    self.listbox.insert(END, entry)
-
-        listbox_size = self.listbox.size()
-        if not listbox_size:
-            if self._no_results_message is None or text is None:
-                self.listbox.grid_forget()
-            else:
-                try:
-                    self.listbox.insert(END, self._no_results_message.format(text))
-                except UnicodeEncodeError:
-                    self.listbox.insert(END, self._no_results_message.format(text.encode("utf-8")))
-                if listbox_size <= self.listbox["height"]:
-                    # In case there's less entries than the maximum
-                    # amount of entries allowed, resize the listbox.
-                    self.listbox["height"] = listbox_size
-                self.listbox.grid()
-        else:
-            if listbox_size <= self.listbox["height"]:
-                self.listbox["height"] = listbox_size
-            self.listbox.grid()
-
-    def _select_entry(self, event):
-        """Internal method.
-        Set the text variable corresponding to `self.entry`
-        to the value currently selected.
-        """
-        widget = event.widget
-        try:
-            value = widget.get(int(widget.curselection()[0]))
-            self.text_.set(value)
-        except IndexError:
-            self.text_.set('')
+from annotate.autocomplete import AutocompleteEntry
 
 
 class SpanAnnotatorFrame(Frame):
-    def __init__(self, parent, config):
+    def __init__(self, parent, config, **kwargs):
         """create a span annotator frame object: this will hold the text area and the shortcuts and stuff
         :param parent: parent frame
         :param config: configuration dictionary, typically stores the labels and shortcuts
@@ -151,7 +27,10 @@ class SpanAnnotatorFrame(Frame):
         self.current_content = deque(maxlen=1)
         self.labels: List = config[LABELS_KEY]  # config must provide the labels
         self.label_shortcuts = config.get(SHORTCUT_LABELS_KEY, {})  # assign some keys to some common labels
-
+        self.special_key_map = {HIGHLIGHT_KEY: HIGHLIGHT_COMMAND, UNDO_KEY: UNDO_COMMAND,
+                                UN_LABEL_KEY: UN_LABEL_COMMAND, RE_LABEL_KEY: RE_LABEL_COMMAND}
+        self.file_name = kwargs.get('input_file')
+        
         # define the ui components here. the values will be set later
         self.text_row = None
         self.text_column = None
@@ -170,11 +49,7 @@ class SpanAnnotatorFrame(Frame):
         self.msg_lbl = None
         self.type_ahead_string_replace = TYPE_AHEAD
         self.all_input_keys = ALL_INPUT_KEYS
-        # there is no Z here, which will only be used for <ctrl-z>
         self.init_ui()
-
-        self.label_entry_list = []
-        self.shortcut_label_list = []
 
     def init_ui(self):
         """initialize the UI and bind the appropriate keys.
@@ -218,9 +93,6 @@ class SpanAnnotatorFrame(Frame):
         open_button = Button(self, text='Open', command=self.open_file_dialog_read_file)
         open_button.grid(row=1, column=self.text_column + 1)
 
-        open_button = Button(self, text='De-Highlight', command=self.de_highlight)
-        open_button.grid(row=3, column=self.text_column + 1)
-
         export_button = Button(self, text='Export', command=self.export)
         export_button.grid(row=6, column=self.text_column + 1, pady=4)
 
@@ -238,47 +110,70 @@ class SpanAnnotatorFrame(Frame):
         self.msg_lbl = Label(self, text='[Message]:')
         self.msg_lbl.grid(row=self.text_row + 1, sticky=E + W + S + N, pady=4, padx=4)
 
+        # all input keys are bound to type ahead
         for char_key in self.all_input_keys:
             self.text.bind(char_key, self.label_type_ahead)
 
-        self.label_shortcuts.update({UNLABEL_KEY: UNLABEL_CMD})
+        # bind shortcut keys
         for char_key in self.label_shortcuts:
             self.text.bind(f'<Control-{char_key}>', self.label_shortcut_press)
+        self.show_shortcut_mapping()
 
-        self.text.bind(UNDO_KEY, self.back_to_history)
+        # bind special keys
+        self.text.bind(UN_LABEL_KEY, self.un_label)
+        self.text.bind(UNDO_KEY, self.undo)
         self.text.bind(RE_LABEL_KEY, self.re_label)
-
-        # show cursor positions
+        self.text.bind(HIGHLIGHT_KEY, self.highlight)
+        self.show_special_key_mapping()
+        
+        # bind arrow keys to show cursor positions
         for arrow_key in ['Left', 'Right', 'Up', 'Down']:
             self.text.bind(f'<{arrow_key}>', self.show_cursor_position)
             self.text.bind(f'<KeyRelease-{arrow_key}>', self.show_cursor_position)
 
-        self.show_shortcut_mapping()
-
+        # if the input file is supplied, load that file in the text area
+        if self.file_name is not None:
+            self.set_file_content_text_area(self.file_name)
+        
     def show_shortcut_mapping(self):
         """set up the shortcut mapping region in the UI
         :return:
         """
         row = 0
 
-        map_label = Label(self, text='Shortcuts map Labels', foreground='blue', font=(self.text_font_style, 14, 'bold'))
+        map_label = Label(self, text='Shortcuts map Labels', foreground='red', font=(self.text_font_style, 14, 'bold'))
         map_label.grid(row=0, column=self.text_column + 2, columnspan=2, rowspan=1, padx=10)
-
-        self.label_entry_list = []
-        self.shortcut_label_list = []
 
         for key in sorted(self.label_shortcuts):
             row += 1
             symbol_label = Label(
-                self, text=f'<ctrl-{key.upper()}>' + ': ', foreground='blue', font=(self.text_font_style, 14, 'bold')
+                self, text=f'<ctrl-{key}>' + ': ', foreground='blue', font=(self.text_font_style, 14, 'bold')
             )
             symbol_label.grid(row=row, column=self.text_column + 2, columnspan=1, rowspan=1, padx=3)
-            self.shortcut_label_list.append(symbol_label)
 
             label_entry = tk.Entry(self, foreground='blue', font=(self.text_font_style, 14, 'bold'))
             label_entry.insert(0, self.label_shortcuts[key])
             label_entry.grid(row=row, column=self.text_column + 3, columnspan=1, rowspan=1)
-            self.label_entry_list.append(label_entry)
+
+    def show_special_key_mapping(self):
+        """set up the special key mapping region in the UI
+        :return:
+        """
+        row = len(self.label_shortcuts)+1
+    
+        map_label = Label(self, text='Special keys', foreground='red', font=(self.text_font_style, 14, 'bold'))
+        map_label.grid(row=row, column=self.text_column + 2, columnspan=2, rowspan=1, padx=10)
+    
+        for key in self.special_key_map:
+            row += 1
+            symbol_label = Label(
+                self, text=f'{key.lower()}' + ': ', foreground='blue', font=(self.text_font_style, 14, 'bold')
+            )
+            symbol_label.grid(row=row, column=self.text_column + 2, columnspan=1, rowspan=1, padx=3)
+        
+            label_entry = tk.Entry(self, foreground='blue', font=(self.text_font_style, 14, 'bold'))
+            label_entry.insert(0, self.special_key_map[key])
+            label_entry.grid(row=row, column=self.text_column + 3, columnspan=1, rowspan=1)
 
     def open_file_dialog_read_file(self):
         """open the file dialog, read the file, and set the content of the file in the textarea
@@ -287,12 +182,18 @@ class SpanAnnotatorFrame(Frame):
         file_types = [('text files', '.txt'), ('ann files', '.ann'), ('all files', '*')]
         dlg = tkfileopen(self, filetypes=file_types)
         fl = dlg.show()
-        if fl != '':
-            self.text.delete(TEXTAREA_START, TEXTAREA_END)
-            text = self.set_file_name_read_data(fl)
-            self.text.insert(TEXTAREA_END, text)
-            self.filename_lbl.config(text=fl)
-            self.set_cursor_label(self.text.index(INSERT))
+        if fl:
+            self.set_file_name_read_data(fl)
+            
+    def set_file_content_text_area(self, file_name):
+        """set a file content in the text area
+        :return:
+        """
+        self.text.delete(TEXTAREA_START, TEXTAREA_END)
+        text = self.set_file_name_read_data(file_name)
+        self.text.insert(TEXTAREA_END, text)
+        self.filename_lbl.config(text=file_name)
+        self.set_cursor_label(self.text.index(INSERT))
 
     def show_cursor_position(self, event):
         """show the current cursor position in the cursor label + move the cursor in that index
@@ -345,14 +246,7 @@ class SpanAnnotatorFrame(Frame):
         """
         current_cursor = self.text.index(INSERT)
         current_row, current_col = [int(x) for x in current_cursor.split('.')]
-        col = 0
-        line = ''
-        while True:
-            current_char = self.text.get(self.text.index(f'{current_row}.{col}'))
-            if current_char == NEW_LINE_CHAR:
-                break
-            line += current_char
-            col += 1
+        line = self.row_content(current_row)
         if not line.strip():
             return BREAK
         selection_start_col, selection_end_col = self.get_closest_labeled_text(line, current_col)
@@ -382,7 +276,7 @@ class SpanAnnotatorFrame(Frame):
         press_key = event.keysym
         self.push_to_history()
         self.log(f'type ahead: {press_key}')
-        if not self.text.tag_ranges('sel'):
+        if not self.text.tag_ranges(SEL):
             return BREAK
         allowed, selected_content, selection_start, selection_end = self.adjust_selection()
         if not allowed:
@@ -401,15 +295,36 @@ class SpanAnnotatorFrame(Frame):
         """handle the event when a shortcut key for an annotation label has been pressed.
         1. if no text is selected, do nothing
         2. check the correctness of the selected text
+        3. label the text
         :param event: the event that caused this callback to fire
         :return:
         """
         press_key = event.keysym
         self.push_to_history()
         self.log(f'shortcut: {press_key}')
-        if not self.text.tag_ranges('sel'):
+        if not self.text.tag_ranges(SEL):
             return BREAK
         label = self.label_shortcuts[press_key.lower()]
+        allowed, selected_content, selection_start, selection_end = self.adjust_selection()
+        if not allowed:
+            return BREAK
+        self.label_selected_text(label, selected_content, selection_start, selection_end)
+        return BREAK
+
+    def un_label(self, event):
+        """handle the event when <ctrl-q> has been pressed.
+        1. if no text is selected, do nothing
+        2. check the correctness of the selected text
+        3. un-label the text.
+        This method is pretty similar to label_shortcut_press, only the label is *NOT* obtained from the shortcut map
+        :param event: the event that caused this callback to fire
+        :return:
+        """
+        self.push_to_history()
+        self.log(f'un-label')
+        if not self.text.tag_ranges(SEL):
+            return BREAK
+        label = UN_LABEL_COMMAND
         allowed, selected_content, selection_start, selection_end = self.adjust_selection()
         if not allowed:
             return BREAK
@@ -450,7 +365,7 @@ class SpanAnnotatorFrame(Frame):
         selection_end = f'{begin_row}.{end_col}'
         return True, selected_content, selection_start, selection_end
 
-    def back_to_history(self, event):
+    def undo(self, event):
         """handle the ctrl z event by loading the last text and cursor index back in the text area
         :param event: the event that happened
         :return:
@@ -483,10 +398,10 @@ class SpanAnnotatorFrame(Frame):
         cursor_row, cursor_col = [int(x) for x in cursor_index.split(CURSOR_SEP)]
         # if the label is UNDO, check if the selected string is fully labeled. if not, do nothing.
         # if yes, remove the last label. if the label is not UNDO, label the selected string
-        if label == UNLABEL_CMD:
+        if label == UN_LABEL_COMMAND:
             if not is_labeled(selected_string, self.labels, text_after_cursor):  # do nothing
                 self.log('You need to select a fully labeled string to remove the labels', ERROR)
-                return text_before_cursor + selected_string + text_after_cursor, cursor_index
+                return text_before_cursor + selected_string + text_after_cursor, cursor_index, len(selected_string)
             else:
                 prev_length = len(selected_string)
                 selected_string = de_biofy(selected_string, depth=1)
@@ -509,7 +424,7 @@ class SpanAnnotatorFrame(Frame):
         :return:
         """
         # if there was a highlight tag configured, remove it.
-        self.text.tag_delete(HIGHLIGHT_TAG_NAME)
+        self.text.tag_delete(HIGHLIGHT_COMMAND)
         text_before_cursor = self.text.get(TEXTAREA_START, label_start_index)
         text_after_cursor = self.text.get(label_start_index, TEXTAREA_END)
         # re-construct the content and get the modified cursor index back
@@ -520,9 +435,9 @@ class SpanAnnotatorFrame(Frame):
         # highlight the selected span
         self.write_output_and_text_area(content, label_end_index)
         self.text.tag_add(
-            HIGHLIGHT_TAG_NAME, f'{label_end_row}.{label_end_col-selected_content_length}', label_end_index
+            HIGHLIGHT_COMMAND, f'{label_end_row}.{label_end_col-selected_content_length}', label_end_index
         )
-        self.text.tag_config(HIGHLIGHT_TAG_NAME, background="yellow", foreground="black")
+        self.text.tag_config(HIGHLIGHT_COMMAND, background="yellow", foreground="black" )
 
     def write_output_and_text_area(self, content, new_cursor_index):
         """write the changes to an ann file and load the written file to a text area (WYSIWYG). put the cursor index at the position of last index.
@@ -560,7 +475,7 @@ class SpanAnnotatorFrame(Frame):
         Note: This will only work if you have one level of labels, IOW, if your string is `a/B-x b/I-x/B-y c/I-x/I-y/B-z`, it will not work, because if your cursor is on b, it is not clear whether the correct span is `a/B-x b/I-x/B-y` or `b/I-x/B-y c/I-x/I-y/B-z`.
         :param content: text
         :param char_index: col index for cursor click
-        :return:
+        :return: start and end col indices for the closest labeled span
         """
         max_label_depth = max([(word.count(TAG_START_B) + word.count(TAG_START_I)) for word in content.split(WORD_SEP)])
         if max_label_depth > 1:
@@ -616,15 +531,49 @@ class SpanAnnotatorFrame(Frame):
         :return:
         """
         if self.file_name.endswith('.ann'):
-            file_name = f'{self.file_name[:-3]}.conll.bio'
+            file_name = f'{self.file_name[:-3]}.bio.conll'
         else:
-            file_name = f'{self.file_name}.conll.bio'
+            file_name = f'{self.file_name}.bio.conll'
         content = self.text.get(TEXTAREA_START, TEXTAREA_END)
         self.log(f'Writing output to {file_name}')
         towkf(content, file_name)
 
-    def de_highlight(self):
-        """de-highlight the highlighted area.
+    def highlight(self, event):
+        """highlight a span or de-highlight the highlighted area.
+        :param event: the event key that caused this callback to fire
         :return:
         """
-        self.text.tag_delete(HIGHLIGHT_TAG_NAME)
+        if self.text.tag_ranges( HIGHLIGHT_COMMAND ):
+            self.text.tag_delete( HIGHLIGHT_COMMAND )
+            return BREAK
+        if self.text.tag_ranges(SEL):
+            sel_first = self.text.index(SEL_FIRST)
+            sel_last = self.text.index(SEL_LAST)
+        else:
+            current_row, current_col = [int(x) for x in self.text.index(INSERT).split('.')]
+            line = self.row_content(current_row)
+            if not line:
+                return BREAK
+            label_start_row, label_end_row = self.get_closest_labeled_text(line, current_col)
+            if label_start_row is None or label_end_row is None:
+                return BREAK
+            else:
+                sel_first = f'{current_row}.{label_start_row}'
+                sel_last = f'{current_row}.{label_end_row}'
+        self.text.tag_add( HIGHLIGHT_COMMAND, sel_first, sel_last )
+        self.text.tag_config( HIGHLIGHT_COMMAND, background="yellow", foreground="black" )
+        return BREAK
+
+    def row_content(self, current_row):
+        """content of the current row
+        :return:
+        """
+        line = ''
+        col = 0
+        while True:
+            current_char = self.text.get(self.text.index(f'{current_row}.{col}'))
+            if current_char == NEW_LINE_CHAR:
+                break
+            line += current_char
+            col += 1
+        return line
