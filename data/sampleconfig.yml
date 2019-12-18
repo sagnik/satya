@@ -1,0 +1,29 @@
+entity_shortcuts:
+  m: MIDNAME
+  f: FULLNAME
+  p: PER
+  a: ALTNAME
+  l: LOC
+entities:
+- MIDNAME
+- FULLNAME
+- PER
+- ALTNAME
+- LOC
+- FIRSTNAME
+- LASTNAME
+entity_colors:  # /etc/X11/rgb.txt
+  MIDNAME: MediumPurple1
+  FULLNAME: YellowGreen
+  PER: IndianRed1
+  ALTNAME: DarkBlue
+  LOC: DarkCyan
+  FIRSTNAME: DeepSkyBlue1
+  LASTNAME: NavyBlue
+relations:
+- JOB
+- BIRTHDATE
+- BIRTHPLACE
+relation_shortcuts:
+  j: JOB
+  d: BIRTHDATE

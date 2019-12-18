@@ -44,7 +44,7 @@ class AutocompleteEntry(tk.Toplevel, object):
         self.text_ = tk.StringVar()
         self.entry = tk.Entry(self, textvariable=self.text_, width=TYPE_AHEAD_ENTRY_WIDTH)
         self.listbox = tk.Listbox(
-            self, selectmode='browse', height=TYPE_AHEAD_LISTBOX_HEIGHT, width=TYPE_AHEAD_LISTBOX_WIDTH
+            self, selectmode="browse", height=TYPE_AHEAD_LISTBOX_HEIGHT, width=TYPE_AHEAD_LISTBOX_WIDTH
         )
         self._case_sensitive = None
         self._entries = None
@@ -125,4 +125,4 @@ class AutocompleteEntry(tk.Toplevel, object):
             value = widget.get(int(widget.curselection()[0]))
             self.text_.set(value)
         except IndexError:
-            self.text_.set('')
+            self.text_.set("")

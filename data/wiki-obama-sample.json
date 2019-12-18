@@ -1,0 +1,7598 @@
+{
+  "tokens": [
+    {
+      "content": "Barack",
+      "sen_index": 1,
+      "tok_index": 0,
+      "char_start_index": 0,
+      "char_end_index": 6,
+      "id": "1:0",
+      "tags": [
+        "B-PER"
+      ]
+    },
+    {
+      "content": "Hussein",
+      "sen_index": 1,
+      "tok_index": 1,
+      "char_start_index": 7,
+      "char_end_index": 14,
+      "id": "1:1",
+      "tags": [
+        "I-PER"
+      ]
+    },
+    {
+      "content": "Obama",
+      "sen_index": 1,
+      "tok_index": 2,
+      "char_start_index": 15,
+      "char_end_index": 20,
+      "id": "1:2",
+      "tags": [
+        "I-PER"
+      ]
+    },
+    {
+      "content": "II",
+      "sen_index": 1,
+      "tok_index": 3,
+      "char_start_index": 21,
+      "char_end_index": 23,
+      "id": "1:3",
+      "tags": [
+        "I-PER"
+      ]
+    },
+    {
+      "content": "(",
+      "sen_index": 1,
+      "tok_index": 4,
+      "char_start_index": 24,
+      "char_end_index": 25,
+      "id": "1:4",
+      "tags": []
+    },
+    {
+      "content": "/b",
+      "sen_index": 1,
+      "tok_index": 5,
+      "char_start_index": 26,
+      "char_end_index": 28,
+      "id": "1:5",
+      "tags": []
+    },
+    {
+      "content": "r",
+      "sen_index": 1,
+      "tok_index": 6,
+      "char_start_index": 29,
+      "char_end_index": 30,
+      "id": "1:6",
+      "tags": []
+    },
+    {
+      "content": "k",
+      "sen_index": 1,
+      "tok_index": 7,
+      "char_start_index": 31,
+      "char_end_index": 32,
+      "id": "1:7",
+      "tags": []
+    },
+    {
+      "content": "hu",
+      "sen_index": 1,
+      "tok_index": 8,
+      "char_start_index": 33,
+      "char_end_index": 35,
+      "id": "1:8",
+      "tags": []
+    },
+    {
+      "content": "se",
+      "sen_index": 1,
+      "tok_index": 9,
+      "char_start_index": 36,
+      "char_end_index": 38,
+      "id": "1:9",
+      "tags": []
+    },
+    {
+      "content": "n",
+      "sen_index": 1,
+      "tok_index": 10,
+      "char_start_index": 39,
+      "char_end_index": 40,
+      "id": "1:10",
+      "tags": []
+    },
+    {
+      "content": "o",
+      "sen_index": 1,
+      "tok_index": 11,
+      "char_start_index": 41,
+      "char_end_index": 42,
+      "id": "1:11",
+      "tags": []
+    },
+    {
+      "content": "b",
+      "sen_index": 1,
+      "tok_index": 12,
+      "char_start_index": 43,
+      "char_end_index": 44,
+      "id": "1:12",
+      "tags": []
+    },
+    {
+      "content": "m",
+      "sen_index": 1,
+      "tok_index": 13,
+      "char_start_index": 45,
+      "char_end_index": 46,
+      "id": "1:13",
+      "tags": []
+    },
+    {
+      "content": "/",
+      "sen_index": 1,
+      "tok_index": 14,
+      "char_start_index": 47,
+      "char_end_index": 48,
+      "id": "1:14",
+      "tags": []
+    },
+    {
+      "content": "(",
+      "sen_index": 1,
+      "tok_index": 15,
+      "char_start_index": 49,
+      "char_end_index": 50,
+      "id": "1:15",
+      "tags": []
+    },
+    {
+      "content": "About",
+      "sen_index": 1,
+      "tok_index": 16,
+      "char_start_index": 51,
+      "char_end_index": 56,
+      "id": "1:16",
+      "tags": []
+    },
+    {
+      "content": "this",
+      "sen_index": 1,
+      "tok_index": 17,
+      "char_start_index": 57,
+      "char_end_index": 61,
+      "id": "1:17",
+      "tags": []
+    },
+    {
+      "content": "soundlisten",
+      "sen_index": 1,
+      "tok_index": 18,
+      "char_start_index": 62,
+      "char_end_index": 73,
+      "id": "1:18",
+      "tags": []
+    },
+    {
+      "content": ")",
+      "sen_index": 1,
+      "tok_index": 19,
+      "char_start_index": 74,
+      "char_end_index": 75,
+      "id": "1:19",
+      "tags": []
+    },
+    {
+      "content": ";",
+      "sen_index": 1,
+      "tok_index": 20,
+      "char_start_index": 76,
+      "char_end_index": 77,
+      "id": "1:20",
+      "tags": []
+    },
+    {
+      "content": "[",
+      "sen_index": 1,
+      "tok_index": 21,
+      "char_start_index": 78,
+      "char_end_index": 79,
+      "id": "1:21",
+      "tags": []
+    },
+    {
+      "content": "1",
+      "sen_index": 1,
+      "tok_index": 22,
+      "char_start_index": 80,
+      "char_end_index": 81,
+      "id": "1:22",
+      "tags": []
+    },
+    {
+      "content": "]",
+      "sen_index": 1,
+      "tok_index": 23,
+      "char_start_index": 82,
+      "char_end_index": 83,
+      "id": "1:23",
+      "tags": []
+    },
+    {
+      "content": "born",
+      "sen_index": 1,
+      "tok_index": 24,
+      "char_start_index": 84,
+      "char_end_index": 88,
+      "id": "1:24",
+      "tags": []
+    },
+    {
+      "content": "August",
+      "sen_index": 1,
+      "tok_index": 25,
+      "char_start_index": 89,
+      "char_end_index": 95,
+      "id": "1:25",
+      "tags": []
+    },
+    {
+      "content": "4",
+      "sen_index": 1,
+      "tok_index": 26,
+      "char_start_index": 96,
+      "char_end_index": 97,
+      "id": "1:26",
+      "tags": []
+    },
+    {
+      "content": ",",
+      "sen_index": 1,
+      "tok_index": 27,
+      "char_start_index": 98,
+      "char_end_index": 99,
+      "id": "1:27",
+      "tags": []
+    },
+    {
+      "content": "1961",
+      "sen_index": 1,
+      "tok_index": 28,
+      "char_start_index": 100,
+      "char_end_index": 104,
+      "id": "1:28",
+      "tags": []
+    },
+    {
+      "content": ")",
+      "sen_index": 1,
+      "tok_index": 29,
+      "char_start_index": 105,
+      "char_end_index": 106,
+      "id": "1:29",
+      "tags": []
+    },
+    {
+      "content": "is",
+      "sen_index": 1,
+      "tok_index": 30,
+      "char_start_index": 107,
+      "char_end_index": 109,
+      "id": "1:30",
+      "tags": []
+    },
+    {
+      "content": "an",
+      "sen_index": 1,
+      "tok_index": 31,
+      "char_start_index": 110,
+      "char_end_index": 112,
+      "id": "1:31",
+      "tags": []
+    },
+    {
+      "content": "American",
+      "sen_index": 1,
+      "tok_index": 32,
+      "char_start_index": 113,
+      "char_end_index": 121,
+      "id": "1:32",
+      "tags": []
+    },
+    {
+      "content": "attorney",
+      "sen_index": 1,
+      "tok_index": 33,
+      "char_start_index": 122,
+      "char_end_index": 130,
+      "id": "1:33",
+      "tags": []
+    },
+    {
+      "content": "and",
+      "sen_index": 1,
+      "tok_index": 34,
+      "char_start_index": 131,
+      "char_end_index": 134,
+      "id": "1:34",
+      "tags": []
+    },
+    {
+      "content": "politician",
+      "sen_index": 1,
+      "tok_index": 35,
+      "char_start_index": 135,
+      "char_end_index": 145,
+      "id": "1:35",
+      "tags": []
+    },
+    {
+      "content": "who",
+      "sen_index": 1,
+      "tok_index": 36,
+      "char_start_index": 146,
+      "char_end_index": 149,
+      "id": "1:36",
+      "tags": []
+    },
+    {
+      "content": "served",
+      "sen_index": 1,
+      "tok_index": 37,
+      "char_start_index": 150,
+      "char_end_index": 156,
+      "id": "1:37",
+      "tags": []
+    },
+    {
+      "content": "as",
+      "sen_index": 1,
+      "tok_index": 38,
+      "char_start_index": 157,
+      "char_end_index": 159,
+      "id": "1:38",
+      "tags": []
+    },
+    {
+      "content": "the",
+      "sen_index": 1,
+      "tok_index": 39,
+      "char_start_index": 160,
+      "char_end_index": 163,
+      "id": "1:39",
+      "tags": []
+    },
+    {
+      "content": "44",
+      "sen_index": 1,
+      "tok_index": 40,
+      "char_start_index": 164,
+      "char_end_index": 166,
+      "id": "1:40",
+      "tags": []
+    },
+    {
+      "content": "\u0000h",
+      "sen_index": 1,
+      "tok_index": 41,
+      "char_start_index": 167,
+      "char_end_index": 169,
+      "id": "1:41",
+      "tags": []
+    },
+    {
+      "content": "President",
+      "sen_index": 1,
+      "tok_index": 42,
+      "char_start_index": 170,
+      "char_end_index": 179,
+      "id": "1:42",
+      "tags": [
+        "B-MIDNAME"
+      ]
+    },
+    {
+      "content": "of",
+      "sen_index": 1,
+      "tok_index": 43,
+      "char_start_index": 180,
+      "char_end_index": 182,
+      "id": "1:43",
+      "tags": [
+        "I-MIDNAME"
+      ]
+    },
+    {
+      "content": "the",
+      "sen_index": 1,
+      "tok_index": 44,
+      "char_start_index": 183,
+      "char_end_index": 186,
+      "id": "1:44",
+      "tags": [
+        "I-MIDNAME"
+      ]
+    },
+    {
+      "content": "United",
+      "sen_index": 1,
+      "tok_index": 45,
+      "char_start_index": 187,
+      "char_end_index": 193,
+      "id": "1:45",
+      "tags": [
+        "I-MIDNAME"
+      ]
+    },
+    {
+      "content": "States",
+      "sen_index": 1,
+      "tok_index": 46,
+      "char_start_index": 194,
+      "char_end_index": 200,
+      "id": "1:46",
+      "tags": [
+        "I-MIDNAME"
+      ]
+    },
+    {
+      "content": "from",
+      "sen_index": 1,
+      "tok_index": 47,
+      "char_start_index": 201,
+      "char_end_index": 205,
+      "id": "1:47",
+      "tags": []
+    },
+    {
+      "content": "2009",
+      "sen_index": 1,
+      "tok_index": 48,
+      "char_start_index": 206,
+      "char_end_index": 210,
+      "id": "1:48",
+      "tags": []
+    },
+    {
+      "content": "to",
+      "sen_index": 1,
+      "tok_index": 49,
+      "char_start_index": 211,
+      "char_end_index": 213,
+      "id": "1:49",
+      "tags": []
+    },
+    {
+      "content": "2017",
+      "sen_index": 1,
+      "tok_index": 50,
+      "char_start_index": 214,
+      "char_end_index": 218,
+      "id": "1:50",
+      "tags": []
+    },
+    {
+      "content": ".",
+      "sen_index": 1,
+      "tok_index": 51,
+      "char_start_index": 219,
+      "char_end_index": 220,
+      "id": "1:51",
+      "tags": []
+    },
+    {
+      "content": "A",
+      "sen_index": 2,
+      "tok_index": 0,
+      "char_start_index": 0,
+      "char_end_index": 1,
+      "id": "2:0",
+      "tags": []
+    },
+    {
+      "content": "member",
+      "sen_index": 2,
+      "tok_index": 1,
+      "char_start_index": 2,
+      "char_end_index": 8,
+      "id": "2:1",
+      "tags": []
+    },
+    {
+      "content": "of",
+      "sen_index": 2,
+      "tok_index": 2,
+      "char_start_index": 9,
+      "char_end_index": 11,
+      "id": "2:2",
+      "tags": []
+    },
+    {
+      "content": "the",
+      "sen_index": 2,
+      "tok_index": 3,
+      "char_start_index": 12,
+      "char_end_index": 15,
+      "id": "2:3",
+      "tags": []
+    },
+    {
+      "content": "Democratic",
+      "sen_index": 2,
+      "tok_index": 4,
+      "char_start_index": 16,
+      "char_end_index": 26,
+      "id": "2:4",
+      "tags": []
+    },
+    {
+      "content": "Party",
+      "sen_index": 2,
+      "tok_index": 5,
+      "char_start_index": 27,
+      "char_end_index": 32,
+      "id": "2:5",
+      "tags": []
+    },
+    {
+      "content": ",",
+      "sen_index": 2,
+      "tok_index": 6,
+      "char_start_index": 33,
+      "char_end_index": 34,
+      "id": "2:6",
+      "tags": []
+    },
+    {
+      "content": "he",
+      "sen_index": 2,
+      "tok_index": 7,
+      "char_start_index": 35,
+      "char_end_index": 37,
+      "id": "2:7",
+      "tags": []
+    },
+    {
+      "content": "was",
+      "sen_index": 2,
+      "tok_index": 8,
+      "char_start_index": 38,
+      "char_end_index": 41,
+      "id": "2:8",
+      "tags": []
+    },
+    {
+      "content": "the",
+      "sen_index": 2,
+      "tok_index": 9,
+      "char_start_index": 42,
+      "char_end_index": 45,
+      "id": "2:9",
+      "tags": []
+    },
+    {
+      "content": "first",
+      "sen_index": 2,
+      "tok_index": 10,
+      "char_start_index": 46,
+      "char_end_index": 51,
+      "id": "2:10",
+      "tags": []
+    },
+    {
+      "content": "African",
+      "sen_index": 2,
+      "tok_index": 11,
+      "char_start_index": 52,
+      "char_end_index": 59,
+      "id": "2:11",
+      "tags": []
+    },
+    {
+      "content": "American",
+      "sen_index": 2,
+      "tok_index": 12,
+      "char_start_index": 60,
+      "char_end_index": 68,
+      "id": "2:12",
+      "tags": []
+    },
+    {
+      "content": "President",
+      "sen_index": 2,
+      "tok_index": 13,
+      "char_start_index": 69,
+      "char_end_index": 78,
+      "id": "2:13",
+      "tags": []
+    },
+    {
+      "content": "of",
+      "sen_index": 2,
+      "tok_index": 14,
+      "char_start_index": 79,
+      "char_end_index": 81,
+      "id": "2:14",
+      "tags": []
+    },
+    {
+      "content": "the",
+      "sen_index": 2,
+      "tok_index": 15,
+      "char_start_index": 82,
+      "char_end_index": 85,
+      "id": "2:15",
+      "tags": []
+    },
+    {
+      "content": "United",
+      "sen_index": 2,
+      "tok_index": 16,
+      "char_start_index": 86,
+      "char_end_index": 92,
+      "id": "2:16",
+      "tags": []
+    },
+    {
+      "content": "States",
+      "sen_index": 2,
+      "tok_index": 17,
+      "char_start_index": 93,
+      "char_end_index": 99,
+      "id": "2:17",
+      "tags": []
+    },
+    {
+      "content": ".",
+      "sen_index": 2,
+      "tok_index": 18,
+      "char_start_index": 100,
+      "char_end_index": 101,
+      "id": "2:18",
+      "tags": []
+    },
+    {
+      "content": "He",
+      "sen_index": 3,
+      "tok_index": 0,
+      "char_start_index": 0,
+      "char_end_index": 2,
+      "id": "3:0",
+      "tags": []
+    },
+    {
+      "content": "previously",
+      "sen_index": 3,
+      "tok_index": 1,
+      "char_start_index": 3,
+      "char_end_index": 13,
+      "id": "3:1",
+      "tags": []
+    },
+    {
+      "content": "served",
+      "sen_index": 3,
+      "tok_index": 2,
+      "char_start_index": 14,
+      "char_end_index": 20,
+      "id": "3:2",
+      "tags": []
+    },
+    {
+      "content": "as",
+      "sen_index": 3,
+      "tok_index": 3,
+      "char_start_index": 21,
+      "char_end_index": 23,
+      "id": "3:3",
+      "tags": []
+    },
+    {
+      "content": "a",
+      "sen_index": 3,
+      "tok_index": 4,
+      "char_start_index": 24,
+      "char_end_index": 25,
+      "id": "3:4",
+      "tags": []
+    },
+    {
+      "content": "U.S",
+      "sen_index": 3,
+      "tok_index": 5,
+      "char_start_index": 26,
+      "char_end_index": 29,
+      "id": "3:5",
+      "tags": []
+    },
+    {
+      "content": ".",
+      "sen_index": 3,
+      "tok_index": 6,
+      "char_start_index": 30,
+      "char_end_index": 31,
+      "id": "3:6",
+      "tags": []
+    },
+    {
+      "content": "senator",
+      "sen_index": 3,
+      "tok_index": 7,
+      "char_start_index": 32,
+      "char_end_index": 39,
+      "id": "3:7",
+      "tags": []
+    },
+    {
+      "content": "from",
+      "sen_index": 3,
+      "tok_index": 8,
+      "char_start_index": 40,
+      "char_end_index": 44,
+      "id": "3:8",
+      "tags": []
+    },
+    {
+      "content": "Illinois",
+      "sen_index": 3,
+      "tok_index": 9,
+      "char_start_index": 45,
+      "char_end_index": 53,
+      "id": "3:9",
+      "tags": []
+    },
+    {
+      "content": "from",
+      "sen_index": 3,
+      "tok_index": 10,
+      "char_start_index": 54,
+      "char_end_index": 58,
+      "id": "3:10",
+      "tags": []
+    },
+    {
+      "content": "2005",
+      "sen_index": 3,
+      "tok_index": 11,
+      "char_start_index": 59,
+      "char_end_index": 63,
+      "id": "3:11",
+      "tags": []
+    },
+    {
+      "content": "to",
+      "sen_index": 3,
+      "tok_index": 12,
+      "char_start_index": 64,
+      "char_end_index": 66,
+      "id": "3:12",
+      "tags": []
+    },
+    {
+      "content": "2008",
+      "sen_index": 3,
+      "tok_index": 13,
+      "char_start_index": 67,
+      "char_end_index": 71,
+      "id": "3:13",
+      "tags": []
+    },
+    {
+      "content": "and",
+      "sen_index": 3,
+      "tok_index": 14,
+      "char_start_index": 72,
+      "char_end_index": 75,
+      "id": "3:14",
+      "tags": []
+    },
+    {
+      "content": "an",
+      "sen_index": 3,
+      "tok_index": 15,
+      "char_start_index": 76,
+      "char_end_index": 78,
+      "id": "3:15",
+      "tags": []
+    },
+    {
+      "content": "Illinois",
+      "sen_index": 3,
+      "tok_index": 16,
+      "char_start_index": 79,
+      "char_end_index": 87,
+      "id": "3:16",
+      "tags": []
+    },
+    {
+      "content": "state",
+      "sen_index": 3,
+      "tok_index": 17,
+      "char_start_index": 88,
+      "char_end_index": 93,
+      "id": "3:17",
+      "tags": []
+    },
+    {
+      "content": "senator",
+      "sen_index": 3,
+      "tok_index": 18,
+      "char_start_index": 94,
+      "char_end_index": 101,
+      "id": "3:18",
+      "tags": []
+    },
+    {
+      "content": "from",
+      "sen_index": 3,
+      "tok_index": 19,
+      "char_start_index": 102,
+      "char_end_index": 106,
+      "id": "3:19",
+      "tags": []
+    },
+    {
+      "content": "1997",
+      "sen_index": 3,
+      "tok_index": 20,
+      "char_start_index": 107,
+      "char_end_index": 111,
+      "id": "3:20",
+      "tags": []
+    },
+    {
+      "content": "to",
+      "sen_index": 3,
+      "tok_index": 21,
+      "char_start_index": 112,
+      "char_end_index": 114,
+      "id": "3:21",
+      "tags": []
+    },
+    {
+      "content": "2004",
+      "sen_index": 3,
+      "tok_index": 22,
+      "char_start_index": 115,
+      "char_end_index": 119,
+      "id": "3:22",
+      "tags": []
+    },
+    {
+      "content": ".",
+      "sen_index": 3,
+      "tok_index": 23,
+      "char_start_index": 120,
+      "char_end_index": 121,
+      "id": "3:23",
+      "tags": []
+    },
+    {
+      "content": "Obama",
+      "sen_index": 4,
+      "tok_index": 0,
+      "char_start_index": 0,
+      "char_end_index": 5,
+      "id": "4:0",
+      "tags": []
+    },
+    {
+      "content": "was",
+      "sen_index": 4,
+      "tok_index": 1,
+      "char_start_index": 6,
+      "char_end_index": 9,
+      "id": "4:1",
+      "tags": []
+    },
+    {
+      "content": "born",
+      "sen_index": 4,
+      "tok_index": 2,
+      "char_start_index": 10,
+      "char_end_index": 14,
+      "id": "4:2",
+      "tags": []
+    },
+    {
+      "content": "in",
+      "sen_index": 4,
+      "tok_index": 3,
+      "char_start_index": 15,
+      "char_end_index": 17,
+      "id": "4:3",
+      "tags": []
+    },
+    {
+      "content": "Honolulu",
+      "sen_index": 4,
+      "tok_index": 4,
+      "char_start_index": 18,
+      "char_end_index": 26,
+      "id": "4:4",
+      "tags": []
+    },
+    {
+      "content": ",",
+      "sen_index": 4,
+      "tok_index": 5,
+      "char_start_index": 27,
+      "char_end_index": 28,
+      "id": "4:5",
+      "tags": []
+    },
+    {
+      "content": "Hawaii",
+      "sen_index": 4,
+      "tok_index": 6,
+      "char_start_index": 29,
+      "char_end_index": 35,
+      "id": "4:6",
+      "tags": []
+    },
+    {
+      "content": ".",
+      "sen_index": 4,
+      "tok_index": 7,
+      "char_start_index": 36,
+      "char_end_index": 37,
+      "id": "4:7",
+      "tags": []
+    },
+    {
+      "content": "After",
+      "sen_index": 5,
+      "tok_index": 0,
+      "char_start_index": 0,
+      "char_end_index": 5,
+      "id": "5:0",
+      "tags": []
+    },
+    {
+      "content": "graduating",
+      "sen_index": 5,
+      "tok_index": 1,
+      "char_start_index": 6,
+      "char_end_index": 16,
+      "id": "5:1",
+      "tags": []
+    },
+    {
+      "content": "from",
+      "sen_index": 5,
+      "tok_index": 2,
+      "char_start_index": 17,
+      "char_end_index": 21,
+      "id": "5:2",
+      "tags": []
+    },
+    {
+      "content": "Columbia",
+      "sen_index": 5,
+      "tok_index": 3,
+      "char_start_index": 22,
+      "char_end_index": 30,
+      "id": "5:3",
+      "tags": []
+    },
+    {
+      "content": "University",
+      "sen_index": 5,
+      "tok_index": 4,
+      "char_start_index": 31,
+      "char_end_index": 41,
+      "id": "5:4",
+      "tags": []
+    },
+    {
+      "content": "in",
+      "sen_index": 5,
+      "tok_index": 5,
+      "char_start_index": 42,
+      "char_end_index": 44,
+      "id": "5:5",
+      "tags": []
+    },
+    {
+      "content": "1983",
+      "sen_index": 5,
+      "tok_index": 6,
+      "char_start_index": 45,
+      "char_end_index": 49,
+      "id": "5:6",
+      "tags": []
+    },
+    {
+      "content": ",",
+      "sen_index": 5,
+      "tok_index": 7,
+      "char_start_index": 50,
+      "char_end_index": 51,
+      "id": "5:7",
+      "tags": []
+    },
+    {
+      "content": "he",
+      "sen_index": 5,
+      "tok_index": 8,
+      "char_start_index": 52,
+      "char_end_index": 54,
+      "id": "5:8",
+      "tags": []
+    },
+    {
+      "content": "worked",
+      "sen_index": 5,
+      "tok_index": 9,
+      "char_start_index": 55,
+      "char_end_index": 61,
+      "id": "5:9",
+      "tags": []
+    },
+    {
+      "content": "as",
+      "sen_index": 5,
+      "tok_index": 10,
+      "char_start_index": 62,
+      "char_end_index": 64,
+      "id": "5:10",
+      "tags": []
+    },
+    {
+      "content": "a",
+      "sen_index": 5,
+      "tok_index": 11,
+      "char_start_index": 65,
+      "char_end_index": 66,
+      "id": "5:11",
+      "tags": []
+    },
+    {
+      "content": "community",
+      "sen_index": 5,
+      "tok_index": 12,
+      "char_start_index": 67,
+      "char_end_index": 76,
+      "id": "5:12",
+      "tags": []
+    },
+    {
+      "content": "organizer",
+      "sen_index": 5,
+      "tok_index": 13,
+      "char_start_index": 77,
+      "char_end_index": 86,
+      "id": "5:13",
+      "tags": []
+    },
+    {
+      "content": "in",
+      "sen_index": 5,
+      "tok_index": 14,
+      "char_start_index": 87,
+      "char_end_index": 89,
+      "id": "5:14",
+      "tags": []
+    },
+    {
+      "content": "Chicago",
+      "sen_index": 5,
+      "tok_index": 15,
+      "char_start_index": 90,
+      "char_end_index": 97,
+      "id": "5:15",
+      "tags": []
+    },
+    {
+      "content": ".",
+      "sen_index": 5,
+      "tok_index": 16,
+      "char_start_index": 98,
+      "char_end_index": 99,
+      "id": "5:16",
+      "tags": []
+    },
+    {
+      "content": "In",
+      "sen_index": 6,
+      "tok_index": 0,
+      "char_start_index": 0,
+      "char_end_index": 2,
+      "id": "6:0",
+      "tags": []
+    },
+    {
+      "content": "1988",
+      "sen_index": 6,
+      "tok_index": 1,
+      "char_start_index": 3,
+      "char_end_index": 7,
+      "id": "6:1",
+      "tags": []
+    },
+    {
+      "content": ",",
+      "sen_index": 6,
+      "tok_index": 2,
+      "char_start_index": 8,
+      "char_end_index": 9,
+      "id": "6:2",
+      "tags": []
+    },
+    {
+      "content": "he",
+      "sen_index": 6,
+      "tok_index": 3,
+      "char_start_index": 10,
+      "char_end_index": 12,
+      "id": "6:3",
+      "tags": []
+    },
+    {
+      "content": "enrolled",
+      "sen_index": 6,
+      "tok_index": 4,
+      "char_start_index": 13,
+      "char_end_index": 21,
+      "id": "6:4",
+      "tags": []
+    },
+    {
+      "content": "in",
+      "sen_index": 6,
+      "tok_index": 5,
+      "char_start_index": 22,
+      "char_end_index": 24,
+      "id": "6:5",
+      "tags": []
+    },
+    {
+      "content": "Harvard",
+      "sen_index": 6,
+      "tok_index": 6,
+      "char_start_index": 25,
+      "char_end_index": 32,
+      "id": "6:6",
+      "tags": []
+    },
+    {
+      "content": "Law",
+      "sen_index": 6,
+      "tok_index": 7,
+      "char_start_index": 33,
+      "char_end_index": 36,
+      "id": "6:7",
+      "tags": []
+    },
+    {
+      "content": "School",
+      "sen_index": 6,
+      "tok_index": 8,
+      "char_start_index": 37,
+      "char_end_index": 43,
+      "id": "6:8",
+      "tags": []
+    },
+    {
+      "content": ",",
+      "sen_index": 6,
+      "tok_index": 9,
+      "char_start_index": 44,
+      "char_end_index": 45,
+      "id": "6:9",
+      "tags": []
+    },
+    {
+      "content": "where",
+      "sen_index": 6,
+      "tok_index": 10,
+      "char_start_index": 46,
+      "char_end_index": 51,
+      "id": "6:10",
+      "tags": []
+    },
+    {
+      "content": "he",
+      "sen_index": 6,
+      "tok_index": 11,
+      "char_start_index": 52,
+      "char_end_index": 54,
+      "id": "6:11",
+      "tags": []
+    },
+    {
+      "content": "was",
+      "sen_index": 6,
+      "tok_index": 12,
+      "char_start_index": 55,
+      "char_end_index": 58,
+      "id": "6:12",
+      "tags": []
+    },
+    {
+      "content": "the",
+      "sen_index": 6,
+      "tok_index": 13,
+      "char_start_index": 59,
+      "char_end_index": 62,
+      "id": "6:13",
+      "tags": []
+    },
+    {
+      "content": "first",
+      "sen_index": 6,
+      "tok_index": 14,
+      "char_start_index": 63,
+      "char_end_index": 68,
+      "id": "6:14",
+      "tags": []
+    },
+    {
+      "content": "black",
+      "sen_index": 6,
+      "tok_index": 15,
+      "char_start_index": 69,
+      "char_end_index": 74,
+      "id": "6:15",
+      "tags": []
+    },
+    {
+      "content": "president",
+      "sen_index": 6,
+      "tok_index": 16,
+      "char_start_index": 75,
+      "char_end_index": 84,
+      "id": "6:16",
+      "tags": []
+    },
+    {
+      "content": "of",
+      "sen_index": 6,
+      "tok_index": 17,
+      "char_start_index": 85,
+      "char_end_index": 87,
+      "id": "6:17",
+      "tags": []
+    },
+    {
+      "content": "the",
+      "sen_index": 6,
+      "tok_index": 18,
+      "char_start_index": 88,
+      "char_end_index": 91,
+      "id": "6:18",
+      "tags": []
+    },
+    {
+      "content": "Harvard",
+      "sen_index": 6,
+      "tok_index": 19,
+      "char_start_index": 92,
+      "char_end_index": 99,
+      "id": "6:19",
+      "tags": []
+    },
+    {
+      "content": "Law",
+      "sen_index": 6,
+      "tok_index": 20,
+      "char_start_index": 100,
+      "char_end_index": 103,
+      "id": "6:20",
+      "tags": []
+    },
+    {
+      "content": "Review",
+      "sen_index": 6,
+      "tok_index": 21,
+      "char_start_index": 104,
+      "char_end_index": 110,
+      "id": "6:21",
+      "tags": []
+    },
+    {
+      "content": ".",
+      "sen_index": 6,
+      "tok_index": 22,
+      "char_start_index": 111,
+      "char_end_index": 112,
+      "id": "6:22",
+      "tags": []
+    },
+    {
+      "content": "After",
+      "sen_index": 7,
+      "tok_index": 0,
+      "char_start_index": 0,
+      "char_end_index": 5,
+      "id": "7:0",
+      "tags": []
+    },
+    {
+      "content": "graduating",
+      "sen_index": 7,
+      "tok_index": 1,
+      "char_start_index": 6,
+      "char_end_index": 16,
+      "id": "7:1",
+      "tags": []
+    },
+    {
+      "content": ",",
+      "sen_index": 7,
+      "tok_index": 2,
+      "char_start_index": 17,
+      "char_end_index": 18,
+      "id": "7:2",
+      "tags": []
+    },
+    {
+      "content": "he",
+      "sen_index": 7,
+      "tok_index": 3,
+      "char_start_index": 19,
+      "char_end_index": 21,
+      "id": "7:3",
+      "tags": []
+    },
+    {
+      "content": "became",
+      "sen_index": 7,
+      "tok_index": 4,
+      "char_start_index": 22,
+      "char_end_index": 28,
+      "id": "7:4",
+      "tags": []
+    },
+    {
+      "content": "a",
+      "sen_index": 7,
+      "tok_index": 5,
+      "char_start_index": 29,
+      "char_end_index": 30,
+      "id": "7:5",
+      "tags": []
+    },
+    {
+      "content": "civil",
+      "sen_index": 7,
+      "tok_index": 6,
+      "char_start_index": 31,
+      "char_end_index": 36,
+      "id": "7:6",
+      "tags": []
+    },
+    {
+      "content": "rights",
+      "sen_index": 7,
+      "tok_index": 7,
+      "char_start_index": 37,
+      "char_end_index": 43,
+      "id": "7:7",
+      "tags": []
+    },
+    {
+      "content": "attorney",
+      "sen_index": 7,
+      "tok_index": 8,
+      "char_start_index": 44,
+      "char_end_index": 52,
+      "id": "7:8",
+      "tags": []
+    },
+    {
+      "content": "and",
+      "sen_index": 7,
+      "tok_index": 9,
+      "char_start_index": 53,
+      "char_end_index": 56,
+      "id": "7:9",
+      "tags": []
+    },
+    {
+      "content": "an",
+      "sen_index": 7,
+      "tok_index": 10,
+      "char_start_index": 57,
+      "char_end_index": 59,
+      "id": "7:10",
+      "tags": []
+    },
+    {
+      "content": "academic",
+      "sen_index": 7,
+      "tok_index": 11,
+      "char_start_index": 60,
+      "char_end_index": 68,
+      "id": "7:11",
+      "tags": []
+    },
+    {
+      "content": ",",
+      "sen_index": 7,
+      "tok_index": 12,
+      "char_start_index": 69,
+      "char_end_index": 70,
+      "id": "7:12",
+      "tags": []
+    },
+    {
+      "content": "teaching",
+      "sen_index": 7,
+      "tok_index": 13,
+      "char_start_index": 71,
+      "char_end_index": 79,
+      "id": "7:13",
+      "tags": []
+    },
+    {
+      "content": "constitutional",
+      "sen_index": 7,
+      "tok_index": 14,
+      "char_start_index": 80,
+      "char_end_index": 94,
+      "id": "7:14",
+      "tags": []
+    },
+    {
+      "content": "law",
+      "sen_index": 7,
+      "tok_index": 15,
+      "char_start_index": 95,
+      "char_end_index": 98,
+      "id": "7:15",
+      "tags": []
+    },
+    {
+      "content": "at",
+      "sen_index": 7,
+      "tok_index": 16,
+      "char_start_index": 99,
+      "char_end_index": 101,
+      "id": "7:16",
+      "tags": []
+    },
+    {
+      "content": "the",
+      "sen_index": 7,
+      "tok_index": 17,
+      "char_start_index": 102,
+      "char_end_index": 105,
+      "id": "7:17",
+      "tags": []
+    },
+    {
+      "content": "University",
+      "sen_index": 7,
+      "tok_index": 18,
+      "char_start_index": 106,
+      "char_end_index": 116,
+      "id": "7:18",
+      "tags": []
+    },
+    {
+      "content": "of",
+      "sen_index": 7,
+      "tok_index": 19,
+      "char_start_index": 117,
+      "char_end_index": 119,
+      "id": "7:19",
+      "tags": []
+    },
+    {
+      "content": "Chicago",
+      "sen_index": 7,
+      "tok_index": 20,
+      "char_start_index": 120,
+      "char_end_index": 127,
+      "id": "7:20",
+      "tags": []
+    },
+    {
+      "content": "Law",
+      "sen_index": 7,
+      "tok_index": 21,
+      "char_start_index": 128,
+      "char_end_index": 131,
+      "id": "7:21",
+      "tags": []
+    },
+    {
+      "content": "School",
+      "sen_index": 7,
+      "tok_index": 22,
+      "char_start_index": 132,
+      "char_end_index": 138,
+      "id": "7:22",
+      "tags": []
+    },
+    {
+      "content": "from",
+      "sen_index": 7,
+      "tok_index": 23,
+      "char_start_index": 139,
+      "char_end_index": 143,
+      "id": "7:23",
+      "tags": []
+    },
+    {
+      "content": "1992",
+      "sen_index": 7,
+      "tok_index": 24,
+      "char_start_index": 144,
+      "char_end_index": 148,
+      "id": "7:24",
+      "tags": []
+    },
+    {
+      "content": "to",
+      "sen_index": 7,
+      "tok_index": 25,
+      "char_start_index": 149,
+      "char_end_index": 151,
+      "id": "7:25",
+      "tags": []
+    },
+    {
+      "content": "2004",
+      "sen_index": 7,
+      "tok_index": 26,
+      "char_start_index": 152,
+      "char_end_index": 156,
+      "id": "7:26",
+      "tags": []
+    },
+    {
+      "content": ".",
+      "sen_index": 7,
+      "tok_index": 27,
+      "char_start_index": 157,
+      "char_end_index": 158,
+      "id": "7:27",
+      "tags": []
+    },
+    {
+      "content": "He",
+      "sen_index": 8,
+      "tok_index": 0,
+      "char_start_index": 0,
+      "char_end_index": 2,
+      "id": "8:0",
+      "tags": []
+    },
+    {
+      "content": "represented",
+      "sen_index": 8,
+      "tok_index": 1,
+      "char_start_index": 3,
+      "char_end_index": 14,
+      "id": "8:1",
+      "tags": []
+    },
+    {
+      "content": "the",
+      "sen_index": 8,
+      "tok_index": 2,
+      "char_start_index": 15,
+      "char_end_index": 18,
+      "id": "8:2",
+      "tags": []
+    },
+    {
+      "content": "13",
+      "sen_index": 8,
+      "tok_index": 3,
+      "char_start_index": 19,
+      "char_end_index": 21,
+      "id": "8:3",
+      "tags": []
+    },
+    {
+      "content": "\u0000h",
+      "sen_index": 8,
+      "tok_index": 4,
+      "char_start_index": 22,
+      "char_end_index": 24,
+      "id": "8:4",
+      "tags": []
+    },
+    {
+      "content": "district",
+      "sen_index": 8,
+      "tok_index": 5,
+      "char_start_index": 25,
+      "char_end_index": 33,
+      "id": "8:5",
+      "tags": []
+    },
+    {
+      "content": "for",
+      "sen_index": 8,
+      "tok_index": 6,
+      "char_start_index": 34,
+      "char_end_index": 37,
+      "id": "8:6",
+      "tags": []
+    },
+    {
+      "content": "three",
+      "sen_index": 8,
+      "tok_index": 7,
+      "char_start_index": 38,
+      "char_end_index": 43,
+      "id": "8:7",
+      "tags": []
+    },
+    {
+      "content": "terms",
+      "sen_index": 8,
+      "tok_index": 8,
+      "char_start_index": 44,
+      "char_end_index": 49,
+      "id": "8:8",
+      "tags": []
+    },
+    {
+      "content": "in",
+      "sen_index": 8,
+      "tok_index": 9,
+      "char_start_index": 50,
+      "char_end_index": 52,
+      "id": "8:9",
+      "tags": []
+    },
+    {
+      "content": "the",
+      "sen_index": 8,
+      "tok_index": 10,
+      "char_start_index": 53,
+      "char_end_index": 56,
+      "id": "8:10",
+      "tags": []
+    },
+    {
+      "content": "Illinois",
+      "sen_index": 8,
+      "tok_index": 11,
+      "char_start_index": 57,
+      "char_end_index": 65,
+      "id": "8:11",
+      "tags": []
+    },
+    {
+      "content": "Senate",
+      "sen_index": 8,
+      "tok_index": 12,
+      "char_start_index": 66,
+      "char_end_index": 72,
+      "id": "8:12",
+      "tags": []
+    },
+    {
+      "content": "from",
+      "sen_index": 8,
+      "tok_index": 13,
+      "char_start_index": 73,
+      "char_end_index": 77,
+      "id": "8:13",
+      "tags": []
+    },
+    {
+      "content": "1997",
+      "sen_index": 8,
+      "tok_index": 14,
+      "char_start_index": 78,
+      "char_end_index": 82,
+      "id": "8:14",
+      "tags": []
+    },
+    {
+      "content": "until",
+      "sen_index": 8,
+      "tok_index": 15,
+      "char_start_index": 83,
+      "char_end_index": 88,
+      "id": "8:15",
+      "tags": []
+    },
+    {
+      "content": "2004",
+      "sen_index": 8,
+      "tok_index": 16,
+      "char_start_index": 89,
+      "char_end_index": 93,
+      "id": "8:16",
+      "tags": []
+    },
+    {
+      "content": ",",
+      "sen_index": 8,
+      "tok_index": 17,
+      "char_start_index": 94,
+      "char_end_index": 95,
+      "id": "8:17",
+      "tags": []
+    },
+    {
+      "content": "when",
+      "sen_index": 8,
+      "tok_index": 18,
+      "char_start_index": 96,
+      "char_end_index": 100,
+      "id": "8:18",
+      "tags": []
+    },
+    {
+      "content": "he",
+      "sen_index": 8,
+      "tok_index": 19,
+      "char_start_index": 101,
+      "char_end_index": 103,
+      "id": "8:19",
+      "tags": []
+    },
+    {
+      "content": "ran",
+      "sen_index": 8,
+      "tok_index": 20,
+      "char_start_index": 104,
+      "char_end_index": 107,
+      "id": "8:20",
+      "tags": []
+    },
+    {
+      "content": "for",
+      "sen_index": 8,
+      "tok_index": 21,
+      "char_start_index": 108,
+      "char_end_index": 111,
+      "id": "8:21",
+      "tags": []
+    },
+    {
+      "content": "the",
+      "sen_index": 8,
+      "tok_index": 22,
+      "char_start_index": 112,
+      "char_end_index": 115,
+      "id": "8:22",
+      "tags": []
+    },
+    {
+      "content": "U.S",
+      "sen_index": 8,
+      "tok_index": 23,
+      "char_start_index": 116,
+      "char_end_index": 119,
+      "id": "8:23",
+      "tags": []
+    },
+    {
+      "content": ".",
+      "sen_index": 8,
+      "tok_index": 24,
+      "char_start_index": 120,
+      "char_end_index": 121,
+      "id": "8:24",
+      "tags": []
+    },
+    {
+      "content": "Senate",
+      "sen_index": 8,
+      "tok_index": 25,
+      "char_start_index": 122,
+      "char_end_index": 128,
+      "id": "8:25",
+      "tags": []
+    },
+    {
+      "content": ".",
+      "sen_index": 8,
+      "tok_index": 26,
+      "char_start_index": 129,
+      "char_end_index": 130,
+      "id": "8:26",
+      "tags": []
+    },
+    {
+      "content": "He",
+      "sen_index": 9,
+      "tok_index": 0,
+      "char_start_index": 0,
+      "char_end_index": 2,
+      "id": "9:0",
+      "tags": []
+    },
+    {
+      "content": "received",
+      "sen_index": 9,
+      "tok_index": 1,
+      "char_start_index": 3,
+      "char_end_index": 11,
+      "id": "9:1",
+      "tags": []
+    },
+    {
+      "content": "national",
+      "sen_index": 9,
+      "tok_index": 2,
+      "char_start_index": 12,
+      "char_end_index": 20,
+      "id": "9:2",
+      "tags": []
+    },
+    {
+      "content": "attention",
+      "sen_index": 9,
+      "tok_index": 3,
+      "char_start_index": 21,
+      "char_end_index": 30,
+      "id": "9:3",
+      "tags": []
+    },
+    {
+      "content": "in",
+      "sen_index": 9,
+      "tok_index": 4,
+      "char_start_index": 31,
+      "char_end_index": 33,
+      "id": "9:4",
+      "tags": []
+    },
+    {
+      "content": "2004",
+      "sen_index": 9,
+      "tok_index": 5,
+      "char_start_index": 34,
+      "char_end_index": 38,
+      "id": "9:5",
+      "tags": []
+    },
+    {
+      "content": "with",
+      "sen_index": 9,
+      "tok_index": 6,
+      "char_start_index": 39,
+      "char_end_index": 43,
+      "id": "9:6",
+      "tags": []
+    },
+    {
+      "content": "his",
+      "sen_index": 9,
+      "tok_index": 7,
+      "char_start_index": 44,
+      "char_end_index": 47,
+      "id": "9:7",
+      "tags": []
+    },
+    {
+      "content": "March",
+      "sen_index": 9,
+      "tok_index": 8,
+      "char_start_index": 48,
+      "char_end_index": 53,
+      "id": "9:8",
+      "tags": []
+    },
+    {
+      "content": "primary",
+      "sen_index": 9,
+      "tok_index": 9,
+      "char_start_index": 54,
+      "char_end_index": 61,
+      "id": "9:9",
+      "tags": []
+    },
+    {
+      "content": "win",
+      "sen_index": 9,
+      "tok_index": 10,
+      "char_start_index": 62,
+      "char_end_index": 65,
+      "id": "9:10",
+      "tags": []
+    },
+    {
+      "content": ",",
+      "sen_index": 9,
+      "tok_index": 11,
+      "char_start_index": 66,
+      "char_end_index": 67,
+      "id": "9:11",
+      "tags": []
+    },
+    {
+      "content": "his",
+      "sen_index": 9,
+      "tok_index": 12,
+      "char_start_index": 68,
+      "char_end_index": 71,
+      "id": "9:12",
+      "tags": []
+    },
+    {
+      "content": "well-received",
+      "sen_index": 9,
+      "tok_index": 13,
+      "char_start_index": 72,
+      "char_end_index": 85,
+      "id": "9:13",
+      "tags": []
+    },
+    {
+      "content": "July",
+      "sen_index": 9,
+      "tok_index": 14,
+      "char_start_index": 86,
+      "char_end_index": 90,
+      "id": "9:14",
+      "tags": []
+    },
+    {
+      "content": "Democratic",
+      "sen_index": 9,
+      "tok_index": 15,
+      "char_start_index": 91,
+      "char_end_index": 101,
+      "id": "9:15",
+      "tags": []
+    },
+    {
+      "content": "National",
+      "sen_index": 9,
+      "tok_index": 16,
+      "char_start_index": 102,
+      "char_end_index": 110,
+      "id": "9:16",
+      "tags": []
+    },
+    {
+      "content": "Convention",
+      "sen_index": 9,
+      "tok_index": 17,
+      "char_start_index": 111,
+      "char_end_index": 121,
+      "id": "9:17",
+      "tags": []
+    },
+    {
+      "content": "keynote",
+      "sen_index": 9,
+      "tok_index": 18,
+      "char_start_index": 122,
+      "char_end_index": 129,
+      "id": "9:18",
+      "tags": []
+    },
+    {
+      "content": "address",
+      "sen_index": 9,
+      "tok_index": 19,
+      "char_start_index": 130,
+      "char_end_index": 137,
+      "id": "9:19",
+      "tags": []
+    },
+    {
+      "content": ",",
+      "sen_index": 9,
+      "tok_index": 20,
+      "char_start_index": 138,
+      "char_end_index": 139,
+      "id": "9:20",
+      "tags": []
+    },
+    {
+      "content": "and",
+      "sen_index": 9,
+      "tok_index": 21,
+      "char_start_index": 140,
+      "char_end_index": 143,
+      "id": "9:21",
+      "tags": []
+    },
+    {
+      "content": "his",
+      "sen_index": 9,
+      "tok_index": 22,
+      "char_start_index": 144,
+      "char_end_index": 147,
+      "id": "9:22",
+      "tags": []
+    },
+    {
+      "content": "landslide",
+      "sen_index": 9,
+      "tok_index": 23,
+      "char_start_index": 148,
+      "char_end_index": 157,
+      "id": "9:23",
+      "tags": []
+    },
+    {
+      "content": "November",
+      "sen_index": 9,
+      "tok_index": 24,
+      "char_start_index": 158,
+      "char_end_index": 166,
+      "id": "9:24",
+      "tags": []
+    },
+    {
+      "content": "election",
+      "sen_index": 9,
+      "tok_index": 25,
+      "char_start_index": 167,
+      "char_end_index": 175,
+      "id": "9:25",
+      "tags": []
+    },
+    {
+      "content": "to",
+      "sen_index": 9,
+      "tok_index": 26,
+      "char_start_index": 176,
+      "char_end_index": 178,
+      "id": "9:26",
+      "tags": []
+    },
+    {
+      "content": "the",
+      "sen_index": 9,
+      "tok_index": 27,
+      "char_start_index": 179,
+      "char_end_index": 182,
+      "id": "9:27",
+      "tags": []
+    },
+    {
+      "content": "Senate",
+      "sen_index": 9,
+      "tok_index": 28,
+      "char_start_index": 183,
+      "char_end_index": 189,
+      "id": "9:28",
+      "tags": []
+    },
+    {
+      "content": ".",
+      "sen_index": 9,
+      "tok_index": 29,
+      "char_start_index": 190,
+      "char_end_index": 191,
+      "id": "9:29",
+      "tags": []
+    },
+    {
+      "content": "In",
+      "sen_index": 10,
+      "tok_index": 0,
+      "char_start_index": 0,
+      "char_end_index": 2,
+      "id": "10:0",
+      "tags": []
+    },
+    {
+      "content": "2008",
+      "sen_index": 10,
+      "tok_index": 1,
+      "char_start_index": 3,
+      "char_end_index": 7,
+      "id": "10:1",
+      "tags": []
+    },
+    {
+      "content": ",",
+      "sen_index": 10,
+      "tok_index": 2,
+      "char_start_index": 8,
+      "char_end_index": 9,
+      "id": "10:2",
+      "tags": []
+    },
+    {
+      "content": "he",
+      "sen_index": 10,
+      "tok_index": 3,
+      "char_start_index": 10,
+      "char_end_index": 12,
+      "id": "10:3",
+      "tags": []
+    },
+    {
+      "content": "was",
+      "sen_index": 10,
+      "tok_index": 4,
+      "char_start_index": 13,
+      "char_end_index": 16,
+      "id": "10:4",
+      "tags": []
+    },
+    {
+      "content": "nominated",
+      "sen_index": 10,
+      "tok_index": 5,
+      "char_start_index": 17,
+      "char_end_index": 26,
+      "id": "10:5",
+      "tags": []
+    },
+    {
+      "content": "for",
+      "sen_index": 10,
+      "tok_index": 6,
+      "char_start_index": 27,
+      "char_end_index": 30,
+      "id": "10:6",
+      "tags": []
+    },
+    {
+      "content": "president",
+      "sen_index": 10,
+      "tok_index": 7,
+      "char_start_index": 31,
+      "char_end_index": 40,
+      "id": "10:7",
+      "tags": []
+    },
+    {
+      "content": "a",
+      "sen_index": 10,
+      "tok_index": 8,
+      "char_start_index": 41,
+      "char_end_index": 42,
+      "id": "10:8",
+      "tags": []
+    },
+    {
+      "content": "year",
+      "sen_index": 10,
+      "tok_index": 9,
+      "char_start_index": 43,
+      "char_end_index": 47,
+      "id": "10:9",
+      "tags": []
+    },
+    {
+      "content": "after",
+      "sen_index": 10,
+      "tok_index": 10,
+      "char_start_index": 48,
+      "char_end_index": 53,
+      "id": "10:10",
+      "tags": []
+    },
+    {
+      "content": "his",
+      "sen_index": 10,
+      "tok_index": 11,
+      "char_start_index": 54,
+      "char_end_index": 57,
+      "id": "10:11",
+      "tags": []
+    },
+    {
+      "content": "campaign",
+      "sen_index": 10,
+      "tok_index": 12,
+      "char_start_index": 58,
+      "char_end_index": 66,
+      "id": "10:12",
+      "tags": []
+    },
+    {
+      "content": "began",
+      "sen_index": 10,
+      "tok_index": 13,
+      "char_start_index": 67,
+      "char_end_index": 72,
+      "id": "10:13",
+      "tags": []
+    },
+    {
+      "content": ",",
+      "sen_index": 10,
+      "tok_index": 14,
+      "char_start_index": 73,
+      "char_end_index": 74,
+      "id": "10:14",
+      "tags": []
+    },
+    {
+      "content": "after",
+      "sen_index": 10,
+      "tok_index": 15,
+      "char_start_index": 75,
+      "char_end_index": 80,
+      "id": "10:15",
+      "tags": []
+    },
+    {
+      "content": "a",
+      "sen_index": 10,
+      "tok_index": 16,
+      "char_start_index": 81,
+      "char_end_index": 82,
+      "id": "10:16",
+      "tags": []
+    },
+    {
+      "content": "close",
+      "sen_index": 10,
+      "tok_index": 17,
+      "char_start_index": 83,
+      "char_end_index": 88,
+      "id": "10:17",
+      "tags": []
+    },
+    {
+      "content": "primary",
+      "sen_index": 10,
+      "tok_index": 18,
+      "char_start_index": 89,
+      "char_end_index": 96,
+      "id": "10:18",
+      "tags": []
+    },
+    {
+      "content": "campaign",
+      "sen_index": 10,
+      "tok_index": 19,
+      "char_start_index": 97,
+      "char_end_index": 105,
+      "id": "10:19",
+      "tags": []
+    },
+    {
+      "content": "against",
+      "sen_index": 10,
+      "tok_index": 20,
+      "char_start_index": 106,
+      "char_end_index": 113,
+      "id": "10:20",
+      "tags": []
+    },
+    {
+      "content": "Hillary",
+      "sen_index": 10,
+      "tok_index": 21,
+      "char_start_index": 114,
+      "char_end_index": 121,
+      "id": "10:21",
+      "tags": []
+    },
+    {
+      "content": "Clinton",
+      "sen_index": 10,
+      "tok_index": 22,
+      "char_start_index": 122,
+      "char_end_index": 129,
+      "id": "10:22",
+      "tags": []
+    },
+    {
+      "content": ".",
+      "sen_index": 10,
+      "tok_index": 23,
+      "char_start_index": 130,
+      "char_end_index": 131,
+      "id": "10:23",
+      "tags": []
+    },
+    {
+      "content": "He",
+      "sen_index": 11,
+      "tok_index": 0,
+      "char_start_index": 0,
+      "char_end_index": 2,
+      "id": "11:0",
+      "tags": []
+    },
+    {
+      "content": "was",
+      "sen_index": 11,
+      "tok_index": 1,
+      "char_start_index": 3,
+      "char_end_index": 6,
+      "id": "11:1",
+      "tags": []
+    },
+    {
+      "content": "elected",
+      "sen_index": 11,
+      "tok_index": 2,
+      "char_start_index": 7,
+      "char_end_index": 14,
+      "id": "11:2",
+      "tags": []
+    },
+    {
+      "content": "over",
+      "sen_index": 11,
+      "tok_index": 3,
+      "char_start_index": 15,
+      "char_end_index": 19,
+      "id": "11:3",
+      "tags": []
+    },
+    {
+      "content": "Republican",
+      "sen_index": 11,
+      "tok_index": 4,
+      "char_start_index": 20,
+      "char_end_index": 30,
+      "id": "11:4",
+      "tags": []
+    },
+    {
+      "content": "John",
+      "sen_index": 11,
+      "tok_index": 5,
+      "char_start_index": 31,
+      "char_end_index": 35,
+      "id": "11:5",
+      "tags": []
+    },
+    {
+      "content": "McCain",
+      "sen_index": 11,
+      "tok_index": 6,
+      "char_start_index": 36,
+      "char_end_index": 42,
+      "id": "11:6",
+      "tags": []
+    },
+    {
+      "content": "and",
+      "sen_index": 11,
+      "tok_index": 7,
+      "char_start_index": 43,
+      "char_end_index": 46,
+      "id": "11:7",
+      "tags": []
+    },
+    {
+      "content": "was",
+      "sen_index": 11,
+      "tok_index": 8,
+      "char_start_index": 47,
+      "char_end_index": 50,
+      "id": "11:8",
+      "tags": []
+    },
+    {
+      "content": "inaugurated",
+      "sen_index": 11,
+      "tok_index": 9,
+      "char_start_index": 51,
+      "char_end_index": 62,
+      "id": "11:9",
+      "tags": []
+    },
+    {
+      "content": "on",
+      "sen_index": 11,
+      "tok_index": 10,
+      "char_start_index": 63,
+      "char_end_index": 65,
+      "id": "11:10",
+      "tags": []
+    },
+    {
+      "content": "January",
+      "sen_index": 11,
+      "tok_index": 11,
+      "char_start_index": 66,
+      "char_end_index": 73,
+      "id": "11:11",
+      "tags": []
+    },
+    {
+      "content": "20",
+      "sen_index": 11,
+      "tok_index": 12,
+      "char_start_index": 74,
+      "char_end_index": 76,
+      "id": "11:12",
+      "tags": []
+    },
+    {
+      "content": ",",
+      "sen_index": 11,
+      "tok_index": 13,
+      "char_start_index": 77,
+      "char_end_index": 78,
+      "id": "11:13",
+      "tags": []
+    },
+    {
+      "content": "2009",
+      "sen_index": 11,
+      "tok_index": 14,
+      "char_start_index": 79,
+      "char_end_index": 83,
+      "id": "11:14",
+      "tags": []
+    },
+    {
+      "content": ".",
+      "sen_index": 11,
+      "tok_index": 15,
+      "char_start_index": 84,
+      "char_end_index": 85,
+      "id": "11:15",
+      "tags": []
+    },
+    {
+      "content": "Nine",
+      "sen_index": 12,
+      "tok_index": 0,
+      "char_start_index": 0,
+      "char_end_index": 4,
+      "id": "12:0",
+      "tags": []
+    },
+    {
+      "content": "months",
+      "sen_index": 12,
+      "tok_index": 1,
+      "char_start_index": 5,
+      "char_end_index": 11,
+      "id": "12:1",
+      "tags": []
+    },
+    {
+      "content": "later",
+      "sen_index": 12,
+      "tok_index": 2,
+      "char_start_index": 12,
+      "char_end_index": 17,
+      "id": "12:2",
+      "tags": []
+    },
+    {
+      "content": ",",
+      "sen_index": 12,
+      "tok_index": 3,
+      "char_start_index": 18,
+      "char_end_index": 19,
+      "id": "12:3",
+      "tags": []
+    },
+    {
+      "content": "he",
+      "sen_index": 12,
+      "tok_index": 4,
+      "char_start_index": 20,
+      "char_end_index": 22,
+      "id": "12:4",
+      "tags": []
+    },
+    {
+      "content": "was",
+      "sen_index": 12,
+      "tok_index": 5,
+      "char_start_index": 23,
+      "char_end_index": 26,
+      "id": "12:5",
+      "tags": []
+    },
+    {
+      "content": "named",
+      "sen_index": 12,
+      "tok_index": 6,
+      "char_start_index": 27,
+      "char_end_index": 32,
+      "id": "12:6",
+      "tags": []
+    },
+    {
+      "content": "the",
+      "sen_index": 12,
+      "tok_index": 7,
+      "char_start_index": 33,
+      "char_end_index": 36,
+      "id": "12:7",
+      "tags": []
+    },
+    {
+      "content": "2009",
+      "sen_index": 12,
+      "tok_index": 8,
+      "char_start_index": 37,
+      "char_end_index": 41,
+      "id": "12:8",
+      "tags": []
+    },
+    {
+      "content": "Nobel",
+      "sen_index": 12,
+      "tok_index": 9,
+      "char_start_index": 42,
+      "char_end_index": 47,
+      "id": "12:9",
+      "tags": []
+    },
+    {
+      "content": "Peace",
+      "sen_index": 12,
+      "tok_index": 10,
+      "char_start_index": 48,
+      "char_end_index": 53,
+      "id": "12:10",
+      "tags": []
+    },
+    {
+      "content": "Prize",
+      "sen_index": 12,
+      "tok_index": 11,
+      "char_start_index": 54,
+      "char_end_index": 59,
+      "id": "12:11",
+      "tags": []
+    },
+    {
+      "content": "laureate",
+      "sen_index": 12,
+      "tok_index": 12,
+      "char_start_index": 60,
+      "char_end_index": 68,
+      "id": "12:12",
+      "tags": []
+    },
+    {
+      "content": ".",
+      "sen_index": 12,
+      "tok_index": 13,
+      "char_start_index": 69,
+      "char_end_index": 70,
+      "id": "12:13",
+      "tags": []
+    },
+    {
+      "content": "Regarded",
+      "sen_index": 13,
+      "tok_index": 0,
+      "char_start_index": 0,
+      "char_end_index": 8,
+      "id": "13:0",
+      "tags": []
+    },
+    {
+      "content": "as",
+      "sen_index": 13,
+      "tok_index": 1,
+      "char_start_index": 9,
+      "char_end_index": 11,
+      "id": "13:1",
+      "tags": []
+    },
+    {
+      "content": "a",
+      "sen_index": 13,
+      "tok_index": 2,
+      "char_start_index": 12,
+      "char_end_index": 13,
+      "id": "13:2",
+      "tags": []
+    },
+    {
+      "content": "centrist",
+      "sen_index": 13,
+      "tok_index": 3,
+      "char_start_index": 14,
+      "char_end_index": 22,
+      "id": "13:3",
+      "tags": []
+    },
+    {
+      "content": "New",
+      "sen_index": 13,
+      "tok_index": 4,
+      "char_start_index": 23,
+      "char_end_index": 26,
+      "id": "13:4",
+      "tags": []
+    },
+    {
+      "content": "Democrat",
+      "sen_index": 13,
+      "tok_index": 5,
+      "char_start_index": 27,
+      "char_end_index": 35,
+      "id": "13:5",
+      "tags": []
+    },
+    {
+      "content": ",",
+      "sen_index": 13,
+      "tok_index": 6,
+      "char_start_index": 36,
+      "char_end_index": 37,
+      "id": "13:6",
+      "tags": []
+    },
+    {
+      "content": "Obama",
+      "sen_index": 13,
+      "tok_index": 7,
+      "char_start_index": 38,
+      "char_end_index": 43,
+      "id": "13:7",
+      "tags": []
+    },
+    {
+      "content": "signed",
+      "sen_index": 13,
+      "tok_index": 8,
+      "char_start_index": 44,
+      "char_end_index": 50,
+      "id": "13:8",
+      "tags": []
+    },
+    {
+      "content": "many",
+      "sen_index": 13,
+      "tok_index": 9,
+      "char_start_index": 51,
+      "char_end_index": 55,
+      "id": "13:9",
+      "tags": []
+    },
+    {
+      "content": "landmark",
+      "sen_index": 13,
+      "tok_index": 10,
+      "char_start_index": 56,
+      "char_end_index": 64,
+      "id": "13:10",
+      "tags": []
+    },
+    {
+      "content": "bills",
+      "sen_index": 13,
+      "tok_index": 11,
+      "char_start_index": 65,
+      "char_end_index": 70,
+      "id": "13:11",
+      "tags": []
+    },
+    {
+      "content": "into",
+      "sen_index": 13,
+      "tok_index": 12,
+      "char_start_index": 71,
+      "char_end_index": 75,
+      "id": "13:12",
+      "tags": []
+    },
+    {
+      "content": "law",
+      "sen_index": 13,
+      "tok_index": 13,
+      "char_start_index": 76,
+      "char_end_index": 79,
+      "id": "13:13",
+      "tags": []
+    },
+    {
+      "content": "during",
+      "sen_index": 13,
+      "tok_index": 14,
+      "char_start_index": 80,
+      "char_end_index": 86,
+      "id": "13:14",
+      "tags": []
+    },
+    {
+      "content": "his",
+      "sen_index": 13,
+      "tok_index": 15,
+      "char_start_index": 87,
+      "char_end_index": 90,
+      "id": "13:15",
+      "tags": []
+    },
+    {
+      "content": "first",
+      "sen_index": 13,
+      "tok_index": 16,
+      "char_start_index": 91,
+      "char_end_index": 96,
+      "id": "13:16",
+      "tags": []
+    },
+    {
+      "content": "two",
+      "sen_index": 13,
+      "tok_index": 17,
+      "char_start_index": 97,
+      "char_end_index": 100,
+      "id": "13:17",
+      "tags": []
+    },
+    {
+      "content": "years",
+      "sen_index": 13,
+      "tok_index": 18,
+      "char_start_index": 101,
+      "char_end_index": 106,
+      "id": "13:18",
+      "tags": []
+    },
+    {
+      "content": "in",
+      "sen_index": 13,
+      "tok_index": 19,
+      "char_start_index": 107,
+      "char_end_index": 109,
+      "id": "13:19",
+      "tags": []
+    },
+    {
+      "content": "office",
+      "sen_index": 13,
+      "tok_index": 20,
+      "char_start_index": 110,
+      "char_end_index": 116,
+      "id": "13:20",
+      "tags": []
+    },
+    {
+      "content": ".",
+      "sen_index": 13,
+      "tok_index": 21,
+      "char_start_index": 117,
+      "char_end_index": 118,
+      "id": "13:21",
+      "tags": []
+    },
+    {
+      "content": "The",
+      "sen_index": 14,
+      "tok_index": 0,
+      "char_start_index": 0,
+      "char_end_index": 3,
+      "id": "14:0",
+      "tags": []
+    },
+    {
+      "content": "main",
+      "sen_index": 14,
+      "tok_index": 1,
+      "char_start_index": 4,
+      "char_end_index": 8,
+      "id": "14:1",
+      "tags": []
+    },
+    {
+      "content": "reforms",
+      "sen_index": 14,
+      "tok_index": 2,
+      "char_start_index": 9,
+      "char_end_index": 16,
+      "id": "14:2",
+      "tags": []
+    },
+    {
+      "content": "that",
+      "sen_index": 14,
+      "tok_index": 3,
+      "char_start_index": 17,
+      "char_end_index": 21,
+      "id": "14:3",
+      "tags": []
+    },
+    {
+      "content": "were",
+      "sen_index": 14,
+      "tok_index": 4,
+      "char_start_index": 22,
+      "char_end_index": 26,
+      "id": "14:4",
+      "tags": []
+    },
+    {
+      "content": "passed",
+      "sen_index": 14,
+      "tok_index": 5,
+      "char_start_index": 27,
+      "char_end_index": 33,
+      "id": "14:5",
+      "tags": []
+    },
+    {
+      "content": "include",
+      "sen_index": 14,
+      "tok_index": 6,
+      "char_start_index": 34,
+      "char_end_index": 41,
+      "id": "14:6",
+      "tags": []
+    },
+    {
+      "content": "the",
+      "sen_index": 14,
+      "tok_index": 7,
+      "char_start_index": 42,
+      "char_end_index": 45,
+      "id": "14:7",
+      "tags": []
+    },
+    {
+      "content": "Patient",
+      "sen_index": 14,
+      "tok_index": 8,
+      "char_start_index": 46,
+      "char_end_index": 53,
+      "id": "14:8",
+      "tags": []
+    },
+    {
+      "content": "Protection",
+      "sen_index": 14,
+      "tok_index": 9,
+      "char_start_index": 54,
+      "char_end_index": 64,
+      "id": "14:9",
+      "tags": []
+    },
+    {
+      "content": "and",
+      "sen_index": 14,
+      "tok_index": 10,
+      "char_start_index": 65,
+      "char_end_index": 68,
+      "id": "14:10",
+      "tags": []
+    },
+    {
+      "content": "Affordable",
+      "sen_index": 14,
+      "tok_index": 11,
+      "char_start_index": 69,
+      "char_end_index": 79,
+      "id": "14:11",
+      "tags": []
+    },
+    {
+      "content": "Care",
+      "sen_index": 14,
+      "tok_index": 12,
+      "char_start_index": 80,
+      "char_end_index": 84,
+      "id": "14:12",
+      "tags": []
+    },
+    {
+      "content": "Act",
+      "sen_index": 14,
+      "tok_index": 13,
+      "char_start_index": 85,
+      "char_end_index": 88,
+      "id": "14:13",
+      "tags": []
+    },
+    {
+      "content": "(",
+      "sen_index": 14,
+      "tok_index": 14,
+      "char_start_index": 89,
+      "char_end_index": 90,
+      "id": "14:14",
+      "tags": []
+    },
+    {
+      "content": "commonly",
+      "sen_index": 14,
+      "tok_index": 15,
+      "char_start_index": 91,
+      "char_end_index": 99,
+      "id": "14:15",
+      "tags": []
+    },
+    {
+      "content": "referred",
+      "sen_index": 14,
+      "tok_index": 16,
+      "char_start_index": 100,
+      "char_end_index": 108,
+      "id": "14:16",
+      "tags": []
+    },
+    {
+      "content": "to",
+      "sen_index": 14,
+      "tok_index": 17,
+      "char_start_index": 109,
+      "char_end_index": 111,
+      "id": "14:17",
+      "tags": []
+    },
+    {
+      "content": "as",
+      "sen_index": 14,
+      "tok_index": 18,
+      "char_start_index": 112,
+      "char_end_index": 114,
+      "id": "14:18",
+      "tags": []
+    },
+    {
+      "content": "the",
+      "sen_index": 14,
+      "tok_index": 19,
+      "char_start_index": 115,
+      "char_end_index": 118,
+      "id": "14:19",
+      "tags": []
+    },
+    {
+      "content": "\"",
+      "sen_index": 14,
+      "tok_index": 20,
+      "char_start_index": 119,
+      "char_end_index": 120,
+      "id": "14:20",
+      "tags": []
+    },
+    {
+      "content": "Affordable",
+      "sen_index": 14,
+      "tok_index": 21,
+      "char_start_index": 121,
+      "char_end_index": 131,
+      "id": "14:21",
+      "tags": []
+    },
+    {
+      "content": "Care",
+      "sen_index": 14,
+      "tok_index": 22,
+      "char_start_index": 132,
+      "char_end_index": 136,
+      "id": "14:22",
+      "tags": []
+    },
+    {
+      "content": "Act",
+      "sen_index": 14,
+      "tok_index": 23,
+      "char_start_index": 137,
+      "char_end_index": 140,
+      "id": "14:23",
+      "tags": []
+    },
+    {
+      "content": "\"",
+      "sen_index": 14,
+      "tok_index": 24,
+      "char_start_index": 141,
+      "char_end_index": 142,
+      "id": "14:24",
+      "tags": []
+    },
+    {
+      "content": "or",
+      "sen_index": 14,
+      "tok_index": 25,
+      "char_start_index": 143,
+      "char_end_index": 145,
+      "id": "14:25",
+      "tags": []
+    },
+    {
+      "content": "\"",
+      "sen_index": 14,
+      "tok_index": 26,
+      "char_start_index": 146,
+      "char_end_index": 147,
+      "id": "14:26",
+      "tags": []
+    },
+    {
+      "content": "Obamacare",
+      "sen_index": 14,
+      "tok_index": 27,
+      "char_start_index": 148,
+      "char_end_index": 157,
+      "id": "14:27",
+      "tags": []
+    },
+    {
+      "content": "\"",
+      "sen_index": 14,
+      "tok_index": 28,
+      "char_start_index": 158,
+      "char_end_index": 159,
+      "id": "14:28",
+      "tags": []
+    },
+    {
+      "content": ")",
+      "sen_index": 14,
+      "tok_index": 29,
+      "char_start_index": 160,
+      "char_end_index": 161,
+      "id": "14:29",
+      "tags": []
+    },
+    {
+      "content": ",",
+      "sen_index": 14,
+      "tok_index": 30,
+      "char_start_index": 162,
+      "char_end_index": 163,
+      "id": "14:30",
+      "tags": []
+    },
+    {
+      "content": "the",
+      "sen_index": 14,
+      "tok_index": 31,
+      "char_start_index": 164,
+      "char_end_index": 167,
+      "id": "14:31",
+      "tags": []
+    },
+    {
+      "content": "Dodd",
+      "sen_index": 14,
+      "tok_index": 32,
+      "char_start_index": 168,
+      "char_end_index": 172,
+      "id": "14:32",
+      "tags": []
+    },
+    {
+      "content": "Frank",
+      "sen_index": 14,
+      "tok_index": 33,
+      "char_start_index": 173,
+      "char_end_index": 178,
+      "id": "14:33",
+      "tags": []
+    },
+    {
+      "content": "Wall",
+      "sen_index": 14,
+      "tok_index": 34,
+      "char_start_index": 179,
+      "char_end_index": 183,
+      "id": "14:34",
+      "tags": []
+    },
+    {
+      "content": "Street",
+      "sen_index": 14,
+      "tok_index": 35,
+      "char_start_index": 184,
+      "char_end_index": 190,
+      "id": "14:35",
+      "tags": []
+    },
+    {
+      "content": "Reform",
+      "sen_index": 14,
+      "tok_index": 36,
+      "char_start_index": 191,
+      "char_end_index": 197,
+      "id": "14:36",
+      "tags": []
+    },
+    {
+      "content": "and",
+      "sen_index": 14,
+      "tok_index": 37,
+      "char_start_index": 198,
+      "char_end_index": 201,
+      "id": "14:37",
+      "tags": []
+    },
+    {
+      "content": "Consumer",
+      "sen_index": 14,
+      "tok_index": 38,
+      "char_start_index": 202,
+      "char_end_index": 210,
+      "id": "14:38",
+      "tags": []
+    },
+    {
+      "content": "Protection",
+      "sen_index": 14,
+      "tok_index": 39,
+      "char_start_index": 211,
+      "char_end_index": 221,
+      "id": "14:39",
+      "tags": []
+    },
+    {
+      "content": "Act",
+      "sen_index": 14,
+      "tok_index": 40,
+      "char_start_index": 222,
+      "char_end_index": 225,
+      "id": "14:40",
+      "tags": []
+    },
+    {
+      "content": ",",
+      "sen_index": 14,
+      "tok_index": 41,
+      "char_start_index": 226,
+      "char_end_index": 227,
+      "id": "14:41",
+      "tags": []
+    },
+    {
+      "content": "and",
+      "sen_index": 14,
+      "tok_index": 42,
+      "char_start_index": 228,
+      "char_end_index": 231,
+      "id": "14:42",
+      "tags": []
+    },
+    {
+      "content": "the",
+      "sen_index": 14,
+      "tok_index": 43,
+      "char_start_index": 232,
+      "char_end_index": 235,
+      "id": "14:43",
+      "tags": []
+    },
+    {
+      "content": "Don't",
+      "sen_index": 14,
+      "tok_index": 44,
+      "char_start_index": 236,
+      "char_end_index": 241,
+      "id": "14:44",
+      "tags": []
+    },
+    {
+      "content": "Ask",
+      "sen_index": 14,
+      "tok_index": 45,
+      "char_start_index": 242,
+      "char_end_index": 245,
+      "id": "14:45",
+      "tags": []
+    },
+    {
+      "content": ",",
+      "sen_index": 14,
+      "tok_index": 46,
+      "char_start_index": 246,
+      "char_end_index": 247,
+      "id": "14:46",
+      "tags": []
+    },
+    {
+      "content": "Don't",
+      "sen_index": 14,
+      "tok_index": 47,
+      "char_start_index": 248,
+      "char_end_index": 253,
+      "id": "14:47",
+      "tags": []
+    },
+    {
+      "content": "Tell",
+      "sen_index": 14,
+      "tok_index": 48,
+      "char_start_index": 254,
+      "char_end_index": 258,
+      "id": "14:48",
+      "tags": []
+    },
+    {
+      "content": "Repeal",
+      "sen_index": 14,
+      "tok_index": 49,
+      "char_start_index": 259,
+      "char_end_index": 265,
+      "id": "14:49",
+      "tags": []
+    },
+    {
+      "content": "Act",
+      "sen_index": 14,
+      "tok_index": 50,
+      "char_start_index": 266,
+      "char_end_index": 269,
+      "id": "14:50",
+      "tags": []
+    },
+    {
+      "content": "of",
+      "sen_index": 14,
+      "tok_index": 51,
+      "char_start_index": 270,
+      "char_end_index": 272,
+      "id": "14:51",
+      "tags": []
+    },
+    {
+      "content": "2010",
+      "sen_index": 14,
+      "tok_index": 52,
+      "char_start_index": 273,
+      "char_end_index": 277,
+      "id": "14:52",
+      "tags": []
+    },
+    {
+      "content": ".",
+      "sen_index": 14,
+      "tok_index": 53,
+      "char_start_index": 278,
+      "char_end_index": 279,
+      "id": "14:53",
+      "tags": []
+    },
+    {
+      "content": "The",
+      "sen_index": 15,
+      "tok_index": 0,
+      "char_start_index": 0,
+      "char_end_index": 3,
+      "id": "15:0",
+      "tags": []
+    },
+    {
+      "content": "American",
+      "sen_index": 15,
+      "tok_index": 1,
+      "char_start_index": 4,
+      "char_end_index": 12,
+      "id": "15:1",
+      "tags": []
+    },
+    {
+      "content": "Recovery",
+      "sen_index": 15,
+      "tok_index": 2,
+      "char_start_index": 13,
+      "char_end_index": 21,
+      "id": "15:2",
+      "tags": []
+    },
+    {
+      "content": "and",
+      "sen_index": 15,
+      "tok_index": 3,
+      "char_start_index": 22,
+      "char_end_index": 25,
+      "id": "15:3",
+      "tags": []
+    },
+    {
+      "content": "Reinvestment",
+      "sen_index": 15,
+      "tok_index": 4,
+      "char_start_index": 26,
+      "char_end_index": 38,
+      "id": "15:4",
+      "tags": []
+    },
+    {
+      "content": "Act",
+      "sen_index": 15,
+      "tok_index": 5,
+      "char_start_index": 39,
+      "char_end_index": 42,
+      "id": "15:5",
+      "tags": []
+    },
+    {
+      "content": "of",
+      "sen_index": 15,
+      "tok_index": 6,
+      "char_start_index": 43,
+      "char_end_index": 45,
+      "id": "15:6",
+      "tags": []
+    },
+    {
+      "content": "2009",
+      "sen_index": 15,
+      "tok_index": 7,
+      "char_start_index": 46,
+      "char_end_index": 50,
+      "id": "15:7",
+      "tags": []
+    },
+    {
+      "content": "and",
+      "sen_index": 15,
+      "tok_index": 8,
+      "char_start_index": 51,
+      "char_end_index": 54,
+      "id": "15:8",
+      "tags": []
+    },
+    {
+      "content": "Tax",
+      "sen_index": 15,
+      "tok_index": 9,
+      "char_start_index": 55,
+      "char_end_index": 58,
+      "id": "15:9",
+      "tags": []
+    },
+    {
+      "content": "Relief",
+      "sen_index": 15,
+      "tok_index": 10,
+      "char_start_index": 59,
+      "char_end_index": 65,
+      "id": "15:10",
+      "tags": []
+    },
+    {
+      "content": ",",
+      "sen_index": 15,
+      "tok_index": 11,
+      "char_start_index": 66,
+      "char_end_index": 67,
+      "id": "15:11",
+      "tags": []
+    },
+    {
+      "content": "Unemployment",
+      "sen_index": 15,
+      "tok_index": 12,
+      "char_start_index": 68,
+      "char_end_index": 80,
+      "id": "15:12",
+      "tags": []
+    },
+    {
+      "content": "Insurance",
+      "sen_index": 15,
+      "tok_index": 13,
+      "char_start_index": 81,
+      "char_end_index": 90,
+      "id": "15:13",
+      "tags": []
+    },
+    {
+      "content": "Reauthorization",
+      "sen_index": 15,
+      "tok_index": 14,
+      "char_start_index": 91,
+      "char_end_index": 106,
+      "id": "15:14",
+      "tags": []
+    },
+    {
+      "content": ",",
+      "sen_index": 15,
+      "tok_index": 15,
+      "char_start_index": 107,
+      "char_end_index": 108,
+      "id": "15:15",
+      "tags": []
+    },
+    {
+      "content": "and",
+      "sen_index": 15,
+      "tok_index": 16,
+      "char_start_index": 109,
+      "char_end_index": 112,
+      "id": "15:16",
+      "tags": []
+    },
+    {
+      "content": "Job",
+      "sen_index": 15,
+      "tok_index": 17,
+      "char_start_index": 113,
+      "char_end_index": 116,
+      "id": "15:17",
+      "tags": []
+    },
+    {
+      "content": "Creation",
+      "sen_index": 15,
+      "tok_index": 18,
+      "char_start_index": 117,
+      "char_end_index": 125,
+      "id": "15:18",
+      "tags": []
+    },
+    {
+      "content": "Act",
+      "sen_index": 15,
+      "tok_index": 19,
+      "char_start_index": 126,
+      "char_end_index": 129,
+      "id": "15:19",
+      "tags": []
+    },
+    {
+      "content": "of",
+      "sen_index": 15,
+      "tok_index": 20,
+      "char_start_index": 130,
+      "char_end_index": 132,
+      "id": "15:20",
+      "tags": []
+    },
+    {
+      "content": "2010",
+      "sen_index": 15,
+      "tok_index": 21,
+      "char_start_index": 133,
+      "char_end_index": 137,
+      "id": "15:21",
+      "tags": []
+    },
+    {
+      "content": "served",
+      "sen_index": 15,
+      "tok_index": 22,
+      "char_start_index": 138,
+      "char_end_index": 144,
+      "id": "15:22",
+      "tags": []
+    },
+    {
+      "content": "as",
+      "sen_index": 15,
+      "tok_index": 23,
+      "char_start_index": 145,
+      "char_end_index": 147,
+      "id": "15:23",
+      "tags": []
+    },
+    {
+      "content": "economic",
+      "sen_index": 15,
+      "tok_index": 24,
+      "char_start_index": 148,
+      "char_end_index": 156,
+      "id": "15:24",
+      "tags": []
+    },
+    {
+      "content": "stimulus",
+      "sen_index": 15,
+      "tok_index": 25,
+      "char_start_index": 157,
+      "char_end_index": 165,
+      "id": "15:25",
+      "tags": []
+    },
+    {
+      "content": "amidst",
+      "sen_index": 15,
+      "tok_index": 26,
+      "char_start_index": 166,
+      "char_end_index": 172,
+      "id": "15:26",
+      "tags": []
+    },
+    {
+      "content": "the",
+      "sen_index": 15,
+      "tok_index": 27,
+      "char_start_index": 173,
+      "char_end_index": 176,
+      "id": "15:27",
+      "tags": []
+    },
+    {
+      "content": "Great",
+      "sen_index": 15,
+      "tok_index": 28,
+      "char_start_index": 177,
+      "char_end_index": 182,
+      "id": "15:28",
+      "tags": []
+    },
+    {
+      "content": "Recession",
+      "sen_index": 15,
+      "tok_index": 29,
+      "char_start_index": 183,
+      "char_end_index": 192,
+      "id": "15:29",
+      "tags": []
+    },
+    {
+      "content": ".",
+      "sen_index": 15,
+      "tok_index": 30,
+      "char_start_index": 193,
+      "char_end_index": 194,
+      "id": "15:30",
+      "tags": []
+    },
+    {
+      "content": "After",
+      "sen_index": 16,
+      "tok_index": 0,
+      "char_start_index": 0,
+      "char_end_index": 5,
+      "id": "16:0",
+      "tags": []
+    },
+    {
+      "content": "a",
+      "sen_index": 16,
+      "tok_index": 1,
+      "char_start_index": 6,
+      "char_end_index": 7,
+      "id": "16:1",
+      "tags": []
+    },
+    {
+      "content": "lengthy",
+      "sen_index": 16,
+      "tok_index": 2,
+      "char_start_index": 8,
+      "char_end_index": 15,
+      "id": "16:2",
+      "tags": []
+    },
+    {
+      "content": "debate",
+      "sen_index": 16,
+      "tok_index": 3,
+      "char_start_index": 16,
+      "char_end_index": 22,
+      "id": "16:3",
+      "tags": []
+    },
+    {
+      "content": "over",
+      "sen_index": 16,
+      "tok_index": 4,
+      "char_start_index": 23,
+      "char_end_index": 27,
+      "id": "16:4",
+      "tags": []
+    },
+    {
+      "content": "the",
+      "sen_index": 16,
+      "tok_index": 5,
+      "char_start_index": 28,
+      "char_end_index": 31,
+      "id": "16:5",
+      "tags": []
+    },
+    {
+      "content": "national",
+      "sen_index": 16,
+      "tok_index": 6,
+      "char_start_index": 32,
+      "char_end_index": 40,
+      "id": "16:6",
+      "tags": []
+    },
+    {
+      "content": "debt",
+      "sen_index": 16,
+      "tok_index": 7,
+      "char_start_index": 41,
+      "char_end_index": 45,
+      "id": "16:7",
+      "tags": []
+    },
+    {
+      "content": "limit",
+      "sen_index": 16,
+      "tok_index": 8,
+      "char_start_index": 46,
+      "char_end_index": 51,
+      "id": "16:8",
+      "tags": []
+    },
+    {
+      "content": ",",
+      "sen_index": 16,
+      "tok_index": 9,
+      "char_start_index": 52,
+      "char_end_index": 53,
+      "id": "16:9",
+      "tags": []
+    },
+    {
+      "content": "he",
+      "sen_index": 16,
+      "tok_index": 10,
+      "char_start_index": 54,
+      "char_end_index": 56,
+      "id": "16:10",
+      "tags": []
+    },
+    {
+      "content": "signed",
+      "sen_index": 16,
+      "tok_index": 11,
+      "char_start_index": 57,
+      "char_end_index": 63,
+      "id": "16:11",
+      "tags": []
+    },
+    {
+      "content": "the",
+      "sen_index": 16,
+      "tok_index": 12,
+      "char_start_index": 64,
+      "char_end_index": 67,
+      "id": "16:12",
+      "tags": []
+    },
+    {
+      "content": "Budget",
+      "sen_index": 16,
+      "tok_index": 13,
+      "char_start_index": 68,
+      "char_end_index": 74,
+      "id": "16:13",
+      "tags": []
+    },
+    {
+      "content": "Control",
+      "sen_index": 16,
+      "tok_index": 14,
+      "char_start_index": 75,
+      "char_end_index": 82,
+      "id": "16:14",
+      "tags": []
+    },
+    {
+      "content": "and",
+      "sen_index": 16,
+      "tok_index": 15,
+      "char_start_index": 83,
+      "char_end_index": 86,
+      "id": "16:15",
+      "tags": []
+    },
+    {
+      "content": "the",
+      "sen_index": 16,
+      "tok_index": 16,
+      "char_start_index": 87,
+      "char_end_index": 90,
+      "id": "16:16",
+      "tags": []
+    },
+    {
+      "content": "American",
+      "sen_index": 16,
+      "tok_index": 17,
+      "char_start_index": 91,
+      "char_end_index": 99,
+      "id": "16:17",
+      "tags": []
+    },
+    {
+      "content": "Taxpayer",
+      "sen_index": 16,
+      "tok_index": 18,
+      "char_start_index": 100,
+      "char_end_index": 108,
+      "id": "16:18",
+      "tags": []
+    },
+    {
+      "content": "Relief",
+      "sen_index": 16,
+      "tok_index": 19,
+      "char_start_index": 109,
+      "char_end_index": 115,
+      "id": "16:19",
+      "tags": []
+    },
+    {
+      "content": "Acts",
+      "sen_index": 16,
+      "tok_index": 20,
+      "char_start_index": 116,
+      "char_end_index": 120,
+      "id": "16:20",
+      "tags": []
+    },
+    {
+      "content": ".",
+      "sen_index": 16,
+      "tok_index": 21,
+      "char_start_index": 121,
+      "char_end_index": 122,
+      "id": "16:21",
+      "tags": []
+    },
+    {
+      "content": "In",
+      "sen_index": 17,
+      "tok_index": 0,
+      "char_start_index": 0,
+      "char_end_index": 2,
+      "id": "17:0",
+      "tags": []
+    },
+    {
+      "content": "foreign",
+      "sen_index": 17,
+      "tok_index": 1,
+      "char_start_index": 3,
+      "char_end_index": 10,
+      "id": "17:1",
+      "tags": []
+    },
+    {
+      "content": "policy",
+      "sen_index": 17,
+      "tok_index": 2,
+      "char_start_index": 11,
+      "char_end_index": 17,
+      "id": "17:2",
+      "tags": []
+    },
+    {
+      "content": ",",
+      "sen_index": 17,
+      "tok_index": 3,
+      "char_start_index": 18,
+      "char_end_index": 19,
+      "id": "17:3",
+      "tags": []
+    },
+    {
+      "content": "he",
+      "sen_index": 17,
+      "tok_index": 4,
+      "char_start_index": 20,
+      "char_end_index": 22,
+      "id": "17:4",
+      "tags": []
+    },
+    {
+      "content": "increased",
+      "sen_index": 17,
+      "tok_index": 5,
+      "char_start_index": 23,
+      "char_end_index": 32,
+      "id": "17:5",
+      "tags": []
+    },
+    {
+      "content": "U.S",
+      "sen_index": 17,
+      "tok_index": 6,
+      "char_start_index": 33,
+      "char_end_index": 36,
+      "id": "17:6",
+      "tags": []
+    },
+    {
+      "content": ".",
+      "sen_index": 17,
+      "tok_index": 7,
+      "char_start_index": 37,
+      "char_end_index": 38,
+      "id": "17:7",
+      "tags": []
+    },
+    {
+      "content": "troop",
+      "sen_index": 17,
+      "tok_index": 8,
+      "char_start_index": 39,
+      "char_end_index": 44,
+      "id": "17:8",
+      "tags": []
+    },
+    {
+      "content": "levels",
+      "sen_index": 17,
+      "tok_index": 9,
+      "char_start_index": 45,
+      "char_end_index": 51,
+      "id": "17:9",
+      "tags": []
+    },
+    {
+      "content": "in",
+      "sen_index": 17,
+      "tok_index": 10,
+      "char_start_index": 52,
+      "char_end_index": 54,
+      "id": "17:10",
+      "tags": []
+    },
+    {
+      "content": "Afghanistan",
+      "sen_index": 17,
+      "tok_index": 11,
+      "char_start_index": 55,
+      "char_end_index": 66,
+      "id": "17:11",
+      "tags": []
+    },
+    {
+      "content": ",",
+      "sen_index": 17,
+      "tok_index": 12,
+      "char_start_index": 67,
+      "char_end_index": 68,
+      "id": "17:12",
+      "tags": []
+    },
+    {
+      "content": "reduced",
+      "sen_index": 17,
+      "tok_index": 13,
+      "char_start_index": 69,
+      "char_end_index": 76,
+      "id": "17:13",
+      "tags": []
+    },
+    {
+      "content": "nuclear",
+      "sen_index": 17,
+      "tok_index": 14,
+      "char_start_index": 77,
+      "char_end_index": 84,
+      "id": "17:14",
+      "tags": []
+    },
+    {
+      "content": "weapons",
+      "sen_index": 17,
+      "tok_index": 15,
+      "char_start_index": 85,
+      "char_end_index": 92,
+      "id": "17:15",
+      "tags": []
+    },
+    {
+      "content": "with",
+      "sen_index": 17,
+      "tok_index": 16,
+      "char_start_index": 93,
+      "char_end_index": 97,
+      "id": "17:16",
+      "tags": []
+    },
+    {
+      "content": "the",
+      "sen_index": 17,
+      "tok_index": 17,
+      "char_start_index": 98,
+      "char_end_index": 101,
+      "id": "17:17",
+      "tags": []
+    },
+    {
+      "content": "United",
+      "sen_index": 17,
+      "tok_index": 18,
+      "char_start_index": 102,
+      "char_end_index": 108,
+      "id": "17:18",
+      "tags": []
+    },
+    {
+      "content": "States",
+      "sen_index": 17,
+      "tok_index": 19,
+      "char_start_index": 109,
+      "char_end_index": 115,
+      "id": "17:19",
+      "tags": []
+    },
+    {
+      "content": "Russia",
+      "sen_index": 17,
+      "tok_index": 20,
+      "char_start_index": 116,
+      "char_end_index": 122,
+      "id": "17:20",
+      "tags": []
+    },
+    {
+      "content": "New",
+      "sen_index": 17,
+      "tok_index": 21,
+      "char_start_index": 123,
+      "char_end_index": 126,
+      "id": "17:21",
+      "tags": []
+    },
+    {
+      "content": "START",
+      "sen_index": 17,
+      "tok_index": 22,
+      "char_start_index": 127,
+      "char_end_index": 132,
+      "id": "17:22",
+      "tags": []
+    },
+    {
+      "content": "treaty",
+      "sen_index": 17,
+      "tok_index": 23,
+      "char_start_index": 133,
+      "char_end_index": 139,
+      "id": "17:23",
+      "tags": []
+    },
+    {
+      "content": ",",
+      "sen_index": 17,
+      "tok_index": 24,
+      "char_start_index": 140,
+      "char_end_index": 141,
+      "id": "17:24",
+      "tags": []
+    },
+    {
+      "content": "and",
+      "sen_index": 17,
+      "tok_index": 25,
+      "char_start_index": 142,
+      "char_end_index": 145,
+      "id": "17:25",
+      "tags": []
+    },
+    {
+      "content": "ended",
+      "sen_index": 17,
+      "tok_index": 26,
+      "char_start_index": 146,
+      "char_end_index": 151,
+      "id": "17:26",
+      "tags": []
+    },
+    {
+      "content": "military",
+      "sen_index": 17,
+      "tok_index": 27,
+      "char_start_index": 152,
+      "char_end_index": 160,
+      "id": "17:27",
+      "tags": []
+    },
+    {
+      "content": "involvement",
+      "sen_index": 17,
+      "tok_index": 28,
+      "char_start_index": 161,
+      "char_end_index": 172,
+      "id": "17:28",
+      "tags": []
+    },
+    {
+      "content": "in",
+      "sen_index": 17,
+      "tok_index": 29,
+      "char_start_index": 173,
+      "char_end_index": 175,
+      "id": "17:29",
+      "tags": []
+    },
+    {
+      "content": "the",
+      "sen_index": 17,
+      "tok_index": 30,
+      "char_start_index": 176,
+      "char_end_index": 179,
+      "id": "17:30",
+      "tags": []
+    },
+    {
+      "content": "Iraq",
+      "sen_index": 17,
+      "tok_index": 31,
+      "char_start_index": 180,
+      "char_end_index": 184,
+      "id": "17:31",
+      "tags": []
+    },
+    {
+      "content": "War",
+      "sen_index": 17,
+      "tok_index": 32,
+      "char_start_index": 185,
+      "char_end_index": 188,
+      "id": "17:32",
+      "tags": []
+    },
+    {
+      "content": ".",
+      "sen_index": 17,
+      "tok_index": 33,
+      "char_start_index": 189,
+      "char_end_index": 190,
+      "id": "17:33",
+      "tags": []
+    },
+    {
+      "content": "He",
+      "sen_index": 18,
+      "tok_index": 0,
+      "char_start_index": 0,
+      "char_end_index": 2,
+      "id": "18:0",
+      "tags": []
+    },
+    {
+      "content": "ordered",
+      "sen_index": 18,
+      "tok_index": 1,
+      "char_start_index": 3,
+      "char_end_index": 10,
+      "id": "18:1",
+      "tags": []
+    },
+    {
+      "content": "military",
+      "sen_index": 18,
+      "tok_index": 2,
+      "char_start_index": 11,
+      "char_end_index": 19,
+      "id": "18:2",
+      "tags": []
+    },
+    {
+      "content": "involvement",
+      "sen_index": 18,
+      "tok_index": 3,
+      "char_start_index": 20,
+      "char_end_index": 31,
+      "id": "18:3",
+      "tags": []
+    },
+    {
+      "content": "in",
+      "sen_index": 18,
+      "tok_index": 4,
+      "char_start_index": 32,
+      "char_end_index": 34,
+      "id": "18:4",
+      "tags": []
+    },
+    {
+      "content": "Libya",
+      "sen_index": 18,
+      "tok_index": 5,
+      "char_start_index": 35,
+      "char_end_index": 40,
+      "id": "18:5",
+      "tags": []
+    },
+    {
+      "content": ",",
+      "sen_index": 18,
+      "tok_index": 6,
+      "char_start_index": 41,
+      "char_end_index": 42,
+      "id": "18:6",
+      "tags": []
+    },
+    {
+      "content": "contributing",
+      "sen_index": 18,
+      "tok_index": 7,
+      "char_start_index": 43,
+      "char_end_index": 55,
+      "id": "18:7",
+      "tags": []
+    },
+    {
+      "content": "to",
+      "sen_index": 18,
+      "tok_index": 8,
+      "char_start_index": 56,
+      "char_end_index": 58,
+      "id": "18:8",
+      "tags": []
+    },
+    {
+      "content": "the",
+      "sen_index": 18,
+      "tok_index": 9,
+      "char_start_index": 59,
+      "char_end_index": 62,
+      "id": "18:9",
+      "tags": []
+    },
+    {
+      "content": "overthrow",
+      "sen_index": 18,
+      "tok_index": 10,
+      "char_start_index": 63,
+      "char_end_index": 72,
+      "id": "18:10",
+      "tags": []
+    },
+    {
+      "content": "of",
+      "sen_index": 18,
+      "tok_index": 11,
+      "char_start_index": 73,
+      "char_end_index": 75,
+      "id": "18:11",
+      "tags": []
+    },
+    {
+      "content": "Muammar",
+      "sen_index": 18,
+      "tok_index": 12,
+      "char_start_index": 76,
+      "char_end_index": 83,
+      "id": "18:12",
+      "tags": []
+    },
+    {
+      "content": "Gaddafi",
+      "sen_index": 18,
+      "tok_index": 13,
+      "char_start_index": 84,
+      "char_end_index": 91,
+      "id": "18:13",
+      "tags": []
+    },
+    {
+      "content": ".",
+      "sen_index": 18,
+      "tok_index": 14,
+      "char_start_index": 92,
+      "char_end_index": 93,
+      "id": "18:14",
+      "tags": []
+    },
+    {
+      "content": "He",
+      "sen_index": 19,
+      "tok_index": 0,
+      "char_start_index": 0,
+      "char_end_index": 2,
+      "id": "19:0",
+      "tags": []
+    },
+    {
+      "content": "also",
+      "sen_index": 19,
+      "tok_index": 1,
+      "char_start_index": 3,
+      "char_end_index": 7,
+      "id": "19:1",
+      "tags": []
+    },
+    {
+      "content": "ordered",
+      "sen_index": 19,
+      "tok_index": 2,
+      "char_start_index": 8,
+      "char_end_index": 15,
+      "id": "19:2",
+      "tags": []
+    },
+    {
+      "content": "the",
+      "sen_index": 19,
+      "tok_index": 3,
+      "char_start_index": 16,
+      "char_end_index": 19,
+      "id": "19:3",
+      "tags": []
+    },
+    {
+      "content": "military",
+      "sen_index": 19,
+      "tok_index": 4,
+      "char_start_index": 20,
+      "char_end_index": 28,
+      "id": "19:4",
+      "tags": []
+    },
+    {
+      "content": "operations",
+      "sen_index": 19,
+      "tok_index": 5,
+      "char_start_index": 29,
+      "char_end_index": 39,
+      "id": "19:5",
+      "tags": []
+    },
+    {
+      "content": "that",
+      "sen_index": 19,
+      "tok_index": 6,
+      "char_start_index": 40,
+      "char_end_index": 44,
+      "id": "19:6",
+      "tags": []
+    },
+    {
+      "content": "resulted",
+      "sen_index": 19,
+      "tok_index": 7,
+      "char_start_index": 45,
+      "char_end_index": 53,
+      "id": "19:7",
+      "tags": []
+    },
+    {
+      "content": "in",
+      "sen_index": 19,
+      "tok_index": 8,
+      "char_start_index": 54,
+      "char_end_index": 56,
+      "id": "19:8",
+      "tags": []
+    },
+    {
+      "content": "the",
+      "sen_index": 19,
+      "tok_index": 9,
+      "char_start_index": 57,
+      "char_end_index": 60,
+      "id": "19:9",
+      "tags": []
+    },
+    {
+      "content": "deaths",
+      "sen_index": 19,
+      "tok_index": 10,
+      "char_start_index": 61,
+      "char_end_index": 67,
+      "id": "19:10",
+      "tags": []
+    },
+    {
+      "content": "of",
+      "sen_index": 19,
+      "tok_index": 11,
+      "char_start_index": 68,
+      "char_end_index": 70,
+      "id": "19:11",
+      "tags": []
+    },
+    {
+      "content": "Osama",
+      "sen_index": 19,
+      "tok_index": 12,
+      "char_start_index": 71,
+      "char_end_index": 76,
+      "id": "19:12",
+      "tags": []
+    },
+    {
+      "content": "bin",
+      "sen_index": 19,
+      "tok_index": 13,
+      "char_start_index": 77,
+      "char_end_index": 80,
+      "id": "19:13",
+      "tags": []
+    },
+    {
+      "content": "Laden",
+      "sen_index": 19,
+      "tok_index": 14,
+      "char_start_index": 81,
+      "char_end_index": 86,
+      "id": "19:14",
+      "tags": []
+    },
+    {
+      "content": "and",
+      "sen_index": 19,
+      "tok_index": 15,
+      "char_start_index": 87,
+      "char_end_index": 90,
+      "id": "19:15",
+      "tags": []
+    },
+    {
+      "content": "suspected",
+      "sen_index": 19,
+      "tok_index": 16,
+      "char_start_index": 91,
+      "char_end_index": 100,
+      "id": "19:16",
+      "tags": []
+    },
+    {
+      "content": "Yemeni",
+      "sen_index": 19,
+      "tok_index": 17,
+      "char_start_index": 101,
+      "char_end_index": 107,
+      "id": "19:17",
+      "tags": []
+    },
+    {
+      "content": "Al-Qaeda",
+      "sen_index": 19,
+      "tok_index": 18,
+      "char_start_index": 108,
+      "char_end_index": 116,
+      "id": "19:18",
+      "tags": []
+    },
+    {
+      "content": "operative",
+      "sen_index": 19,
+      "tok_index": 19,
+      "char_start_index": 117,
+      "char_end_index": 126,
+      "id": "19:19",
+      "tags": []
+    },
+    {
+      "content": "Anwar",
+      "sen_index": 19,
+      "tok_index": 20,
+      "char_start_index": 127,
+      "char_end_index": 132,
+      "id": "19:20",
+      "tags": []
+    },
+    {
+      "content": "al-Awlaki",
+      "sen_index": 19,
+      "tok_index": 21,
+      "char_start_index": 133,
+      "char_end_index": 142,
+      "id": "19:21",
+      "tags": []
+    },
+    {
+      "content": ".",
+      "sen_index": 19,
+      "tok_index": 22,
+      "char_start_index": 143,
+      "char_end_index": 144,
+      "id": "19:22",
+      "tags": []
+    },
+    {
+      "content": "After",
+      "sen_index": 20,
+      "tok_index": 0,
+      "char_start_index": 0,
+      "char_end_index": 5,
+      "id": "20:0",
+      "tags": []
+    },
+    {
+      "content": "winning",
+      "sen_index": 20,
+      "tok_index": 1,
+      "char_start_index": 6,
+      "char_end_index": 13,
+      "id": "20:1",
+      "tags": []
+    },
+    {
+      "content": "re-election",
+      "sen_index": 20,
+      "tok_index": 2,
+      "char_start_index": 14,
+      "char_end_index": 25,
+      "id": "20:2",
+      "tags": []
+    },
+    {
+      "content": "by",
+      "sen_index": 20,
+      "tok_index": 3,
+      "char_start_index": 26,
+      "char_end_index": 28,
+      "id": "20:3",
+      "tags": []
+    },
+    {
+      "content": "defeating",
+      "sen_index": 20,
+      "tok_index": 4,
+      "char_start_index": 29,
+      "char_end_index": 38,
+      "id": "20:4",
+      "tags": []
+    },
+    {
+      "content": "Republican",
+      "sen_index": 20,
+      "tok_index": 5,
+      "char_start_index": 39,
+      "char_end_index": 49,
+      "id": "20:5",
+      "tags": []
+    },
+    {
+      "content": "opponent",
+      "sen_index": 20,
+      "tok_index": 6,
+      "char_start_index": 50,
+      "char_end_index": 58,
+      "id": "20:6",
+      "tags": []
+    },
+    {
+      "content": "Mitt",
+      "sen_index": 20,
+      "tok_index": 7,
+      "char_start_index": 59,
+      "char_end_index": 63,
+      "id": "20:7",
+      "tags": []
+    },
+    {
+      "content": "Romney",
+      "sen_index": 20,
+      "tok_index": 8,
+      "char_start_index": 64,
+      "char_end_index": 70,
+      "id": "20:8",
+      "tags": []
+    },
+    {
+      "content": ",",
+      "sen_index": 20,
+      "tok_index": 9,
+      "char_start_index": 71,
+      "char_end_index": 72,
+      "id": "20:9",
+      "tags": []
+    },
+    {
+      "content": "Obama",
+      "sen_index": 20,
+      "tok_index": 10,
+      "char_start_index": 73,
+      "char_end_index": 78,
+      "id": "20:10",
+      "tags": []
+    },
+    {
+      "content": "was",
+      "sen_index": 20,
+      "tok_index": 11,
+      "char_start_index": 79,
+      "char_end_index": 82,
+      "id": "20:11",
+      "tags": []
+    },
+    {
+      "content": "sworn",
+      "sen_index": 20,
+      "tok_index": 12,
+      "char_start_index": 83,
+      "char_end_index": 88,
+      "id": "20:12",
+      "tags": []
+    },
+    {
+      "content": "in",
+      "sen_index": 20,
+      "tok_index": 13,
+      "char_start_index": 89,
+      "char_end_index": 91,
+      "id": "20:13",
+      "tags": []
+    },
+    {
+      "content": "for",
+      "sen_index": 20,
+      "tok_index": 14,
+      "char_start_index": 92,
+      "char_end_index": 95,
+      "id": "20:14",
+      "tags": []
+    },
+    {
+      "content": "a",
+      "sen_index": 20,
+      "tok_index": 15,
+      "char_start_index": 96,
+      "char_end_index": 97,
+      "id": "20:15",
+      "tags": []
+    },
+    {
+      "content": "second",
+      "sen_index": 20,
+      "tok_index": 16,
+      "char_start_index": 98,
+      "char_end_index": 104,
+      "id": "20:16",
+      "tags": []
+    },
+    {
+      "content": "term",
+      "sen_index": 20,
+      "tok_index": 17,
+      "char_start_index": 105,
+      "char_end_index": 109,
+      "id": "20:17",
+      "tags": []
+    },
+    {
+      "content": "in",
+      "sen_index": 20,
+      "tok_index": 18,
+      "char_start_index": 110,
+      "char_end_index": 112,
+      "id": "20:18",
+      "tags": []
+    },
+    {
+      "content": "2013",
+      "sen_index": 20,
+      "tok_index": 19,
+      "char_start_index": 113,
+      "char_end_index": 117,
+      "id": "20:19",
+      "tags": []
+    },
+    {
+      "content": ".",
+      "sen_index": 20,
+      "tok_index": 20,
+      "char_start_index": 118,
+      "char_end_index": 119,
+      "id": "20:20",
+      "tags": []
+    },
+    {
+      "content": "During",
+      "sen_index": 21,
+      "tok_index": 0,
+      "char_start_index": 0,
+      "char_end_index": 6,
+      "id": "21:0",
+      "tags": []
+    },
+    {
+      "content": "this",
+      "sen_index": 21,
+      "tok_index": 1,
+      "char_start_index": 7,
+      "char_end_index": 11,
+      "id": "21:1",
+      "tags": []
+    },
+    {
+      "content": "term",
+      "sen_index": 21,
+      "tok_index": 2,
+      "char_start_index": 12,
+      "char_end_index": 16,
+      "id": "21:2",
+      "tags": []
+    },
+    {
+      "content": ",",
+      "sen_index": 21,
+      "tok_index": 3,
+      "char_start_index": 17,
+      "char_end_index": 18,
+      "id": "21:3",
+      "tags": []
+    },
+    {
+      "content": "he",
+      "sen_index": 21,
+      "tok_index": 4,
+      "char_start_index": 19,
+      "char_end_index": 21,
+      "id": "21:4",
+      "tags": []
+    },
+    {
+      "content": "promoted",
+      "sen_index": 21,
+      "tok_index": 5,
+      "char_start_index": 22,
+      "char_end_index": 30,
+      "id": "21:5",
+      "tags": []
+    },
+    {
+      "content": "inclusiveness",
+      "sen_index": 21,
+      "tok_index": 6,
+      "char_start_index": 31,
+      "char_end_index": 44,
+      "id": "21:6",
+      "tags": []
+    },
+    {
+      "content": "for",
+      "sen_index": 21,
+      "tok_index": 7,
+      "char_start_index": 45,
+      "char_end_index": 48,
+      "id": "21:7",
+      "tags": []
+    },
+    {
+      "content": "LGBT",
+      "sen_index": 21,
+      "tok_index": 8,
+      "char_start_index": 49,
+      "char_end_index": 53,
+      "id": "21:8",
+      "tags": []
+    },
+    {
+      "content": "Americans",
+      "sen_index": 21,
+      "tok_index": 9,
+      "char_start_index": 54,
+      "char_end_index": 63,
+      "id": "21:9",
+      "tags": []
+    },
+    {
+      "content": ".",
+      "sen_index": 21,
+      "tok_index": 10,
+      "char_start_index": 64,
+      "char_end_index": 65,
+      "id": "21:10",
+      "tags": []
+    },
+    {
+      "content": "His",
+      "sen_index": 21,
+      "tok_index": 11,
+      "char_start_index": 66,
+      "char_end_index": 69,
+      "id": "21:11",
+      "tags": []
+    },
+    {
+      "content": "administration",
+      "sen_index": 21,
+      "tok_index": 12,
+      "char_start_index": 70,
+      "char_end_index": 84,
+      "id": "21:12",
+      "tags": []
+    },
+    {
+      "content": "filed",
+      "sen_index": 21,
+      "tok_index": 13,
+      "char_start_index": 85,
+      "char_end_index": 90,
+      "id": "21:13",
+      "tags": []
+    },
+    {
+      "content": "briefs",
+      "sen_index": 21,
+      "tok_index": 14,
+      "char_start_index": 91,
+      "char_end_index": 97,
+      "id": "21:14",
+      "tags": []
+    },
+    {
+      "content": "that",
+      "sen_index": 21,
+      "tok_index": 15,
+      "char_start_index": 98,
+      "char_end_index": 102,
+      "id": "21:15",
+      "tags": []
+    },
+    {
+      "content": "urged",
+      "sen_index": 21,
+      "tok_index": 16,
+      "char_start_index": 103,
+      "char_end_index": 108,
+      "id": "21:16",
+      "tags": []
+    },
+    {
+      "content": "the",
+      "sen_index": 21,
+      "tok_index": 17,
+      "char_start_index": 109,
+      "char_end_index": 112,
+      "id": "21:17",
+      "tags": []
+    },
+    {
+      "content": "Supreme",
+      "sen_index": 21,
+      "tok_index": 18,
+      "char_start_index": 113,
+      "char_end_index": 120,
+      "id": "21:18",
+      "tags": []
+    },
+    {
+      "content": "Court",
+      "sen_index": 21,
+      "tok_index": 19,
+      "char_start_index": 121,
+      "char_end_index": 126,
+      "id": "21:19",
+      "tags": []
+    },
+    {
+      "content": "to",
+      "sen_index": 21,
+      "tok_index": 20,
+      "char_start_index": 127,
+      "char_end_index": 129,
+      "id": "21:20",
+      "tags": []
+    },
+    {
+      "content": "strike",
+      "sen_index": 21,
+      "tok_index": 21,
+      "char_start_index": 130,
+      "char_end_index": 136,
+      "id": "21:21",
+      "tags": []
+    },
+    {
+      "content": "down",
+      "sen_index": 21,
+      "tok_index": 22,
+      "char_start_index": 137,
+      "char_end_index": 141,
+      "id": "21:22",
+      "tags": []
+    },
+    {
+      "content": "same-sex",
+      "sen_index": 21,
+      "tok_index": 23,
+      "char_start_index": 142,
+      "char_end_index": 150,
+      "id": "21:23",
+      "tags": []
+    },
+    {
+      "content": "marriage",
+      "sen_index": 21,
+      "tok_index": 24,
+      "char_start_index": 151,
+      "char_end_index": 159,
+      "id": "21:24",
+      "tags": []
+    },
+    {
+      "content": "bans",
+      "sen_index": 21,
+      "tok_index": 25,
+      "char_start_index": 160,
+      "char_end_index": 164,
+      "id": "21:25",
+      "tags": []
+    },
+    {
+      "content": "as",
+      "sen_index": 21,
+      "tok_index": 26,
+      "char_start_index": 165,
+      "char_end_index": 167,
+      "id": "21:26",
+      "tags": []
+    },
+    {
+      "content": "unconstitutional",
+      "sen_index": 21,
+      "tok_index": 27,
+      "char_start_index": 168,
+      "char_end_index": 184,
+      "id": "21:27",
+      "tags": []
+    },
+    {
+      "content": "(",
+      "sen_index": 21,
+      "tok_index": 28,
+      "char_start_index": 185,
+      "char_end_index": 186,
+      "id": "21:28",
+      "tags": []
+    },
+    {
+      "content": "United",
+      "sen_index": 21,
+      "tok_index": 29,
+      "char_start_index": 187,
+      "char_end_index": 193,
+      "id": "21:29",
+      "tags": []
+    },
+    {
+      "content": "States",
+      "sen_index": 21,
+      "tok_index": 30,
+      "char_start_index": 194,
+      "char_end_index": 200,
+      "id": "21:30",
+      "tags": []
+    },
+    {
+      "content": "v",
+      "sen_index": 21,
+      "tok_index": 31,
+      "char_start_index": 201,
+      "char_end_index": 202,
+      "id": "21:31",
+      "tags": []
+    },
+    {
+      "content": ".",
+      "sen_index": 21,
+      "tok_index": 32,
+      "char_start_index": 203,
+      "char_end_index": 204,
+      "id": "21:32",
+      "tags": []
+    },
+    {
+      "content": "Windsor",
+      "sen_index": 21,
+      "tok_index": 33,
+      "char_start_index": 205,
+      "char_end_index": 212,
+      "id": "21:33",
+      "tags": []
+    },
+    {
+      "content": "and",
+      "sen_index": 21,
+      "tok_index": 34,
+      "char_start_index": 213,
+      "char_end_index": 216,
+      "id": "21:34",
+      "tags": []
+    },
+    {
+      "content": "Obergefell",
+      "sen_index": 21,
+      "tok_index": 35,
+      "char_start_index": 217,
+      "char_end_index": 227,
+      "id": "21:35",
+      "tags": []
+    },
+    {
+      "content": "v",
+      "sen_index": 21,
+      "tok_index": 36,
+      "char_start_index": 228,
+      "char_end_index": 229,
+      "id": "21:36",
+      "tags": []
+    },
+    {
+      "content": ".",
+      "sen_index": 21,
+      "tok_index": 37,
+      "char_start_index": 230,
+      "char_end_index": 231,
+      "id": "21:37",
+      "tags": []
+    },
+    {
+      "content": "Hodges",
+      "sen_index": 21,
+      "tok_index": 38,
+      "char_start_index": 232,
+      "char_end_index": 238,
+      "id": "21:38",
+      "tags": []
+    },
+    {
+      "content": ")",
+      "sen_index": 21,
+      "tok_index": 39,
+      "char_start_index": 239,
+      "char_end_index": 240,
+      "id": "21:39",
+      "tags": []
+    },
+    {
+      "content": ";",
+      "sen_index": 21,
+      "tok_index": 40,
+      "char_start_index": 241,
+      "char_end_index": 242,
+      "id": "21:40",
+      "tags": []
+    },
+    {
+      "content": "same-sex",
+      "sen_index": 21,
+      "tok_index": 41,
+      "char_start_index": 243,
+      "char_end_index": 251,
+      "id": "21:41",
+      "tags": []
+    },
+    {
+      "content": "marriage",
+      "sen_index": 21,
+      "tok_index": 42,
+      "char_start_index": 252,
+      "char_end_index": 260,
+      "id": "21:42",
+      "tags": []
+    },
+    {
+      "content": "was",
+      "sen_index": 21,
+      "tok_index": 43,
+      "char_start_index": 261,
+      "char_end_index": 264,
+      "id": "21:43",
+      "tags": []
+    },
+    {
+      "content": "fully",
+      "sen_index": 21,
+      "tok_index": 44,
+      "char_start_index": 265,
+      "char_end_index": 270,
+      "id": "21:44",
+      "tags": []
+    },
+    {
+      "content": "legalized",
+      "sen_index": 21,
+      "tok_index": 45,
+      "char_start_index": 271,
+      "char_end_index": 280,
+      "id": "21:45",
+      "tags": []
+    },
+    {
+      "content": "in",
+      "sen_index": 21,
+      "tok_index": 46,
+      "char_start_index": 281,
+      "char_end_index": 283,
+      "id": "21:46",
+      "tags": []
+    },
+    {
+      "content": "2015",
+      "sen_index": 21,
+      "tok_index": 47,
+      "char_start_index": 284,
+      "char_end_index": 288,
+      "id": "21:47",
+      "tags": []
+    },
+    {
+      "content": "after",
+      "sen_index": 21,
+      "tok_index": 48,
+      "char_start_index": 289,
+      "char_end_index": 294,
+      "id": "21:48",
+      "tags": []
+    },
+    {
+      "content": "the",
+      "sen_index": 21,
+      "tok_index": 49,
+      "char_start_index": 295,
+      "char_end_index": 298,
+      "id": "21:49",
+      "tags": []
+    },
+    {
+      "content": "Court",
+      "sen_index": 21,
+      "tok_index": 50,
+      "char_start_index": 299,
+      "char_end_index": 304,
+      "id": "21:50",
+      "tags": []
+    },
+    {
+      "content": "ruled",
+      "sen_index": 21,
+      "tok_index": 51,
+      "char_start_index": 305,
+      "char_end_index": 310,
+      "id": "21:51",
+      "tags": []
+    },
+    {
+      "content": "that",
+      "sen_index": 21,
+      "tok_index": 52,
+      "char_start_index": 311,
+      "char_end_index": 315,
+      "id": "21:52",
+      "tags": []
+    },
+    {
+      "content": "a",
+      "sen_index": 21,
+      "tok_index": 53,
+      "char_start_index": 316,
+      "char_end_index": 317,
+      "id": "21:53",
+      "tags": []
+    },
+    {
+      "content": "same-sex",
+      "sen_index": 21,
+      "tok_index": 54,
+      "char_start_index": 318,
+      "char_end_index": 326,
+      "id": "21:54",
+      "tags": []
+    },
+    {
+      "content": "marriage",
+      "sen_index": 21,
+      "tok_index": 55,
+      "char_start_index": 327,
+      "char_end_index": 335,
+      "id": "21:55",
+      "tags": []
+    },
+    {
+      "content": "ban",
+      "sen_index": 21,
+      "tok_index": 56,
+      "char_start_index": 336,
+      "char_end_index": 339,
+      "id": "21:56",
+      "tags": []
+    },
+    {
+      "content": "was",
+      "sen_index": 21,
+      "tok_index": 57,
+      "char_start_index": 340,
+      "char_end_index": 343,
+      "id": "21:57",
+      "tags": []
+    },
+    {
+      "content": "unconstitutional",
+      "sen_index": 21,
+      "tok_index": 58,
+      "char_start_index": 344,
+      "char_end_index": 360,
+      "id": "21:58",
+      "tags": []
+    },
+    {
+      "content": "in",
+      "sen_index": 21,
+      "tok_index": 59,
+      "char_start_index": 361,
+      "char_end_index": 363,
+      "id": "21:59",
+      "tags": []
+    },
+    {
+      "content": "Obergefell",
+      "sen_index": 21,
+      "tok_index": 60,
+      "char_start_index": 364,
+      "char_end_index": 374,
+      "id": "21:60",
+      "tags": []
+    },
+    {
+      "content": ".",
+      "sen_index": 21,
+      "tok_index": 61,
+      "char_start_index": 375,
+      "char_end_index": 376,
+      "id": "21:61",
+      "tags": []
+    },
+    {
+      "content": "He",
+      "sen_index": 22,
+      "tok_index": 0,
+      "char_start_index": 0,
+      "char_end_index": 2,
+      "id": "22:0",
+      "tags": []
+    },
+    {
+      "content": "advocated",
+      "sen_index": 22,
+      "tok_index": 1,
+      "char_start_index": 3,
+      "char_end_index": 12,
+      "id": "22:1",
+      "tags": []
+    },
+    {
+      "content": "for",
+      "sen_index": 22,
+      "tok_index": 2,
+      "char_start_index": 13,
+      "char_end_index": 16,
+      "id": "22:2",
+      "tags": []
+    },
+    {
+      "content": "gun",
+      "sen_index": 22,
+      "tok_index": 3,
+      "char_start_index": 17,
+      "char_end_index": 20,
+      "id": "22:3",
+      "tags": []
+    },
+    {
+      "content": "control",
+      "sen_index": 22,
+      "tok_index": 4,
+      "char_start_index": 21,
+      "char_end_index": 28,
+      "id": "22:4",
+      "tags": []
+    },
+    {
+      "content": "in",
+      "sen_index": 22,
+      "tok_index": 5,
+      "char_start_index": 29,
+      "char_end_index": 31,
+      "id": "22:5",
+      "tags": []
+    },
+    {
+      "content": "response",
+      "sen_index": 22,
+      "tok_index": 6,
+      "char_start_index": 32,
+      "char_end_index": 40,
+      "id": "22:6",
+      "tags": []
+    },
+    {
+      "content": "to",
+      "sen_index": 22,
+      "tok_index": 7,
+      "char_start_index": 41,
+      "char_end_index": 43,
+      "id": "22:7",
+      "tags": []
+    },
+    {
+      "content": "the",
+      "sen_index": 22,
+      "tok_index": 8,
+      "char_start_index": 44,
+      "char_end_index": 47,
+      "id": "22:8",
+      "tags": []
+    },
+    {
+      "content": "Sandy",
+      "sen_index": 22,
+      "tok_index": 9,
+      "char_start_index": 48,
+      "char_end_index": 53,
+      "id": "22:9",
+      "tags": []
+    },
+    {
+      "content": "Hook",
+      "sen_index": 22,
+      "tok_index": 10,
+      "char_start_index": 54,
+      "char_end_index": 58,
+      "id": "22:10",
+      "tags": []
+    },
+    {
+      "content": "Elementary",
+      "sen_index": 22,
+      "tok_index": 11,
+      "char_start_index": 59,
+      "char_end_index": 69,
+      "id": "22:11",
+      "tags": []
+    },
+    {
+      "content": "School",
+      "sen_index": 22,
+      "tok_index": 12,
+      "char_start_index": 70,
+      "char_end_index": 76,
+      "id": "22:12",
+      "tags": []
+    },
+    {
+      "content": "shooting",
+      "sen_index": 22,
+      "tok_index": 13,
+      "char_start_index": 77,
+      "char_end_index": 85,
+      "id": "22:13",
+      "tags": []
+    },
+    {
+      "content": ",",
+      "sen_index": 22,
+      "tok_index": 14,
+      "char_start_index": 86,
+      "char_end_index": 87,
+      "id": "22:14",
+      "tags": []
+    },
+    {
+      "content": "indicating",
+      "sen_index": 22,
+      "tok_index": 15,
+      "char_start_index": 88,
+      "char_end_index": 98,
+      "id": "22:15",
+      "tags": []
+    },
+    {
+      "content": "support",
+      "sen_index": 22,
+      "tok_index": 16,
+      "char_start_index": 99,
+      "char_end_index": 106,
+      "id": "22:16",
+      "tags": []
+    },
+    {
+      "content": "for",
+      "sen_index": 22,
+      "tok_index": 17,
+      "char_start_index": 107,
+      "char_end_index": 110,
+      "id": "22:17",
+      "tags": []
+    },
+    {
+      "content": "a",
+      "sen_index": 22,
+      "tok_index": 18,
+      "char_start_index": 111,
+      "char_end_index": 112,
+      "id": "22:18",
+      "tags": []
+    },
+    {
+      "content": "ban",
+      "sen_index": 22,
+      "tok_index": 19,
+      "char_start_index": 113,
+      "char_end_index": 116,
+      "id": "22:19",
+      "tags": []
+    },
+    {
+      "content": "on",
+      "sen_index": 22,
+      "tok_index": 20,
+      "char_start_index": 117,
+      "char_end_index": 119,
+      "id": "22:20",
+      "tags": []
+    },
+    {
+      "content": "assault",
+      "sen_index": 22,
+      "tok_index": 21,
+      "char_start_index": 120,
+      "char_end_index": 127,
+      "id": "22:21",
+      "tags": []
+    },
+    {
+      "content": "weapons",
+      "sen_index": 22,
+      "tok_index": 22,
+      "char_start_index": 128,
+      "char_end_index": 135,
+      "id": "22:22",
+      "tags": []
+    },
+    {
+      "content": ",",
+      "sen_index": 22,
+      "tok_index": 23,
+      "char_start_index": 136,
+      "char_end_index": 137,
+      "id": "22:23",
+      "tags": []
+    },
+    {
+      "content": "and",
+      "sen_index": 22,
+      "tok_index": 24,
+      "char_start_index": 138,
+      "char_end_index": 141,
+      "id": "22:24",
+      "tags": []
+    },
+    {
+      "content": "issued",
+      "sen_index": 22,
+      "tok_index": 25,
+      "char_start_index": 142,
+      "char_end_index": 148,
+      "id": "22:25",
+      "tags": []
+    },
+    {
+      "content": "wide-ranging",
+      "sen_index": 22,
+      "tok_index": 26,
+      "char_start_index": 149,
+      "char_end_index": 161,
+      "id": "22:26",
+      "tags": []
+    },
+    {
+      "content": "executive",
+      "sen_index": 22,
+      "tok_index": 27,
+      "char_start_index": 162,
+      "char_end_index": 171,
+      "id": "22:27",
+      "tags": []
+    },
+    {
+      "content": "actions",
+      "sen_index": 22,
+      "tok_index": 28,
+      "char_start_index": 172,
+      "char_end_index": 179,
+      "id": "22:28",
+      "tags": []
+    },
+    {
+      "content": "concerning",
+      "sen_index": 22,
+      "tok_index": 29,
+      "char_start_index": 180,
+      "char_end_index": 190,
+      "id": "22:29",
+      "tags": []
+    },
+    {
+      "content": "global",
+      "sen_index": 22,
+      "tok_index": 30,
+      "char_start_index": 191,
+      "char_end_index": 197,
+      "id": "22:30",
+      "tags": []
+    },
+    {
+      "content": "warming",
+      "sen_index": 22,
+      "tok_index": 31,
+      "char_start_index": 198,
+      "char_end_index": 205,
+      "id": "22:31",
+      "tags": []
+    },
+    {
+      "content": "and",
+      "sen_index": 22,
+      "tok_index": 32,
+      "char_start_index": 206,
+      "char_end_index": 209,
+      "id": "22:32",
+      "tags": []
+    },
+    {
+      "content": "immigration",
+      "sen_index": 22,
+      "tok_index": 33,
+      "char_start_index": 210,
+      "char_end_index": 221,
+      "id": "22:33",
+      "tags": []
+    },
+    {
+      "content": ".",
+      "sen_index": 22,
+      "tok_index": 34,
+      "char_start_index": 222,
+      "char_end_index": 223,
+      "id": "22:34",
+      "tags": []
+    },
+    {
+      "content": "In",
+      "sen_index": 23,
+      "tok_index": 0,
+      "char_start_index": 0,
+      "char_end_index": 2,
+      "id": "23:0",
+      "tags": []
+    },
+    {
+      "content": "foreign",
+      "sen_index": 23,
+      "tok_index": 1,
+      "char_start_index": 3,
+      "char_end_index": 10,
+      "id": "23:1",
+      "tags": []
+    },
+    {
+      "content": "policy",
+      "sen_index": 23,
+      "tok_index": 2,
+      "char_start_index": 11,
+      "char_end_index": 17,
+      "id": "23:2",
+      "tags": []
+    },
+    {
+      "content": ",",
+      "sen_index": 23,
+      "tok_index": 3,
+      "char_start_index": 18,
+      "char_end_index": 19,
+      "id": "23:3",
+      "tags": []
+    },
+    {
+      "content": "he",
+      "sen_index": 23,
+      "tok_index": 4,
+      "char_start_index": 20,
+      "char_end_index": 22,
+      "id": "23:4",
+      "tags": []
+    },
+    {
+      "content": "ordered",
+      "sen_index": 23,
+      "tok_index": 5,
+      "char_start_index": 23,
+      "char_end_index": 30,
+      "id": "23:5",
+      "tags": []
+    },
+    {
+      "content": "military",
+      "sen_index": 23,
+      "tok_index": 6,
+      "char_start_index": 31,
+      "char_end_index": 39,
+      "id": "23:6",
+      "tags": []
+    },
+    {
+      "content": "intervention",
+      "sen_index": 23,
+      "tok_index": 7,
+      "char_start_index": 40,
+      "char_end_index": 52,
+      "id": "23:7",
+      "tags": []
+    },
+    {
+      "content": "in",
+      "sen_index": 23,
+      "tok_index": 8,
+      "char_start_index": 53,
+      "char_end_index": 55,
+      "id": "23:8",
+      "tags": []
+    },
+    {
+      "content": "Iraq",
+      "sen_index": 23,
+      "tok_index": 9,
+      "char_start_index": 56,
+      "char_end_index": 60,
+      "id": "23:9",
+      "tags": []
+    },
+    {
+      "content": "in",
+      "sen_index": 23,
+      "tok_index": 10,
+      "char_start_index": 61,
+      "char_end_index": 63,
+      "id": "23:10",
+      "tags": []
+    },
+    {
+      "content": "response",
+      "sen_index": 23,
+      "tok_index": 11,
+      "char_start_index": 64,
+      "char_end_index": 72,
+      "id": "23:11",
+      "tags": []
+    },
+    {
+      "content": "to",
+      "sen_index": 23,
+      "tok_index": 12,
+      "char_start_index": 73,
+      "char_end_index": 75,
+      "id": "23:12",
+      "tags": []
+    },
+    {
+      "content": "gains",
+      "sen_index": 23,
+      "tok_index": 13,
+      "char_start_index": 76,
+      "char_end_index": 81,
+      "id": "23:13",
+      "tags": []
+    },
+    {
+      "content": "made",
+      "sen_index": 23,
+      "tok_index": 14,
+      "char_start_index": 82,
+      "char_end_index": 86,
+      "id": "23:14",
+      "tags": []
+    },
+    {
+      "content": "by",
+      "sen_index": 23,
+      "tok_index": 15,
+      "char_start_index": 87,
+      "char_end_index": 89,
+      "id": "23:15",
+      "tags": []
+    },
+    {
+      "content": "ISIL",
+      "sen_index": 23,
+      "tok_index": 16,
+      "char_start_index": 90,
+      "char_end_index": 94,
+      "id": "23:16",
+      "tags": []
+    },
+    {
+      "content": "after",
+      "sen_index": 23,
+      "tok_index": 17,
+      "char_start_index": 95,
+      "char_end_index": 100,
+      "id": "23:17",
+      "tags": []
+    },
+    {
+      "content": "the",
+      "sen_index": 23,
+      "tok_index": 18,
+      "char_start_index": 101,
+      "char_end_index": 104,
+      "id": "23:18",
+      "tags": []
+    },
+    {
+      "content": "2011",
+      "sen_index": 23,
+      "tok_index": 19,
+      "char_start_index": 105,
+      "char_end_index": 109,
+      "id": "23:19",
+      "tags": []
+    },
+    {
+      "content": "withdrawal",
+      "sen_index": 23,
+      "tok_index": 20,
+      "char_start_index": 110,
+      "char_end_index": 120,
+      "id": "23:20",
+      "tags": []
+    },
+    {
+      "content": "from",
+      "sen_index": 23,
+      "tok_index": 21,
+      "char_start_index": 121,
+      "char_end_index": 125,
+      "id": "23:21",
+      "tags": []
+    },
+    {
+      "content": "Iraq",
+      "sen_index": 23,
+      "tok_index": 22,
+      "char_start_index": 126,
+      "char_end_index": 130,
+      "id": "23:22",
+      "tags": []
+    },
+    {
+      "content": ",",
+      "sen_index": 23,
+      "tok_index": 23,
+      "char_start_index": 131,
+      "char_end_index": 132,
+      "id": "23:23",
+      "tags": []
+    },
+    {
+      "content": "continued",
+      "sen_index": 23,
+      "tok_index": 24,
+      "char_start_index": 133,
+      "char_end_index": 142,
+      "id": "23:24",
+      "tags": []
+    },
+    {
+      "content": "the",
+      "sen_index": 23,
+      "tok_index": 25,
+      "char_start_index": 143,
+      "char_end_index": 146,
+      "id": "23:25",
+      "tags": []
+    },
+    {
+      "content": "process",
+      "sen_index": 23,
+      "tok_index": 26,
+      "char_start_index": 147,
+      "char_end_index": 154,
+      "id": "23:26",
+      "tags": []
+    },
+    {
+      "content": "of",
+      "sen_index": 23,
+      "tok_index": 27,
+      "char_start_index": 155,
+      "char_end_index": 157,
+      "id": "23:27",
+      "tags": []
+    },
+    {
+      "content": "ending",
+      "sen_index": 23,
+      "tok_index": 28,
+      "char_start_index": 158,
+      "char_end_index": 164,
+      "id": "23:28",
+      "tags": []
+    },
+    {
+      "content": "U.S",
+      "sen_index": 23,
+      "tok_index": 29,
+      "char_start_index": 165,
+      "char_end_index": 168,
+      "id": "23:29",
+      "tags": []
+    },
+    {
+      "content": ".",
+      "sen_index": 23,
+      "tok_index": 30,
+      "char_start_index": 169,
+      "char_end_index": 170,
+      "id": "23:30",
+      "tags": []
+    },
+    {
+      "content": "combat",
+      "sen_index": 23,
+      "tok_index": 31,
+      "char_start_index": 171,
+      "char_end_index": 177,
+      "id": "23:31",
+      "tags": []
+    },
+    {
+      "content": "operations",
+      "sen_index": 23,
+      "tok_index": 32,
+      "char_start_index": 178,
+      "char_end_index": 188,
+      "id": "23:32",
+      "tags": []
+    },
+    {
+      "content": "in",
+      "sen_index": 23,
+      "tok_index": 33,
+      "char_start_index": 189,
+      "char_end_index": 191,
+      "id": "23:33",
+      "tags": []
+    },
+    {
+      "content": "Afghanistan",
+      "sen_index": 23,
+      "tok_index": 34,
+      "char_start_index": 192,
+      "char_end_index": 203,
+      "id": "23:34",
+      "tags": []
+    },
+    {
+      "content": "in",
+      "sen_index": 23,
+      "tok_index": 35,
+      "char_start_index": 204,
+      "char_end_index": 206,
+      "id": "23:35",
+      "tags": []
+    },
+    {
+      "content": "2016",
+      "sen_index": 23,
+      "tok_index": 36,
+      "char_start_index": 207,
+      "char_end_index": 211,
+      "id": "23:36",
+      "tags": []
+    },
+    {
+      "content": ",",
+      "sen_index": 23,
+      "tok_index": 37,
+      "char_start_index": 212,
+      "char_end_index": 213,
+      "id": "23:37",
+      "tags": []
+    },
+    {
+      "content": "promoted",
+      "sen_index": 23,
+      "tok_index": 38,
+      "char_start_index": 214,
+      "char_end_index": 222,
+      "id": "23:38",
+      "tags": []
+    },
+    {
+      "content": "discussions",
+      "sen_index": 23,
+      "tok_index": 39,
+      "char_start_index": 223,
+      "char_end_index": 234,
+      "id": "23:39",
+      "tags": []
+    },
+    {
+      "content": "that",
+      "sen_index": 23,
+      "tok_index": 40,
+      "char_start_index": 235,
+      "char_end_index": 239,
+      "id": "23:40",
+      "tags": []
+    },
+    {
+      "content": "led",
+      "sen_index": 23,
+      "tok_index": 41,
+      "char_start_index": 240,
+      "char_end_index": 243,
+      "id": "23:41",
+      "tags": []
+    },
+    {
+      "content": "to",
+      "sen_index": 23,
+      "tok_index": 42,
+      "char_start_index": 244,
+      "char_end_index": 246,
+      "id": "23:42",
+      "tags": []
+    },
+    {
+      "content": "the",
+      "sen_index": 23,
+      "tok_index": 43,
+      "char_start_index": 247,
+      "char_end_index": 250,
+      "id": "23:43",
+      "tags": []
+    },
+    {
+      "content": "2015",
+      "sen_index": 23,
+      "tok_index": 44,
+      "char_start_index": 251,
+      "char_end_index": 255,
+      "id": "23:44",
+      "tags": []
+    },
+    {
+      "content": "Paris",
+      "sen_index": 23,
+      "tok_index": 45,
+      "char_start_index": 256,
+      "char_end_index": 261,
+      "id": "23:45",
+      "tags": []
+    },
+    {
+      "content": "Agreement",
+      "sen_index": 23,
+      "tok_index": 46,
+      "char_start_index": 262,
+      "char_end_index": 271,
+      "id": "23:46",
+      "tags": []
+    },
+    {
+      "content": "on",
+      "sen_index": 23,
+      "tok_index": 47,
+      "char_start_index": 272,
+      "char_end_index": 274,
+      "id": "23:47",
+      "tags": []
+    },
+    {
+      "content": "global",
+      "sen_index": 23,
+      "tok_index": 48,
+      "char_start_index": 275,
+      "char_end_index": 281,
+      "id": "23:48",
+      "tags": []
+    },
+    {
+      "content": "climate",
+      "sen_index": 23,
+      "tok_index": 49,
+      "char_start_index": 282,
+      "char_end_index": 289,
+      "id": "23:49",
+      "tags": []
+    },
+    {
+      "content": "change",
+      "sen_index": 23,
+      "tok_index": 50,
+      "char_start_index": 290,
+      "char_end_index": 296,
+      "id": "23:50",
+      "tags": []
+    },
+    {
+      "content": ",",
+      "sen_index": 23,
+      "tok_index": 51,
+      "char_start_index": 297,
+      "char_end_index": 298,
+      "id": "23:51",
+      "tags": []
+    },
+    {
+      "content": "initiated",
+      "sen_index": 23,
+      "tok_index": 52,
+      "char_start_index": 299,
+      "char_end_index": 308,
+      "id": "23:52",
+      "tags": []
+    },
+    {
+      "content": "sanctions",
+      "sen_index": 23,
+      "tok_index": 53,
+      "char_start_index": 309,
+      "char_end_index": 318,
+      "id": "23:53",
+      "tags": []
+    },
+    {
+      "content": "against",
+      "sen_index": 23,
+      "tok_index": 54,
+      "char_start_index": 319,
+      "char_end_index": 326,
+      "id": "23:54",
+      "tags": []
+    },
+    {
+      "content": "Russia",
+      "sen_index": 23,
+      "tok_index": 55,
+      "char_start_index": 327,
+      "char_end_index": 333,
+      "id": "23:55",
+      "tags": []
+    },
+    {
+      "content": "following",
+      "sen_index": 23,
+      "tok_index": 56,
+      "char_start_index": 334,
+      "char_end_index": 343,
+      "id": "23:56",
+      "tags": []
+    },
+    {
+      "content": "the",
+      "sen_index": 23,
+      "tok_index": 57,
+      "char_start_index": 344,
+      "char_end_index": 347,
+      "id": "23:57",
+      "tags": []
+    },
+    {
+      "content": "invasion",
+      "sen_index": 23,
+      "tok_index": 58,
+      "char_start_index": 348,
+      "char_end_index": 356,
+      "id": "23:58",
+      "tags": []
+    },
+    {
+      "content": "in",
+      "sen_index": 23,
+      "tok_index": 59,
+      "char_start_index": 357,
+      "char_end_index": 359,
+      "id": "23:59",
+      "tags": []
+    },
+    {
+      "content": "Ukraine",
+      "sen_index": 23,
+      "tok_index": 60,
+      "char_start_index": 360,
+      "char_end_index": 367,
+      "id": "23:60",
+      "tags": []
+    },
+    {
+      "content": "and",
+      "sen_index": 23,
+      "tok_index": 61,
+      "char_start_index": 368,
+      "char_end_index": 371,
+      "id": "23:61",
+      "tags": []
+    },
+    {
+      "content": "again",
+      "sen_index": 23,
+      "tok_index": 62,
+      "char_start_index": 372,
+      "char_end_index": 377,
+      "id": "23:62",
+      "tags": []
+    },
+    {
+      "content": "after",
+      "sen_index": 23,
+      "tok_index": 63,
+      "char_start_index": 378,
+      "char_end_index": 383,
+      "id": "23:63",
+      "tags": []
+    },
+    {
+      "content": "Russian",
+      "sen_index": 23,
+      "tok_index": 64,
+      "char_start_index": 384,
+      "char_end_index": 391,
+      "id": "23:64",
+      "tags": []
+    },
+    {
+      "content": "interference",
+      "sen_index": 23,
+      "tok_index": 65,
+      "char_start_index": 392,
+      "char_end_index": 404,
+      "id": "23:65",
+      "tags": []
+    },
+    {
+      "content": "in",
+      "sen_index": 23,
+      "tok_index": 66,
+      "char_start_index": 405,
+      "char_end_index": 407,
+      "id": "23:66",
+      "tags": []
+    },
+    {
+      "content": "the",
+      "sen_index": 23,
+      "tok_index": 67,
+      "char_start_index": 408,
+      "char_end_index": 411,
+      "id": "23:67",
+      "tags": []
+    },
+    {
+      "content": "2016",
+      "sen_index": 23,
+      "tok_index": 68,
+      "char_start_index": 412,
+      "char_end_index": 416,
+      "id": "23:68",
+      "tags": []
+    },
+    {
+      "content": "United",
+      "sen_index": 23,
+      "tok_index": 69,
+      "char_start_index": 417,
+      "char_end_index": 423,
+      "id": "23:69",
+      "tags": []
+    },
+    {
+      "content": "States",
+      "sen_index": 23,
+      "tok_index": 70,
+      "char_start_index": 424,
+      "char_end_index": 430,
+      "id": "23:70",
+      "tags": []
+    },
+    {
+      "content": "elections",
+      "sen_index": 23,
+      "tok_index": 71,
+      "char_start_index": 431,
+      "char_end_index": 440,
+      "id": "23:71",
+      "tags": []
+    },
+    {
+      "content": ",",
+      "sen_index": 23,
+      "tok_index": 72,
+      "char_start_index": 441,
+      "char_end_index": 442,
+      "id": "23:72",
+      "tags": []
+    },
+    {
+      "content": "brokered",
+      "sen_index": 23,
+      "tok_index": 73,
+      "char_start_index": 443,
+      "char_end_index": 451,
+      "id": "23:73",
+      "tags": []
+    },
+    {
+      "content": "a",
+      "sen_index": 23,
+      "tok_index": 74,
+      "char_start_index": 452,
+      "char_end_index": 453,
+      "id": "23:74",
+      "tags": []
+    },
+    {
+      "content": "nuclear",
+      "sen_index": 23,
+      "tok_index": 75,
+      "char_start_index": 454,
+      "char_end_index": 461,
+      "id": "23:75",
+      "tags": []
+    },
+    {
+      "content": "deal",
+      "sen_index": 23,
+      "tok_index": 76,
+      "char_start_index": 462,
+      "char_end_index": 466,
+      "id": "23:76",
+      "tags": []
+    },
+    {
+      "content": "with",
+      "sen_index": 23,
+      "tok_index": 77,
+      "char_start_index": 467,
+      "char_end_index": 471,
+      "id": "23:77",
+      "tags": []
+    },
+    {
+      "content": "Iran",
+      "sen_index": 23,
+      "tok_index": 78,
+      "char_start_index": 472,
+      "char_end_index": 476,
+      "id": "23:78",
+      "tags": []
+    },
+    {
+      "content": ",",
+      "sen_index": 23,
+      "tok_index": 79,
+      "char_start_index": 477,
+      "char_end_index": 478,
+      "id": "23:79",
+      "tags": []
+    },
+    {
+      "content": "and",
+      "sen_index": 23,
+      "tok_index": 80,
+      "char_start_index": 479,
+      "char_end_index": 482,
+      "id": "23:80",
+      "tags": []
+    },
+    {
+      "content": "normalized",
+      "sen_index": 23,
+      "tok_index": 81,
+      "char_start_index": 483,
+      "char_end_index": 493,
+      "id": "23:81",
+      "tags": []
+    },
+    {
+      "content": "U.S",
+      "sen_index": 23,
+      "tok_index": 82,
+      "char_start_index": 494,
+      "char_end_index": 497,
+      "id": "23:82",
+      "tags": []
+    },
+    {
+      "content": ".",
+      "sen_index": 23,
+      "tok_index": 83,
+      "char_start_index": 498,
+      "char_end_index": 499,
+      "id": "23:83",
+      "tags": []
+    },
+    {
+      "content": "relations",
+      "sen_index": 23,
+      "tok_index": 84,
+      "char_start_index": 500,
+      "char_end_index": 509,
+      "id": "23:84",
+      "tags": []
+    },
+    {
+      "content": "with",
+      "sen_index": 23,
+      "tok_index": 85,
+      "char_start_index": 510,
+      "char_end_index": 514,
+      "id": "23:85",
+      "tags": []
+    },
+    {
+      "content": "Cuba",
+      "sen_index": 23,
+      "tok_index": 86,
+      "char_start_index": 515,
+      "char_end_index": 519,
+      "id": "23:86",
+      "tags": []
+    },
+    {
+      "content": ".",
+      "sen_index": 23,
+      "tok_index": 87,
+      "char_start_index": 520,
+      "char_end_index": 521,
+      "id": "23:87",
+      "tags": []
+    },
+    {
+      "content": "Obama",
+      "sen_index": 24,
+      "tok_index": 0,
+      "char_start_index": 0,
+      "char_end_index": 5,
+      "id": "24:0",
+      "tags": []
+    },
+    {
+      "content": "nominated",
+      "sen_index": 24,
+      "tok_index": 1,
+      "char_start_index": 6,
+      "char_end_index": 15,
+      "id": "24:1",
+      "tags": []
+    },
+    {
+      "content": "three",
+      "sen_index": 24,
+      "tok_index": 2,
+      "char_start_index": 16,
+      "char_end_index": 21,
+      "id": "24:2",
+      "tags": []
+    },
+    {
+      "content": "justices",
+      "sen_index": 24,
+      "tok_index": 3,
+      "char_start_index": 22,
+      "char_end_index": 30,
+      "id": "24:3",
+      "tags": []
+    },
+    {
+      "content": "to",
+      "sen_index": 24,
+      "tok_index": 4,
+      "char_start_index": 31,
+      "char_end_index": 33,
+      "id": "24:4",
+      "tags": []
+    },
+    {
+      "content": "the",
+      "sen_index": 24,
+      "tok_index": 5,
+      "char_start_index": 34,
+      "char_end_index": 37,
+      "id": "24:5",
+      "tags": []
+    },
+    {
+      "content": "Supreme",
+      "sen_index": 24,
+      "tok_index": 6,
+      "char_start_index": 38,
+      "char_end_index": 45,
+      "id": "24:6",
+      "tags": []
+    },
+    {
+      "content": "Court",
+      "sen_index": 24,
+      "tok_index": 7,
+      "char_start_index": 46,
+      "char_end_index": 51,
+      "id": "24:7",
+      "tags": []
+    },
+    {
+      "content": ":",
+      "sen_index": 24,
+      "tok_index": 8,
+      "char_start_index": 52,
+      "char_end_index": 53,
+      "id": "24:8",
+      "tags": []
+    },
+    {
+      "content": "Sonia",
+      "sen_index": 24,
+      "tok_index": 9,
+      "char_start_index": 54,
+      "char_end_index": 59,
+      "id": "24:9",
+      "tags": []
+    },
+    {
+      "content": "Sotomayor",
+      "sen_index": 24,
+      "tok_index": 10,
+      "char_start_index": 60,
+      "char_end_index": 69,
+      "id": "24:10",
+      "tags": []
+    },
+    {
+      "content": "and",
+      "sen_index": 24,
+      "tok_index": 11,
+      "char_start_index": 70,
+      "char_end_index": 73,
+      "id": "24:11",
+      "tags": []
+    },
+    {
+      "content": "Elena",
+      "sen_index": 24,
+      "tok_index": 12,
+      "char_start_index": 74,
+      "char_end_index": 79,
+      "id": "24:12",
+      "tags": []
+    },
+    {
+      "content": "Kagan",
+      "sen_index": 24,
+      "tok_index": 13,
+      "char_start_index": 80,
+      "char_end_index": 85,
+      "id": "24:13",
+      "tags": []
+    },
+    {
+      "content": "were",
+      "sen_index": 24,
+      "tok_index": 14,
+      "char_start_index": 86,
+      "char_end_index": 90,
+      "id": "24:14",
+      "tags": []
+    },
+    {
+      "content": "confirmed",
+      "sen_index": 24,
+      "tok_index": 15,
+      "char_start_index": 91,
+      "char_end_index": 100,
+      "id": "24:15",
+      "tags": []
+    },
+    {
+      "content": "as",
+      "sen_index": 24,
+      "tok_index": 16,
+      "char_start_index": 101,
+      "char_end_index": 103,
+      "id": "24:16",
+      "tags": []
+    },
+    {
+      "content": "justices",
+      "sen_index": 24,
+      "tok_index": 17,
+      "char_start_index": 104,
+      "char_end_index": 112,
+      "id": "24:17",
+      "tags": []
+    },
+    {
+      "content": ",",
+      "sen_index": 24,
+      "tok_index": 18,
+      "char_start_index": 113,
+      "char_end_index": 114,
+      "id": "24:18",
+      "tags": []
+    },
+    {
+      "content": "while",
+      "sen_index": 24,
+      "tok_index": 19,
+      "char_start_index": 115,
+      "char_end_index": 120,
+      "id": "24:19",
+      "tags": []
+    },
+    {
+      "content": "Merrick",
+      "sen_index": 24,
+      "tok_index": 20,
+      "char_start_index": 121,
+      "char_end_index": 128,
+      "id": "24:20",
+      "tags": []
+    },
+    {
+      "content": "Garland",
+      "sen_index": 24,
+      "tok_index": 21,
+      "char_start_index": 129,
+      "char_end_index": 136,
+      "id": "24:21",
+      "tags": []
+    },
+    {
+      "content": "faced",
+      "sen_index": 24,
+      "tok_index": 22,
+      "char_start_index": 137,
+      "char_end_index": 142,
+      "id": "24:22",
+      "tags": []
+    },
+    {
+      "content": "unprecedented",
+      "sen_index": 24,
+      "tok_index": 23,
+      "char_start_index": 143,
+      "char_end_index": 156,
+      "id": "24:23",
+      "tags": []
+    },
+    {
+      "content": "partisan",
+      "sen_index": 24,
+      "tok_index": 24,
+      "char_start_index": 157,
+      "char_end_index": 165,
+      "id": "24:24",
+      "tags": []
+    },
+    {
+      "content": "obstruction",
+      "sen_index": 24,
+      "tok_index": 25,
+      "char_start_index": 166,
+      "char_end_index": 177,
+      "id": "24:25",
+      "tags": []
+    },
+    {
+      "content": "and",
+      "sen_index": 24,
+      "tok_index": 26,
+      "char_start_index": 178,
+      "char_end_index": 181,
+      "id": "24:26",
+      "tags": []
+    },
+    {
+      "content": "was",
+      "sen_index": 24,
+      "tok_index": 27,
+      "char_start_index": 182,
+      "char_end_index": 185,
+      "id": "24:27",
+      "tags": []
+    },
+    {
+      "content": "ultimately",
+      "sen_index": 24,
+      "tok_index": 28,
+      "char_start_index": 186,
+      "char_end_index": 196,
+      "id": "24:28",
+      "tags": []
+    },
+    {
+      "content": "not",
+      "sen_index": 24,
+      "tok_index": 29,
+      "char_start_index": 197,
+      "char_end_index": 200,
+      "id": "24:29",
+      "tags": []
+    },
+    {
+      "content": "confirmed",
+      "sen_index": 24,
+      "tok_index": 30,
+      "char_start_index": 201,
+      "char_end_index": 210,
+      "id": "24:30",
+      "tags": []
+    },
+    {
+      "content": ".",
+      "sen_index": 24,
+      "tok_index": 31,
+      "char_start_index": 211,
+      "char_end_index": 212,
+      "id": "24:31",
+      "tags": []
+    },
+    {
+      "content": "During",
+      "sen_index": 25,
+      "tok_index": 0,
+      "char_start_index": 0,
+      "char_end_index": 6,
+      "id": "25:0",
+      "tags": []
+    },
+    {
+      "content": "his",
+      "sen_index": 25,
+      "tok_index": 1,
+      "char_start_index": 7,
+      "char_end_index": 10,
+      "id": "25:1",
+      "tags": []
+    },
+    {
+      "content": "term",
+      "sen_index": 25,
+      "tok_index": 2,
+      "char_start_index": 11,
+      "char_end_index": 15,
+      "id": "25:2",
+      "tags": []
+    },
+    {
+      "content": "in",
+      "sen_index": 25,
+      "tok_index": 3,
+      "char_start_index": 16,
+      "char_end_index": 18,
+      "id": "25:3",
+      "tags": []
+    },
+    {
+      "content": "office",
+      "sen_index": 25,
+      "tok_index": 4,
+      "char_start_index": 19,
+      "char_end_index": 25,
+      "id": "25:4",
+      "tags": []
+    },
+    {
+      "content": ",",
+      "sen_index": 25,
+      "tok_index": 5,
+      "char_start_index": 26,
+      "char_end_index": 27,
+      "id": "25:5",
+      "tags": []
+    },
+    {
+      "content": "America's",
+      "sen_index": 25,
+      "tok_index": 6,
+      "char_start_index": 28,
+      "char_end_index": 37,
+      "id": "25:6",
+      "tags": []
+    },
+    {
+      "content": "soft",
+      "sen_index": 25,
+      "tok_index": 7,
+      "char_start_index": 38,
+      "char_end_index": 42,
+      "id": "25:7",
+      "tags": []
+    },
+    {
+      "content": "power",
+      "sen_index": 25,
+      "tok_index": 8,
+      "char_start_index": 43,
+      "char_end_index": 48,
+      "id": "25:8",
+      "tags": []
+    },
+    {
+      "content": "and",
+      "sen_index": 25,
+      "tok_index": 9,
+      "char_start_index": 49,
+      "char_end_index": 52,
+      "id": "25:9",
+      "tags": []
+    },
+    {
+      "content": "reputation",
+      "sen_index": 25,
+      "tok_index": 10,
+      "char_start_index": 53,
+      "char_end_index": 63,
+      "id": "25:10",
+      "tags": []
+    },
+    {
+      "content": "abroad",
+      "sen_index": 25,
+      "tok_index": 11,
+      "char_start_index": 64,
+      "char_end_index": 70,
+      "id": "25:11",
+      "tags": []
+    },
+    {
+      "content": "significantly",
+      "sen_index": 25,
+      "tok_index": 12,
+      "char_start_index": 71,
+      "char_end_index": 84,
+      "id": "25:12",
+      "tags": []
+    },
+    {
+      "content": "improved",
+      "sen_index": 25,
+      "tok_index": 13,
+      "char_start_index": 85,
+      "char_end_index": 93,
+      "id": "25:13",
+      "tags": []
+    },
+    {
+      "content": ".",
+      "sen_index": 25,
+      "tok_index": 14,
+      "char_start_index": 94,
+      "char_end_index": 95,
+      "id": "25:14",
+      "tags": []
+    },
+    {
+      "content": "[",
+      "sen_index": 25,
+      "tok_index": 15,
+      "char_start_index": 96,
+      "char_end_index": 97,
+      "id": "25:15",
+      "tags": []
+    },
+    {
+      "content": "2",
+      "sen_index": 25,
+      "tok_index": 16,
+      "char_start_index": 98,
+      "char_end_index": 99,
+      "id": "25:16",
+      "tags": []
+    },
+    {
+      "content": "]",
+      "sen_index": 25,
+      "tok_index": 17,
+      "char_start_index": 100,
+      "char_end_index": 101,
+      "id": "25:17",
+      "tags": []
+    },
+    {
+      "content": "Obama's",
+      "sen_index": 26,
+      "tok_index": 0,
+      "char_start_index": 0,
+      "char_end_index": 7,
+      "id": "26:0",
+      "tags": []
+    },
+    {
+      "content": "presidency",
+      "sen_index": 26,
+      "tok_index": 1,
+      "char_start_index": 8,
+      "char_end_index": 18,
+      "id": "26:1",
+      "tags": []
+    },
+    {
+      "content": "has",
+      "sen_index": 26,
+      "tok_index": 2,
+      "char_start_index": 19,
+      "char_end_index": 22,
+      "id": "26:2",
+      "tags": []
+    },
+    {
+      "content": "generally",
+      "sen_index": 26,
+      "tok_index": 3,
+      "char_start_index": 23,
+      "char_end_index": 32,
+      "id": "26:3",
+      "tags": []
+    },
+    {
+      "content": "been",
+      "sen_index": 26,
+      "tok_index": 4,
+      "char_start_index": 33,
+      "char_end_index": 37,
+      "id": "26:4",
+      "tags": []
+    },
+    {
+      "content": "regarded",
+      "sen_index": 26,
+      "tok_index": 5,
+      "char_start_index": 38,
+      "char_end_index": 46,
+      "id": "26:5",
+      "tags": []
+    },
+    {
+      "content": "favorably",
+      "sen_index": 26,
+      "tok_index": 6,
+      "char_start_index": 47,
+      "char_end_index": 56,
+      "id": "26:6",
+      "tags": []
+    },
+    {
+      "content": ",",
+      "sen_index": 26,
+      "tok_index": 7,
+      "char_start_index": 57,
+      "char_end_index": 58,
+      "id": "26:7",
+      "tags": []
+    },
+    {
+      "content": "and",
+      "sen_index": 26,
+      "tok_index": 8,
+      "char_start_index": 59,
+      "char_end_index": 62,
+      "id": "26:8",
+      "tags": []
+    },
+    {
+      "content": "evaluations",
+      "sen_index": 26,
+      "tok_index": 9,
+      "char_start_index": 63,
+      "char_end_index": 74,
+      "id": "26:9",
+      "tags": []
+    },
+    {
+      "content": "of",
+      "sen_index": 26,
+      "tok_index": 10,
+      "char_start_index": 75,
+      "char_end_index": 77,
+      "id": "26:10",
+      "tags": []
+    },
+    {
+      "content": "his",
+      "sen_index": 26,
+      "tok_index": 11,
+      "char_start_index": 78,
+      "char_end_index": 81,
+      "id": "26:11",
+      "tags": []
+    },
+    {
+      "content": "presidency",
+      "sen_index": 26,
+      "tok_index": 12,
+      "char_start_index": 82,
+      "char_end_index": 92,
+      "id": "26:12",
+      "tags": []
+    },
+    {
+      "content": "among",
+      "sen_index": 26,
+      "tok_index": 13,
+      "char_start_index": 93,
+      "char_end_index": 98,
+      "id": "26:13",
+      "tags": []
+    },
+    {
+      "content": "historians",
+      "sen_index": 26,
+      "tok_index": 14,
+      "char_start_index": 99,
+      "char_end_index": 109,
+      "id": "26:14",
+      "tags": []
+    },
+    {
+      "content": ",",
+      "sen_index": 26,
+      "tok_index": 15,
+      "char_start_index": 110,
+      "char_end_index": 111,
+      "id": "26:15",
+      "tags": []
+    },
+    {
+      "content": "political",
+      "sen_index": 26,
+      "tok_index": 16,
+      "char_start_index": 112,
+      "char_end_index": 121,
+      "id": "26:16",
+      "tags": []
+    },
+    {
+      "content": "scientists",
+      "sen_index": 26,
+      "tok_index": 17,
+      "char_start_index": 122,
+      "char_end_index": 132,
+      "id": "26:17",
+      "tags": []
+    },
+    {
+      "content": ",",
+      "sen_index": 26,
+      "tok_index": 18,
+      "char_start_index": 133,
+      "char_end_index": 134,
+      "id": "26:18",
+      "tags": []
+    },
+    {
+      "content": "and",
+      "sen_index": 26,
+      "tok_index": 19,
+      "char_start_index": 135,
+      "char_end_index": 138,
+      "id": "26:19",
+      "tags": []
+    },
+    {
+      "content": "the",
+      "sen_index": 26,
+      "tok_index": 20,
+      "char_start_index": 139,
+      "char_end_index": 142,
+      "id": "26:20",
+      "tags": []
+    },
+    {
+      "content": "general",
+      "sen_index": 26,
+      "tok_index": 21,
+      "char_start_index": 143,
+      "char_end_index": 150,
+      "id": "26:21",
+      "tags": []
+    },
+    {
+      "content": "public",
+      "sen_index": 26,
+      "tok_index": 22,
+      "char_start_index": 151,
+      "char_end_index": 157,
+      "id": "26:22",
+      "tags": []
+    },
+    {
+      "content": "place",
+      "sen_index": 26,
+      "tok_index": 23,
+      "char_start_index": 158,
+      "char_end_index": 163,
+      "id": "26:23",
+      "tags": []
+    },
+    {
+      "content": "him",
+      "sen_index": 26,
+      "tok_index": 24,
+      "char_start_index": 164,
+      "char_end_index": 167,
+      "id": "26:24",
+      "tags": []
+    },
+    {
+      "content": "among",
+      "sen_index": 26,
+      "tok_index": 25,
+      "char_start_index": 168,
+      "char_end_index": 173,
+      "id": "26:25",
+      "tags": []
+    },
+    {
+      "content": "the",
+      "sen_index": 26,
+      "tok_index": 26,
+      "char_start_index": 174,
+      "char_end_index": 177,
+      "id": "26:26",
+      "tags": []
+    },
+    {
+      "content": "upper",
+      "sen_index": 26,
+      "tok_index": 27,
+      "char_start_index": 178,
+      "char_end_index": 183,
+      "id": "26:27",
+      "tags": []
+    },
+    {
+      "content": "tier",
+      "sen_index": 26,
+      "tok_index": 28,
+      "char_start_index": 184,
+      "char_end_index": 188,
+      "id": "26:28",
+      "tags": []
+    },
+    {
+      "content": "of",
+      "sen_index": 26,
+      "tok_index": 29,
+      "char_start_index": 189,
+      "char_end_index": 191,
+      "id": "26:29",
+      "tags": []
+    },
+    {
+      "content": "American",
+      "sen_index": 26,
+      "tok_index": 30,
+      "char_start_index": 192,
+      "char_end_index": 200,
+      "id": "26:30",
+      "tags": []
+    },
+    {
+      "content": "presidents",
+      "sen_index": 26,
+      "tok_index": 31,
+      "char_start_index": 201,
+      "char_end_index": 211,
+      "id": "26:31",
+      "tags": []
+    },
+    {
+      "content": ".",
+      "sen_index": 26,
+      "tok_index": 32,
+      "char_start_index": 212,
+      "char_end_index": 213,
+      "id": "26:32",
+      "tags": []
+    },
+    {
+      "content": "Obama",
+      "sen_index": 27,
+      "tok_index": 0,
+      "char_start_index": 0,
+      "char_end_index": 5,
+      "id": "27:0",
+      "tags": []
+    },
+    {
+      "content": "left",
+      "sen_index": 27,
+      "tok_index": 1,
+      "char_start_index": 6,
+      "char_end_index": 10,
+      "id": "27:1",
+      "tags": []
+    },
+    {
+      "content": "office",
+      "sen_index": 27,
+      "tok_index": 2,
+      "char_start_index": 11,
+      "char_end_index": 17,
+      "id": "27:2",
+      "tags": []
+    },
+    {
+      "content": "and",
+      "sen_index": 27,
+      "tok_index": 3,
+      "char_start_index": 18,
+      "char_end_index": 21,
+      "id": "27:3",
+      "tags": []
+    },
+    {
+      "content": "retired",
+      "sen_index": 27,
+      "tok_index": 4,
+      "char_start_index": 22,
+      "char_end_index": 29,
+      "id": "27:4",
+      "tags": []
+    },
+    {
+      "content": "in",
+      "sen_index": 27,
+      "tok_index": 5,
+      "char_start_index": 30,
+      "char_end_index": 32,
+      "id": "27:5",
+      "tags": []
+    },
+    {
+      "content": "January",
+      "sen_index": 27,
+      "tok_index": 6,
+      "char_start_index": 33,
+      "char_end_index": 40,
+      "id": "27:6",
+      "tags": []
+    },
+    {
+      "content": "2017",
+      "sen_index": 27,
+      "tok_index": 7,
+      "char_start_index": 41,
+      "char_end_index": 45,
+      "id": "27:7",
+      "tags": []
+    },
+    {
+      "content": "and",
+      "sen_index": 27,
+      "tok_index": 8,
+      "char_start_index": 46,
+      "char_end_index": 49,
+      "id": "27:8",
+      "tags": []
+    },
+    {
+      "content": "currently",
+      "sen_index": 27,
+      "tok_index": 9,
+      "char_start_index": 50,
+      "char_end_index": 59,
+      "id": "27:9",
+      "tags": []
+    },
+    {
+      "content": "resides",
+      "sen_index": 27,
+      "tok_index": 10,
+      "char_start_index": 60,
+      "char_end_index": 67,
+      "id": "27:10",
+      "tags": []
+    },
+    {
+      "content": "in",
+      "sen_index": 27,
+      "tok_index": 11,
+      "char_start_index": 68,
+      "char_end_index": 70,
+      "id": "27:11",
+      "tags": []
+    },
+    {
+      "content": "Washington",
+      "sen_index": 27,
+      "tok_index": 12,
+      "char_start_index": 71,
+      "char_end_index": 81,
+      "id": "27:12",
+      "tags": []
+    },
+    {
+      "content": ",",
+      "sen_index": 27,
+      "tok_index": 13,
+      "char_start_index": 82,
+      "char_end_index": 83,
+      "id": "27:13",
+      "tags": []
+    },
+    {
+      "content": "D.C",
+      "sen_index": 27,
+      "tok_index": 14,
+      "char_start_index": 84,
+      "char_end_index": 87,
+      "id": "27:14",
+      "tags": []
+    },
+    {
+      "content": ".",
+      "sen_index": 27,
+      "tok_index": 15,
+      "char_start_index": 88,
+      "char_end_index": 89,
+      "id": "27:15",
+      "tags": []
+    },
+    {
+      "content": "[",
+      "sen_index": 27,
+      "tok_index": 16,
+      "char_start_index": 90,
+      "char_end_index": 91,
+      "id": "27:16",
+      "tags": []
+    },
+    {
+      "content": "3",
+      "sen_index": 27,
+      "tok_index": 17,
+      "char_start_index": 92,
+      "char_end_index": 93,
+      "id": "27:17",
+      "tags": []
+    },
+    {
+      "content": "]",
+      "sen_index": 27,
+      "tok_index": 18,
+      "char_start_index": 94,
+      "char_end_index": 95,
+      "id": "27:18",
+      "tags": []
+    },
+    {
+      "content": "[",
+      "sen_index": 27,
+      "tok_index": 19,
+      "char_start_index": 96,
+      "char_end_index": 97,
+      "id": "27:19",
+      "tags": []
+    },
+    {
+      "content": "4",
+      "sen_index": 27,
+      "tok_index": 20,
+      "char_start_index": 98,
+      "char_end_index": 99,
+      "id": "27:20",
+      "tags": []
+    },
+    {
+      "content": "]",
+      "sen_index": 27,
+      "tok_index": 21,
+      "char_start_index": 100,
+      "char_end_index": 101,
+      "id": "27:21",
+      "tags": []
+    },
+    {
+      "content": "A",
+      "sen_index": 28,
+      "tok_index": 0,
+      "char_start_index": 0,
+      "char_end_index": 1,
+      "id": "28:0",
+      "tags": []
+    },
+    {
+      "content": "December",
+      "sen_index": 28,
+      "tok_index": 1,
+      "char_start_index": 2,
+      "char_end_index": 10,
+      "id": "28:1",
+      "tags": []
+    },
+    {
+      "content": "2018",
+      "sen_index": 28,
+      "tok_index": 2,
+      "char_start_index": 11,
+      "char_end_index": 15,
+      "id": "28:2",
+      "tags": []
+    },
+    {
+      "content": "Gallup",
+      "sen_index": 28,
+      "tok_index": 3,
+      "char_start_index": 16,
+      "char_end_index": 22,
+      "id": "28:3",
+      "tags": []
+    },
+    {
+      "content": "poll",
+      "sen_index": 28,
+      "tok_index": 4,
+      "char_start_index": 23,
+      "char_end_index": 27,
+      "id": "28:4",
+      "tags": []
+    },
+    {
+      "content": "found",
+      "sen_index": 28,
+      "tok_index": 5,
+      "char_start_index": 28,
+      "char_end_index": 33,
+      "id": "28:5",
+      "tags": []
+    },
+    {
+      "content": "Obama",
+      "sen_index": 28,
+      "tok_index": 6,
+      "char_start_index": 34,
+      "char_end_index": 39,
+      "id": "28:6",
+      "tags": []
+    },
+    {
+      "content": "to",
+      "sen_index": 28,
+      "tok_index": 7,
+      "char_start_index": 40,
+      "char_end_index": 42,
+      "id": "28:7",
+      "tags": []
+    },
+    {
+      "content": "be",
+      "sen_index": 28,
+      "tok_index": 8,
+      "char_start_index": 43,
+      "char_end_index": 45,
+      "id": "28:8",
+      "tags": []
+    },
+    {
+      "content": "the",
+      "sen_index": 28,
+      "tok_index": 9,
+      "char_start_index": 46,
+      "char_end_index": 49,
+      "id": "28:9",
+      "tags": []
+    },
+    {
+      "content": "most",
+      "sen_index": 28,
+      "tok_index": 10,
+      "char_start_index": 50,
+      "char_end_index": 54,
+      "id": "28:10",
+      "tags": []
+    },
+    {
+      "content": "admired",
+      "sen_index": 28,
+      "tok_index": 11,
+      "char_start_index": 55,
+      "char_end_index": 62,
+      "id": "28:11",
+      "tags": []
+    },
+    {
+      "content": "man",
+      "sen_index": 28,
+      "tok_index": 12,
+      "char_start_index": 63,
+      "char_end_index": 66,
+      "id": "28:12",
+      "tags": []
+    },
+    {
+      "content": "in",
+      "sen_index": 28,
+      "tok_index": 13,
+      "char_start_index": 67,
+      "char_end_index": 69,
+      "id": "28:13",
+      "tags": []
+    },
+    {
+      "content": "America",
+      "sen_index": 28,
+      "tok_index": 14,
+      "char_start_index": 70,
+      "char_end_index": 77,
+      "id": "28:14",
+      "tags": []
+    },
+    {
+      "content": "for",
+      "sen_index": 28,
+      "tok_index": 15,
+      "char_start_index": 78,
+      "char_end_index": 81,
+      "id": "28:15",
+      "tags": []
+    },
+    {
+      "content": "an",
+      "sen_index": 28,
+      "tok_index": 16,
+      "char_start_index": 82,
+      "char_end_index": 84,
+      "id": "28:16",
+      "tags": []
+    },
+    {
+      "content": "unprecedented",
+      "sen_index": 28,
+      "tok_index": 17,
+      "char_start_index": 85,
+      "char_end_index": 98,
+      "id": "28:17",
+      "tags": []
+    },
+    {
+      "content": "11",
+      "sen_index": 28,
+      "tok_index": 18,
+      "char_start_index": 99,
+      "char_end_index": 101,
+      "id": "28:18",
+      "tags": []
+    },
+    {
+      "content": "\u0000h",
+      "sen_index": 28,
+      "tok_index": 19,
+      "char_start_index": 102,
+      "char_end_index": 104,
+      "id": "28:19",
+      "tags": []
+    },
+    {
+      "content": "consecutive",
+      "sen_index": 28,
+      "tok_index": 20,
+      "char_start_index": 105,
+      "char_end_index": 116,
+      "id": "28:20",
+      "tags": []
+    },
+    {
+      "content": "year",
+      "sen_index": 28,
+      "tok_index": 21,
+      "char_start_index": 117,
+      "char_end_index": 121,
+      "id": "28:21",
+      "tags": []
+    },
+    {
+      "content": ",",
+      "sen_index": 28,
+      "tok_index": 22,
+      "char_start_index": 122,
+      "char_end_index": 123,
+      "id": "28:22",
+      "tags": []
+    },
+    {
+      "content": "although",
+      "sen_index": 28,
+      "tok_index": 23,
+      "char_start_index": 124,
+      "char_end_index": 132,
+      "id": "28:23",
+      "tags": []
+    },
+    {
+      "content": "Dwight",
+      "sen_index": 28,
+      "tok_index": 24,
+      "char_start_index": 133,
+      "char_end_index": 139,
+      "id": "28:24",
+      "tags": []
+    },
+    {
+      "content": "D",
+      "sen_index": 28,
+      "tok_index": 25,
+      "char_start_index": 140,
+      "char_end_index": 141,
+      "id": "28:25",
+      "tags": []
+    },
+    {
+      "content": ".",
+      "sen_index": 28,
+      "tok_index": 26,
+      "char_start_index": 142,
+      "char_end_index": 143,
+      "id": "28:26",
+      "tags": []
+    },
+    {
+      "content": "Eisenhower",
+      "sen_index": 28,
+      "tok_index": 27,
+      "char_start_index": 144,
+      "char_end_index": 154,
+      "id": "28:27",
+      "tags": []
+    },
+    {
+      "content": "was",
+      "sen_index": 28,
+      "tok_index": 28,
+      "char_start_index": 155,
+      "char_end_index": 158,
+      "id": "28:28",
+      "tags": []
+    },
+    {
+      "content": "selected",
+      "sen_index": 28,
+      "tok_index": 29,
+      "char_start_index": 159,
+      "char_end_index": 167,
+      "id": "28:29",
+      "tags": []
+    },
+    {
+      "content": "most",
+      "sen_index": 28,
+      "tok_index": 30,
+      "char_start_index": 168,
+      "char_end_index": 172,
+      "id": "28:30",
+      "tags": []
+    },
+    {
+      "content": "admired",
+      "sen_index": 28,
+      "tok_index": 31,
+      "char_start_index": 173,
+      "char_end_index": 180,
+      "id": "28:31",
+      "tags": []
+    },
+    {
+      "content": "in",
+      "sen_index": 28,
+      "tok_index": 32,
+      "char_start_index": 181,
+      "char_end_index": 183,
+      "id": "28:32",
+      "tags": []
+    },
+    {
+      "content": "twelve",
+      "sen_index": 28,
+      "tok_index": 33,
+      "char_start_index": 184,
+      "char_end_index": 190,
+      "id": "28:33",
+      "tags": []
+    },
+    {
+      "content": "non-consecutive",
+      "sen_index": 28,
+      "tok_index": 34,
+      "char_start_index": 191,
+      "char_end_index": 206,
+      "id": "28:34",
+      "tags": []
+    },
+    {
+      "content": "years",
+      "sen_index": 28,
+      "tok_index": 35,
+      "char_start_index": 207,
+      "char_end_index": 212,
+      "id": "28:35",
+      "tags": []
+    },
+    {
+      "content": ".",
+      "sen_index": 28,
+      "tok_index": 36,
+      "char_start_index": 213,
+      "char_end_index": 214,
+      "id": "28:36",
+      "tags": []
+    },
+    {
+      "content": "[",
+      "sen_index": 28,
+      "tok_index": 37,
+      "char_start_index": 215,
+      "char_end_index": 216,
+      "id": "28:37",
+      "tags": []
+    },
+    {
+      "content": "5",
+      "sen_index": 28,
+      "tok_index": 38,
+      "char_start_index": 217,
+      "char_end_index": 218,
+      "id": "28:38",
+      "tags": []
+    },
+    {
+      "content": "]",
+      "sen_index": 28,
+      "tok_index": 39,
+      "char_start_index": 219,
+      "char_end_index": 220,
+      "id": "28:39",
+      "tags": []
+    }
+  ],
+  "spans": [
+    {
+      "sen_index": 1,
+      "tok_start_index": 0,
+      "tok_end_index": 3,
+      "content": "Barack Hussein Obama II",
+      "char_start_index": 0,
+      "char_end_index": 23,
+      "tags": [
+        {
+          "content": "PER",
+          "color": "IndianRed1"
+        }
+      ],
+      "id": "1:0:3"
+    },
+    {
+      "sen_index": 1,
+      "tok_start_index": 42,
+      "tok_end_index": 46,
+      "content": "President of the United States",
+      "char_start_index": 170,
+      "char_end_index": 200,
+      "tags": [
+        {
+          "content": "MIDNAME",
+          "color": "MediumPurple1"
+        }
+      ],
+      "id": "1:42:46"
+    }
+  ],
+  "tokens_spans": [
+    [
+      "1:0",
+      "1:0:3"
+    ],
+    [
+      "1:1",
+      "1:0:3"
+    ],
+    [
+      "1:2",
+      "1:0:3"
+    ],
+    [
+      "1:3",
+      "1:0:3"
+    ],
+    [
+      "1:42",
+      "1:42:46"
+    ],
+    [
+      "1:43",
+      "1:42:46"
+    ],
+    [
+      "1:44",
+      "1:42:46"
+    ],
+    [
+      "1:45",
+      "1:42:46"
+    ],
+    [
+      "1:46",
+      "1:42:46"
+    ]
+  ]
+}
