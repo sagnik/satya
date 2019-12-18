@@ -6,12 +6,13 @@ import tkinter as tk
 import platform
 from annotate.spanannotator import SpanAnnotatorFrame
 from annotate.version import __version__
-from annotate.consts import SHORTCUT_LABELS_KEY, RESERVED_SHORT_CUT_CHARS
+from annotate.consts import SHORTCUT_LABELS_KEY, RESERVED_CHARS
 
 
 def main():
     parser = argparse.ArgumentParser('SATYA: Span Annotator Tool, Yet Another')
     parser.add_argument('config', help='config file to run with')
+    parser.add_argument('--input', help='input file to load', default=None)
     args = parser.parse_args()
     config_file = os.path.expanduser(args.config)
     if not os.path.exists(config_file):
@@ -21,6 +22,7 @@ def main():
         config_dict = json.load(open(config_file))
     elif config_file.endswith('yml') or config_file.endswith('yaml'):
         import yaml
+
         config_dict = yaml.load(open(config_file))
     else:
         print(f'ERROR: unsupported format for {config_file}')
@@ -31,10 +33,10 @@ def main():
     root.geometry("1300x700+200+200")
     shortcut_labels = config_dict.get(SHORTCUT_LABELS_KEY, {})
     for shortcut_label in shortcut_labels:
-        if shortcut_label in RESERVED_SHORT_CUT_CHARS:
+        if shortcut_label in RESERVED_CHARS:
             print(f'char [{shortcut_label}] can not be used as a short cut key')
             sys.exit(1)
-    app = SpanAnnotatorFrame(root, config_dict)
+    app = SpanAnnotatorFrame(root, config_dict, input_file=args.input)
     root.mainloop()
 
 

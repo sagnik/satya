@@ -20,13 +20,21 @@ SHORTCUT_LABELS_KEY = 'label_shortcuts'
 PARENT_TITLE = 'Span Annotator'
 TAG_START_B = '/B-'
 TAG_START_I = '/I-'
+
+# special keys
 UNDO_KEY = '<Control-z>'
-UNLABEL_CMD = 'unlabel'
-UNLABEL_KEY = 'q'
+UNDO_COMMAND = 'undo'
+UN_LABEL_KEY = '<Control-q>'
+UN_LABEL_COMMAND = 'un-label'
 RE_LABEL_KEY = '<Control-r>'
+RE_LABEL_COMMAND = 're-label'
+HIGHLIGHT_KEY = '<Control-h>'
+HIGHLIGHT_COMMAND = 'highlight'
+SPECIAL_KEYS = [UNDO_KEY, UN_LABEL_KEY, RE_LABEL_KEY, HIGHLIGHT_KEY]
+RESERVED_CHARS = [x.split('-')[1][0] for x in SPECIAL_KEYS]
+
+# consts for typeahead
 TYPE_AHEAD_LISTBOX_HEIGHT = 5
 TYPE_AHEAD_LISTBOX_WIDTH = 25
 TYPE_AHEAD_ENTRY_WIDTH = 25
 TYPE_AHEAD_NO_RESULTS_MESSAGE = "No results found for '{0:}'"
-RESERVED_SHORT_CUT_CHARS = ['q', 'r', 'z']
-HIGHLIGHT_TAG_NAME = 'highlight'
