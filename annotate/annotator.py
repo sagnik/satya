@@ -22,6 +22,7 @@ def main():
         config_dict = json.load(open(config_file))
     elif config_file.endswith('yml') or config_file.endswith('yaml'):
         import yaml
+
         config_dict = yaml.load(open(config_file))
     else:
         print(f'ERROR: unsupported format for {config_file}')

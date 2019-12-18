@@ -2,6 +2,7 @@ import tkinter as tk
 from annotate.consts import *
 from tkinter.constants import *
 
+
 class AutocompleteEntry(tk.Toplevel, object):
     """A container for `tk.Entry` and `tk.Listbox` widgets.
 
@@ -26,7 +27,7 @@ class AutocompleteEntry(tk.Toplevel, object):
     listbox -- The `tk.Listbox` widget (access this directly if
              you need to change AutocompleteEntry)
     """
-    
+
     def __init__(self, _, *args, **kwargs):
         """Constructor.
 
@@ -49,7 +50,7 @@ class AutocompleteEntry(tk.Toplevel, object):
         self._entries = None
         self._no_results_message = None
         self._listbox_height = None
-    
+
     def build(self, entries, max_entries=5, no_results_message=TYPE_AHEAD_NO_RESULTS_MESSAGE):
         """Set up the autocompletion settings.
 
@@ -70,23 +71,23 @@ class AutocompleteEntry(tk.Toplevel, object):
         self._entries = entries
         self._no_results_message = no_results_message
         self._listbox_height = max_entries
-        
+
         self.entry.bind("<KeyRelease>", self._update_autocomplete)
         self.entry.focus()
         self.entry.grid(column=0, row=0)
-        
+
         self.listbox.bind("<<ListboxSelect>>", self._select_entry)
         self.listbox.grid(column=0, row=1)
         self.listbox.grid_forget()
         # Initially, the listbox widget doesn't show up.
-    
+
     def _update_autocomplete(self, event):
         """Internal method.
         Update `self.listbox` to display new matches.
         """
         self.listbox.delete(0, END)
         self.listbox["height"] = self._listbox_height
-        
+
         text = self.text_.get()
         if not text:
             self.listbox.grid_forget()
@@ -94,7 +95,7 @@ class AutocompleteEntry(tk.Toplevel, object):
             for entry in self._entries:
                 if text.lower() in entry.strip().lower():
                     self.listbox.insert(END, entry)
-        
+
         listbox_size = self.listbox.size()
         if not listbox_size:
             if self._no_results_message is None or text is None:
@@ -113,7 +114,7 @@ class AutocompleteEntry(tk.Toplevel, object):
             if listbox_size <= self.listbox["height"]:
                 self.listbox["height"] = listbox_size
             self.listbox.grid()
-    
+
     def _select_entry(self, event):
         """Internal method.
         Set the text variable corresponding to `self.entry`
@@ -125,5 +126,3 @@ class AutocompleteEntry(tk.Toplevel, object):
             self.text_.set(value)
         except IndexError:
             self.text_.set('')
-
-

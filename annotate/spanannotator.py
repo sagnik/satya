@@ -27,10 +27,14 @@ class SpanAnnotatorFrame(Frame):
         self.current_content = deque(maxlen=1)
         self.labels: List = config[LABELS_KEY]  # config must provide the labels
         self.label_shortcuts = config.get(SHORTCUT_LABELS_KEY, {})  # assign some keys to some common labels
-        self.special_key_map = {HIGHLIGHT_KEY: HIGHLIGHT_COMMAND, UNDO_KEY: UNDO_COMMAND,
-                                UN_LABEL_KEY: UN_LABEL_COMMAND, RE_LABEL_KEY: RE_LABEL_COMMAND}
+        self.special_key_map = {
+            HIGHLIGHT_KEY: HIGHLIGHT_COMMAND,
+            UNDO_KEY: UNDO_COMMAND,
+            UN_LABEL_KEY: UN_LABEL_COMMAND,
+            RE_LABEL_KEY: RE_LABEL_COMMAND,
+        }
         self.file_name = kwargs.get('input_file')
-        
+
         # define the ui components here. the values will be set later
         self.text_row = None
         self.text_column = None
@@ -125,7 +129,7 @@ class SpanAnnotatorFrame(Frame):
         self.text.bind(RE_LABEL_KEY, self.re_label)
         self.text.bind(HIGHLIGHT_KEY, self.highlight)
         self.show_special_key_mapping()
-        
+
         # bind arrow keys to show cursor positions
         for arrow_key in ['Left', 'Right', 'Up', 'Down']:
             self.text.bind(f'<{arrow_key}>', self.show_cursor_position)
@@ -134,7 +138,7 @@ class SpanAnnotatorFrame(Frame):
         # if the input file is supplied, load that file in the text area
         if self.file_name is not None:
             self.set_file_content_text_area(self.file_name)
-        
+
     def show_shortcut_mapping(self):
         """set up the shortcut mapping region in the UI
         :return:
@@ -159,18 +163,18 @@ class SpanAnnotatorFrame(Frame):
         """set up the special key mapping region in the UI
         :return:
         """
-        row = len(self.label_shortcuts)+1
-    
+        row = len(self.label_shortcuts) + 1
+
         map_label = Label(self, text='Special keys', foreground='red', font=(self.text_font_style, 14, 'bold'))
         map_label.grid(row=row, column=self.text_column + 2, columnspan=2, rowspan=1, padx=10)
-    
+
         for key in self.special_key_map:
             row += 1
             symbol_label = Label(
                 self, text=f'{key.lower()}' + ': ', foreground='blue', font=(self.text_font_style, 14, 'bold')
             )
             symbol_label.grid(row=row, column=self.text_column + 2, columnspan=1, rowspan=1, padx=3)
-        
+
             label_entry = tk.Entry(self, foreground='blue', font=(self.text_font_style, 14, 'bold'))
             label_entry.insert(0, self.special_key_map[key])
             label_entry.grid(row=row, column=self.text_column + 3, columnspan=1, rowspan=1)
@@ -184,7 +188,7 @@ class SpanAnnotatorFrame(Frame):
         fl = dlg.show()
         if fl:
             self.set_file_name_read_data(fl)
-            
+
     def set_file_content_text_area(self, file_name):
         """set a file content in the text area
         :return:
@@ -437,7 +441,7 @@ class SpanAnnotatorFrame(Frame):
         self.text.tag_add(
             HIGHLIGHT_COMMAND, f'{label_end_row}.{label_end_col-selected_content_length}', label_end_index
         )
-        self.text.tag_config(HIGHLIGHT_COMMAND, background="yellow", foreground="black" )
+        self.text.tag_config(HIGHLIGHT_COMMAND, background="yellow", foreground="black")
 
     def write_output_and_text_area(self, content, new_cursor_index):
         """write the changes to an ann file and load the written file to a text area (WYSIWYG). put the cursor index at the position of last index.
@@ -543,8 +547,8 @@ class SpanAnnotatorFrame(Frame):
         :param event: the event key that caused this callback to fire
         :return:
         """
-        if self.text.tag_ranges( HIGHLIGHT_COMMAND ):
-            self.text.tag_delete( HIGHLIGHT_COMMAND )
+        if self.text.tag_ranges(HIGHLIGHT_COMMAND):
+            self.text.tag_delete(HIGHLIGHT_COMMAND)
             return BREAK
         if self.text.tag_ranges(SEL):
             sel_first = self.text.index(SEL_FIRST)
@@ -560,8 +564,8 @@ class SpanAnnotatorFrame(Frame):
             else:
                 sel_first = f'{current_row}.{label_start_row}'
                 sel_last = f'{current_row}.{label_end_row}'
-        self.text.tag_add( HIGHLIGHT_COMMAND, sel_first, sel_last )
-        self.text.tag_config( HIGHLIGHT_COMMAND, background="yellow", foreground="black" )
+        self.text.tag_add(HIGHLIGHT_COMMAND, sel_first, sel_last)
+        self.text.tag_config(HIGHLIGHT_COMMAND, background="yellow", foreground="black")
         return BREAK
 
     def row_content(self, current_row):
