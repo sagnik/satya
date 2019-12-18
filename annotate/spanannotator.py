@@ -38,9 +38,6 @@ class SpanAnnotatorFrame(Frame):
         # define the ui components here. the values will be set later
         self.text_row = None
         self.text_column = None
-        self.entity_color = None
-        self.inside_nest_entity_color = None
-        self.recommend_color = None
         self.select_color = None
         self.text_font_style = None
         self.filename_lbl = None
@@ -65,9 +62,6 @@ class SpanAnnotatorFrame(Frame):
             self.text_row = self.min_text_row
         self.text_column = self.min_text_column
 
-        self.entity_color = SKY_BLUE
-        self.inside_nest_entity_color = LIGHT_BLUE
-        self.recommend_color = LIGHT_GREEN
         self.select_color = LIGHT_SALMON
         self.text_font_style = FONT_TIMES
 
