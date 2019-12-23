@@ -21,4 +21,4 @@ jobs:
       run: |
         pip install -e .
         pip install pytest
-        pytest annotate/tests/
+        pytest annotate/tests/*.py
