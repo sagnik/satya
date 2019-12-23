@@ -29,13 +29,13 @@ UNDO_KEY = "<Control-z>"
 UNDO_COMMAND = "undo"
 UN_LABEL_KEY = "<Control-q>"
 UN_LABEL_COMMAND = "un-label"
-RE_LABEL_KEY = "<Control-r>"
-RE_LABEL_COMMAND = "re-label"
+SHOW_SPAN_INFO_KEY = "<Control-s>"
+SHOW_SPAN_INFO_COMMAND = "show-span-info"
 HIGHLIGHT_KEY = "<Control-h>"
 HIGHLIGHT_COMMAND = "highlight"
 RELATION_ENTITY_KEY = "<Control-e>"
 RELATION_ENTITY_COMMAND = "select-relation-entity"
-SPECIAL_KEYS = [UNDO_KEY, UN_LABEL_KEY, RE_LABEL_KEY, HIGHLIGHT_KEY]
+SPECIAL_KEYS = [UNDO_KEY, UN_LABEL_KEY, SHOW_SPAN_INFO_KEY, HIGHLIGHT_KEY]
 RESERVED_CHARS = [x.split("-")[1][0] for x in SPECIAL_KEYS]
 
 # consts for typeahead

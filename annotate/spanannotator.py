@@ -35,6 +35,7 @@ class SpanAnnotatorFrame(Frame):
             HIGHLIGHT_KEY: HIGHLIGHT_COMMAND,
             UNDO_KEY: UNDO_COMMAND,
             UN_LABEL_KEY: UN_LABEL_COMMAND,
+            SHOW_SPAN_INFO_KEY: SHOW_SPAN_INFO_COMMAND,
         }
         self.file_name = kwargs.get("input_file")
 
@@ -46,6 +47,8 @@ class SpanAnnotatorFrame(Frame):
         self.text = None
         self.content = Content()
         self.cursor_index_lbl = None
+        self.span_info_row_start = None
+        self.span_info_entries = []
         self.min_text_row = MIN_TEXT_ROW
         self.min_text_column = MIN_TEXT_COL
         self.type_ahead_entry = None
@@ -98,13 +101,20 @@ class SpanAnnotatorFrame(Frame):
         quit_button = Button(self, text="Quit", command=self.quit)
         quit_button.grid(row=7, column=self.text_column + 1, pady=4)
 
+        cursor_name_row = 9
         cursor_name = Label(self, text="Cursor: ", foreground="Blue", font=(self.text_font_style, 14, "bold"))
-        cursor_name.grid(row=9, column=self.text_column + 1, pady=4)
+        cursor_name.grid(row=cursor_name_row, column=self.text_column + 1, pady=4)
         self.cursor_index_lbl = Label(
             self, text="row: 0\ncol: 0", foreground="red", font=(self.text_font_style, 14, "bold")
         )
-        self.cursor_index_lbl.grid(row=10, column=self.text_column + 1, pady=4)
-        self.cursor_index_lbl.grid(row=10, column=self.text_column + 1, pady=4)
+
+        self.cursor_index_lbl.grid(row=cursor_name_row + 1, column=self.text_column + 1, pady=4)
+
+        self.span_info_row_start = (
+            max((len(self.entity_shortcuts) + len(self.special_key_map), cursor_name_row + 1)) + 1
+        )
+        span_area_name = Label(self, text="Spans", foreground="Blue", font=(self.text_font_style, 14, "bold"))
+        span_area_name.grid(row=self.span_info_row_start, column=self.text_column + 1, pady=4)
 
         self.msg_lbl = Label(self, text="[Message]:")
         self.msg_lbl.grid(row=self.text_row + 1, sticky=E + W + S + N, pady=4, padx=4)
@@ -122,6 +132,8 @@ class SpanAnnotatorFrame(Frame):
         self.text.bind(UN_LABEL_KEY, self.un_label)
         self.text.bind(UNDO_KEY, self.undo)
         self.text.bind(HIGHLIGHT_KEY, self.highlight)
+        self.text.bind(SHOW_SPAN_INFO_KEY, self.show_span_details)
+
         self.show_special_key_mapping()
 
         # bind arrow keys to show cursor positions
@@ -152,6 +164,7 @@ class SpanAnnotatorFrame(Frame):
             label_entry = tk.Entry(self, foreground='blue', font=(self.text_font_style, 14, 'bold'))
             label_entry.insert(0, self.entity_shortcuts[key])
             label_entry.grid(row=row, column=self.text_column + 3, columnspan=1, rowspan=1)
+            label_entry.config(state='readonly')
 
     def show_special_key_mapping(self):
         """set up the special key mapping region in the UI
@@ -172,6 +185,7 @@ class SpanAnnotatorFrame(Frame):
             label_entry = tk.Entry(self, foreground='blue', font=(self.text_font_style, 14, 'bold'))
             label_entry.insert(0, self.special_key_map[key])
             label_entry.grid(row=row, column=self.text_column + 3, columnspan=1, rowspan=1)
+            label_entry.config(state='readonly')
 
     def open_file_dialog_read_file(self):
         """open the file dialog, read the file, and set the content of the file in the textarea
@@ -204,7 +218,7 @@ class SpanAnnotatorFrame(Frame):
         """
         start_char_index = 0
         self.text.delete(TEXTAREA_START, TEXTAREA_END)
-        highlight_tags = []
+        span_tags = []
         content = ''
         current_sentence_num = 1
         for token in self.content.tokens:
@@ -218,7 +232,7 @@ class SpanAnnotatorFrame(Frame):
             ]
             for span in spans:
                 for tag in span.tags:
-                    highlight_tags.append(
+                    span_tags.append(
                         (
                             f'TOKEN_TAG_{token.id}.{tag.content}',
                             f'{span.sen_index}.{span.char_start_index}',
@@ -228,13 +242,14 @@ class SpanAnnotatorFrame(Frame):
                     )
             start_char_index = end_char_index
         self.text.insert(TEXTAREA_END, content)
-        for highlight_tag_id, start, end, color in highlight_tags:
-            self.text.tag_add(highlight_tag_id, start, end)
-            self.text.tag_config(highlight_tag_id, foreground=color)
+        for span_tag_id, start, end, color in span_tags:
+            self.text.tag_add(span_tag_id, start, end)
+            self.text.tag_config(span_tag_id, foreground=color)
         self.text.mark_set(INSERT, cursor_index)
         self.text.see(cursor_index)
         self.set_cursor_label(cursor_index)
         json.dump(self.content.serialize(), open(self.file_name, 'w'), indent=2)
+        self.show_span_details(None)
 
     def show_cursor_position(self, event):
         """show the current cursor position in the cursor label + move the cursor in that index
@@ -462,3 +477,44 @@ class SpanAnnotatorFrame(Frame):
         self.text.tag_add(HIGHLIGHT_COMMAND, sel_first, sel_last)
         self.text.tag_config(HIGHLIGHT_COMMAND, background=DEFAULT_HIGHLIGHT_COLOR)
         return BREAK
+
+    def show_span_details(self, event):
+        """show span info for the token under cursor
+        :param event:
+        :return:
+        """
+        self.span_info_entries = []
+        current_cursor = self.text.index(INSERT)
+        if self.text.tag_ranges(SEL):  # a text is selected
+            allowed, selected_content, selection_start, selection_end = self.adjust_selection()
+            if not allowed:
+                return BREAK
+            sel_row_start, sel_col_start = [int(x) for x in selection_start.split(CURSOR_SEP)]
+            sel_row_end, sel_col_end = [int(x) for x in selection_end.split(CURSOR_SEP)]
+            assert sel_row_start == sel_row_end
+            span_ids = [self.content.span_id_from_start_end_index(sel_row_start, sel_col_start, sel_col_end)]
+        else:
+            current_row, current_col = [int(x) for x in current_cursor.split(CURSOR_SEP)]
+            span_ids = self.content.span_ids_from_char_index(current_row, current_col)
+            if not span_ids:
+                self.log('There is no span for the token you clicked on', ERROR)
+                return BREAK
+        start_col = 1
+        _fnt = Font(family=self.text_font_style, size=15, weight="bold", underline=0)
+        for span_id in span_ids:
+            span = self.content.span_from_span_id(span_id)
+            span_content = span.content
+            for tag in span.tags:
+                entry = tk.Entry(self, width=15, background='white', justify=tk.CENTER, font=_fnt)
+                entry.grid(
+                    padx=10,
+                    pady=5,
+                    row=self.span_info_row_start + start_col,
+                    column=self.text_column + 1,
+                    sticky='W,E,N,S',
+                    columnspan=20,
+                )
+                entry.insert(0, f'[[{span_content}*{tag.content}]]')
+                entry.config(fg=tag.color)
+                entry.config(state='readonly')
+                start_col += 1
