@@ -71,7 +71,8 @@ class Span:
         :param tag:
         :return:
         """
-        self.tags.append(tag)
+        if tag.content not in [tag.content for tag in self.tags]:
+            self.tags.append(tag)
 
     def serialize(self) -> Dict:
         return {

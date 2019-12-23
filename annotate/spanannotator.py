@@ -14,6 +14,14 @@ from annotate.autocomplete import AutocompleteEntry
 from annotate.data import Tag, Span, Content
 
 
+class SpanEntry(tk.Entry):
+    def __init__(self, span: Span, tag: Tag, current_cursor: str, master=None, cnf={}, **kwargs):
+        super().__init__(master, cnf, **kwargs)
+        self.span = span
+        self.tag = tag
+        self.current_cursor = current_cursor
+
+
 class SpanAnnotatorFrame(Frame):
     def __init__(self, parent, config, **kwargs):
         """create a span annotator frame object: this will hold the text area and the shortcuts and stuff
@@ -422,8 +430,8 @@ class SpanAnnotatorFrame(Frame):
         :param label_end_index: cursor index of where the selected text ends
         :return:
         """
-        row_index_start, col_index_start = [int(x) for x in label_start_index.split('.')]
-        row_index_end, col_index_end = [int(x) for x in label_end_index.split('.')]
+        row_index_start, col_index_start = [int(x) for x in label_start_index.split(CURSOR_SEP)]
+        row_index_end, col_index_end = [int(x) for x in label_end_index.split(CURSOR_SEP)]
         label_color = self.label_colors[label]
         assert row_index_start == row_index_end
         self.content.add_tag(
@@ -483,7 +491,9 @@ class SpanAnnotatorFrame(Frame):
         :param event:
         :return:
         """
-        self.span_info_entries = []
+        for entry in self.span_info_entries:
+            entry.destroy()
+            self.span_info_entries.remove(entry)
         current_cursor = self.text.index(INSERT)
         if self.text.tag_ranges(SEL):  # a text is selected
             allowed, selected_content, selection_start, selection_end = self.adjust_selection()
@@ -505,16 +515,37 @@ class SpanAnnotatorFrame(Frame):
             span = self.content.span_from_span_id(span_id)
             span_content = span.content
             for tag in span.tags:
-                entry = tk.Entry(self, width=15, background='white', justify=tk.CENTER, font=_fnt)
+                entry = SpanEntry(
+                    span=span,
+                    tag=tag,
+                    current_cursor=current_cursor,
+                    master=self,
+                    width=15,
+                    background='white',
+                    justify=tk.CENTER,
+                    font=_fnt,
+                )
                 entry.grid(
                     padx=10,
                     pady=5,
                     row=self.span_info_row_start + start_col,
                     column=self.text_column + 1,
-                    sticky='W,E,N,S',
+                    sticky=W + E + N + S,
                     columnspan=20,
                 )
-                entry.insert(0, f'[[{span_content}*{tag.content}]]')
+                entry.insert(0, f'{span_content}/{tag.content}')
                 entry.config(fg=tag.color)
                 entry.config(state='readonly')
+                entry.bind("<Control-d>", lambda event_: self.un_label_span(event_))
                 start_col += 1
+                self.span_info_entries.append(entry)
+
+    def un_label_span(self, event):
+        """delete a span selected from the details area
+        :param event:
+        :return:
+        """
+        entry: SpanEntry = event.widget
+        self.content.delete_tag(entry.span, entry.tag)
+        self.write_output_and_text_area(cursor_index=entry.current_cursor)
+        entry.destroy()

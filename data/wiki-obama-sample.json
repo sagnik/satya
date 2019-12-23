@@ -7,9 +7,7 @@
       "char_start_index": 0,
       "char_end_index": 6,
       "id": "1:0",
-      "tags": [
-        "B-PER"
-      ]
+      "tags": []
     },
     {
       "content": "Hussein",
@@ -18,9 +16,7 @@
       "char_start_index": 7,
       "char_end_index": 14,
       "id": "1:1",
-      "tags": [
-        "B-LOC"
-      ]
+      "tags": []
     },
     {
       "content": "Obama",
@@ -29,10 +25,7 @@
       "char_start_index": 15,
       "char_end_index": 20,
       "id": "1:2",
-      "tags": [
-        "I-LOC",
-        "B-FULLNAME"
-      ]
+      "tags": []
     },
     {
       "content": "II",
@@ -41,9 +34,7 @@
       "char_start_index": 21,
       "char_end_index": 23,
       "id": "1:3",
-      "tags": [
-        "I-FULLNAME"
-      ]
+      "tags": []
     },
     {
       "content": "(",
@@ -304,7 +295,9 @@
       "char_start_index": 113,
       "char_end_index": 121,
       "id": "1:32",
-      "tags": []
+      "tags": [
+        "B-LOC"
+      ]
     },
     {
       "content": "attorney",
@@ -313,7 +306,9 @@
       "char_start_index": 122,
       "char_end_index": 130,
       "id": "1:33",
-      "tags": []
+      "tags": [
+        "I-LOC"
+      ]
     },
     {
       "content": "and",
@@ -7519,70 +7514,28 @@
   "spans": [
     {
       "sen_index": 1,
-      "tok_start_index": 1,
-      "tok_end_index": 2,
-      "content": "Hussein Obama",
-      "char_start_index": 7,
-      "char_end_index": 20,
+      "tok_start_index": 32,
+      "tok_end_index": 33,
+      "content": "American attorney",
+      "char_start_index": 113,
+      "char_end_index": 130,
       "tags": [
         {
           "content": "LOC",
           "color": "DarkCyan"
         }
       ],
-      "id": "1:1:2"
-    },
-    {
-      "sen_index": 1,
-      "tok_start_index": 2,
-      "tok_end_index": 3,
-      "content": "Obama II",
-      "char_start_index": 15,
-      "char_end_index": 23,
-      "tags": [
-        {
-          "content": "FULLNAME",
-          "color": "YellowGreen"
-        }
-      ],
-      "id": "1:2:3"
-    },
-    {
-      "sen_index": 1,
-      "tok_start_index": 0,
-      "tok_end_index": 0,
-      "content": "Barack",
-      "char_start_index": 0,
-      "char_end_index": 6,
-      "tags": [
-        {
-          "content": "PER",
-          "color": "IndianRed1"
-        }
-      ],
-      "id": "1:0:0"
+      "id": "1:32:33"
     }
   ],
   "tokens_spans": [
     [
-      "1:0",
-      "1:0:0"
+      "1:32",
+      "1:32:33"
     ],
     [
-      "1:1",
-      "1:1:2"
-    ],
-    [
-      "1:2",
-      "1:1:2"
-    ],
-    [
-      "1:2",
-      "1:2:3"
-    ],
-    [
-      "1:3",
-      "1:2:3"
+      "1:33",
+      "1:32:33"
     ]
   ]
 }
