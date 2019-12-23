@@ -20,10 +20,3 @@ entity_colors:  # /etc/X11/rgb.txt
   LOC: DarkCyan
   FIRSTNAME: DeepSkyBlue1
   LASTNAME: NavyBlue
-relations:
-- JOB
-- BIRTHDATE
-- BIRTHPLACE
-relation_shortcuts:
-  j: JOB
-  d: BIRTHDATE

@@ -121,7 +121,7 @@ class SpanAnnotatorFrame(Frame):
         self.span_info_row_start = (
             max((len(self.entity_shortcuts) + len(self.special_key_map), cursor_name_row + 1)) + 1
         )
-        span_area_name = Label(self, text="Spans", foreground="Blue", font=(self.text_font_style, 14, "bold"))
+        span_area_name = Label(self, text=f"Spans", foreground="Blue", font=(self.text_font_style, 14, "bold"))
         span_area_name.grid(row=self.span_info_row_start, column=self.text_column + 1, pady=4)
 
         self.msg_lbl = Label(self, text="[Message]:")
@@ -536,7 +536,7 @@ class SpanAnnotatorFrame(Frame):
                 entry.insert(0, f'{span_content}/{tag.content}')
                 entry.config(fg=tag.color)
                 entry.config(state='readonly')
-                entry.bind("<Control-d>", lambda event_: self.un_label_span(event_))
+                entry.bind(UN_LABEL_FROM_SPAN_INFO_AREA_KEY, lambda event_: self.un_label_span(event_))
                 start_col += 1
                 self.span_info_entries.append(entry)
 

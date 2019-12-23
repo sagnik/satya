@@ -295,9 +295,7 @@
       "char_start_index": 113,
       "char_end_index": 121,
       "id": "1:32",
-      "tags": [
-        "B-LOC"
-      ]
+      "tags": []
     },
     {
       "content": "attorney",
@@ -306,9 +304,7 @@
       "char_start_index": 122,
       "char_end_index": 130,
       "id": "1:33",
-      "tags": [
-        "I-LOC"
-      ]
+      "tags": []
     },
     {
       "content": "and",
@@ -974,7 +970,9 @@
       "char_start_index": 31,
       "char_end_index": 41,
       "id": "5:4",
-      "tags": []
+      "tags": [
+        "B-PER"
+      ]
     },
     {
       "content": "in",
@@ -983,7 +981,9 @@
       "char_start_index": 42,
       "char_end_index": 44,
       "id": "5:5",
-      "tags": []
+      "tags": [
+        "I-PER"
+      ]
     },
     {
       "content": "1983",
@@ -992,7 +992,10 @@
       "char_start_index": 45,
       "char_end_index": 49,
       "id": "5:6",
-      "tags": []
+      "tags": [
+        "I-PER",
+        "B-MIDNAME"
+      ]
     },
     {
       "content": ",",
@@ -7513,29 +7516,52 @@
   ],
   "spans": [
     {
-      "sen_index": 1,
-      "tok_start_index": 32,
-      "tok_end_index": 33,
-      "content": "American attorney",
-      "char_start_index": 113,
-      "char_end_index": 130,
+      "sen_index": 5,
+      "tok_start_index": 4,
+      "tok_end_index": 6,
+      "content": "University in 1983",
+      "char_start_index": 31,
+      "char_end_index": 49,
       "tags": [
         {
-          "content": "LOC",
-          "color": "DarkCyan"
+          "content": "PER",
+          "color": "IndianRed1"
         }
       ],
-      "id": "1:32:33"
+      "id": "5:4:6"
+    },
+    {
+      "sen_index": 5,
+      "tok_start_index": 6,
+      "tok_end_index": 6,
+      "content": "1983",
+      "char_start_index": 45,
+      "char_end_index": 49,
+      "tags": [
+        {
+          "content": "MIDNAME",
+          "color": "MediumPurple1"
+        }
+      ],
+      "id": "5:6:6"
     }
   ],
   "tokens_spans": [
     [
-      "1:32",
-      "1:32:33"
+      "5:4",
+      "5:4:6"
     ],
     [
-      "1:33",
-      "1:32:33"
+      "5:5",
+      "5:4:6"
+    ],
+    [
+      "5:6",
+      "5:4:6"
+    ],
+    [
+      "5:6",
+      "5:6:6"
     ]
   ]
 }
