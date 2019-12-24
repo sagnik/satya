@@ -1,16 +1,14 @@
 # code for data models
 from typing import Dict, Set, List, Union, Tuple
 import json
-from annotate.consts import WORD_SEP, DEFAULT_HIGHLIGHT_COLOR, NEW_LINE_CHAR
-from collections import namedtuple
-
-Relation = namedtuple('relation', ['start', 'end', 'name', 'color'])
+from annotate.exceptions import *
 
 
 class Tag:
-    def __init__(self, content: str, color: str = DEFAULT_HIGHLIGHT_COLOR):
+    def __init__(self, content: str, color: str, level: int = 1):
         self.content = content
         self.color = color
+        self.level = level
 
     def serialize(self) -> Dict:
         return {'content': self.content, 'color': self.color}
@@ -66,11 +64,18 @@ class Span:
         self.tags: List[Tag] = kwargs.get('tags', [])
         self.id = kwargs.get('id', f'{self.sen_index}:{self.tok_start_index}:{self.tok_end_index}')
 
-    def add_tag(self, tag: Tag):
+    def add_entity(self, tag: Tag):
         """add a label to the span
+        if the span has a level n tag, you can not add a level n-1 tag to it.
         :param tag:
         :return:
         """
+        tag_max_level = max([tag.level for tag in self.tags])
+        if tag.level < tag_max_level:
+            raise TagLevelHierarchyError(
+                f'span {self.content} has tags {[(x.content, x.level) for x in self.tags]}, '
+                f'tag {tag.content} has a lower level {tag.level}'
+            )
         if tag.content not in [tag.content for tag in self.tags]:
             self.tags.append(tag)
 
@@ -85,6 +90,16 @@ class Span:
             'tags': [tag.serialize() for tag in self.tags],
             'id': self.id,
         }
+
+
+class Relation:
+    def __init__(self, start_id: str, end_id: str, name: str):
+        self.start_id = start_id
+        self.end_id = end_id
+        self.name = name
+
+    def serialize(self) -> Dict:
+        return {'start_id': self.start_id, 'end_id': self.end_id, 'name': self.name}
 
 
 class Content:
@@ -150,10 +165,10 @@ class Content:
                     char_index = char_index + len(word) + 1
                     self.tokens.append(token)
 
-    def add_tag(self, tag: Tag, sen_index: int, char_start_index: int, char_end_index: int):
+    def add_entity(self, tag: Tag, sen_index: int, char_start_index: int, char_end_index: int):
         """add a label to a span
-        :param tag:
-        :param sen_index:
+        :param tag: the tag to apply
+        :param sen_index: start index
         :param char_start_index:
         :param char_end_index:
         :return:
@@ -168,17 +183,32 @@ class Content:
             ):
                 tokens.append(token)
         if not tokens:
-            raise RuntimeError('can not add tag when no token is selected')
+            raise NoTagSelectedError('can not add tag when no token is selected')
         tokens.sort(key=lambda x: x.tok_index)
-        spans = [
-            span for span in self.spans if span.id == f'{span.sen_index}:{tokens[0].tok_index}:{tokens[-1].tok_index}'
+        span_ids = [
+            span.id
+            for span in self.spans
+            if span.id == f'{span.sen_index}:{tokens[0].tok_index}:{tokens[-1].tok_index}'
         ]
-        assert len(spans) <= 1
+        assert len(span_ids) <= 1
         new_span = False
-        if spans:
-            span = self.span_from_span_id(spans[0].id)
-            span.add_tag(tag)
+        if span_ids:
+            span = self.span_from_span_id(span_ids[0])
+            span.add_entity(tag)
         else:
+            inside_spans = [
+                span
+                for span in self.spans
+                if span.char_start_index >= char_start_index and span.char_end_index <= char_end_index
+            ]
+            if inside_spans:
+                inside_span_max_level = max(
+                    [max([tag.level for tag in inside_span.tags]) for inside_span in inside_spans]
+                )
+                if inside_span_max_level > tag.level:
+                    raise TagLevelHierarchyError(
+                        'There is a span inside the selected text with a tag level higher than you want to assign here'
+                    )
             span = Span(tokens=tokens, tags=[tag])
             self.spans.add(span)
             new_span = True
@@ -190,8 +220,10 @@ class Content:
             else:
                 token.tags.append(f'I-{tag.content}')
 
-    def delete_tag(self, span: Span, tag: Tag):
-        """delete the tag from a span
+    def delete_entity(self, span: Span, tag: Tag):
+        """delete the tag from a span.
+        If the span no longer has a tag as a result of the deletion, remove the span and the relations the span
+        appears in
         :param span:
         :param tag:
         :return:
@@ -208,6 +240,7 @@ class Content:
                 else:
                     token.tags.remove(f'I-{tag.content}')
         if not span.tags:
+            self.delete_relation_single_id(span.id)
             self.spans.remove(span)
             self.tokens_spans = [
                 (token_id_, span_id_) for token_id_, span_id_ in self.tokens_spans if span_id_ != span_id
@@ -244,6 +277,7 @@ class Content:
         if not _tokens:
             return None
         else:
+            assert len(_tokens) == 1
             return _tokens[0].id
 
     def span_id_from_start_end_index(self, sen_index: int, start_index: int, end_index: int) -> Union[str, None]:
@@ -315,5 +349,45 @@ class Content:
         dict_ = dict()
         dict_['tokens'] = [token.serialize() for token in self.tokens]
         dict_['spans'] = [span.serialize() for span in self.spans]
+        dict_['relations'] = [relation.serialize() for relation in self.relations]
         dict_['tokens_spans'] = list(self.tokens_spans)
         return dict_
+
+    def add_relation(self, start_span_id: str, end_span_id: str, relation_name: str):
+        """add a relationship between two spans
+        :param start_span_id:
+        :param end_span_id:
+        :param relation_name:
+        :return:
+        """
+        relation = Relation(start_id=start_span_id, end_id=end_span_id, name=relation_name)
+        self.relations.add(relation)
+
+    def relations_by_span_id(self, span_id: str):
+        """return the relations this span is involved in
+        :param span_id:
+        :return:
+        """
+        return [x for x in self.relations if x.start_id == span_id or x.end_id == span_id]
+
+    def delete_relation(self, start_span_id: str, end_span_id: str, relation_name: str):
+        """delete a relation
+        :param start_span_id:
+        :param end_span_id:
+        :param relation_name:
+        :return:
+        """
+        self.relations = set(
+            [
+                x
+                for x in self.relations
+                if not (x.start_id == start_span_id and x.end_id == end_span_id and x.name == relation_name)
+            ]
+        )
+
+    def delete_relation_single_id(self, span_id: str):
+        """delete a relation
+        :param span_id:
+        :return:
+        """
+        self.relations = set([x for x in self.relations if not (x.start_id == span_id or x.end_id == span_id)])

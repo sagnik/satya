@@ -5,13 +5,13 @@ import tkinter as tk
 from tkinter import Text
 from tkinter.ttk import Frame, Button, Label, Scrollbar
 from tkinter.constants import *
-from annotate.consts import *
 from tkinter.filedialog import Open as tkfileopen
 from tkinter.font import Font
 from collections import deque
-from annotate.utils import towkf, get_file_type
+from annotate.utils import towkf, get_file_type, get_entity_colors
 from annotate.autocomplete import AutocompleteEntry
 from annotate.data import Tag, Span, Content
+from annotate.exceptions import *
 
 
 class SpanEntry(tk.Entry):
@@ -36,11 +36,12 @@ class SpanAnnotatorFrame(Frame):
         self.recommend_flag = True
         self.history = deque(maxlen=20)
         self.current_content = deque(maxlen=1)
-        self.labels = config[ENTITIES_KEY]  # config must provide the labels
-        self.label_colors = config[ENTITY_COLORS_KEY]
-        self.entity_shortcuts = config.get(SHORTCUT_ENTITIES_KEY, {})  # assign some keys to some common labels
+        self.entities = config[ENTITIES_KEY]
+        self.entity_names = [x['name'] for x in self.entities]
+        self.entity_colors = get_entity_colors(self.entities)
+        self.entity_shortcuts = {entity['shortcut']: entity['name'] for entity in self.entities if 'shortcut' in entity}
+        self.entity_levels = {x['name']: x.get('level', 1) for x in self.entities}
         self.special_key_map = {
-            HIGHLIGHT_KEY: HIGHLIGHT_COMMAND,
             UNDO_KEY: UNDO_COMMAND,
             UN_LABEL_KEY: UN_LABEL_COMMAND,
             SHOW_SPAN_INFO_KEY: SHOW_SPAN_INFO_COMMAND,
@@ -59,7 +60,7 @@ class SpanAnnotatorFrame(Frame):
         self.span_info_entries = []
         self.min_text_row = MIN_TEXT_ROW
         self.min_text_column = MIN_TEXT_COL
-        self.type_ahead_entry = None
+        self.type_ahead_entity = None
         self.fnt = None
         self.msg_lbl = None
         self.span_relations_def_area = None
@@ -139,7 +140,6 @@ class SpanAnnotatorFrame(Frame):
         # bind special keys
         self.text.bind(UN_LABEL_KEY, self.un_label)
         self.text.bind(UNDO_KEY, self.undo)
-        self.text.bind(HIGHLIGHT_KEY, self.highlight)
         self.text.bind(SHOW_SPAN_INFO_KEY, self.show_span_details)
 
         self.show_special_key_mapping()
@@ -206,7 +206,11 @@ class SpanAnnotatorFrame(Frame):
             self.load_file(fl)
 
     def load_file(self, fl):
-        file_type = get_file_type(fl)
+        try:
+            file_type = get_file_type(fl)
+        except (NoFileFoundError, UnknownFileFormatError) as e:
+            self.log(e.msg, ERROR)
+            return
         if file_type == FILE_TYPE_TXT:
             self.content.populate_from_text(txt_file=fl)
             self.file_name = f'{fl[:-4]}.json'
@@ -268,15 +272,15 @@ class SpanAnnotatorFrame(Frame):
         self.text.see(cursor_index)
         self.set_cursor_label(cursor_index)
 
-    def get_data_type_ahead(self, event, selection_start, selection_end):
+    def get_entity_type_ahead(self, event, selection_start, selection_end):
         """the user has pressed enter on the type ahead. get the label from the type ahead widget, close the type ahead window, label the selected string
         :param event: the event that caused this callback
         :param selection_start: cursor index for the start of the selected text
         :param selection_end: cursor index for the end of the selected text
         :return:
         """
-        label = self.type_ahead_entry.text_.get()
-        self.type_ahead_entry.destroy()
+        label = self.type_ahead_entity.text_.get()
+        self.type_ahead_entity.destroy()
         self.label_selected_text(label, selection_start, selection_end)
 
     def set_cursor_label(self, cursor_index):
@@ -297,6 +301,7 @@ class SpanAnnotatorFrame(Frame):
         if self.text.tag_ranges(SEL):  # a text is selected
             allowed, selected_content, selection_start, selection_end = self.adjust_selection()
             if not allowed:
+                self.log('Selected text should not span multiple sentences', ERROR)
                 return BREAK
             sel_row_start, sel_col_start = [int(x) for x in selection_start.split(CURSOR_SEP)]
             sel_row_end, sel_col_end = [int(x) for x in selection_end.split(CURSOR_SEP)]
@@ -318,7 +323,7 @@ class SpanAnnotatorFrame(Frame):
             return BREAK
         tag = span.tags[-1]
         self.log(f'deleted tag [{tag.content}] for span [{span.content}]')
-        self.content.delete_tag(span=span, tag=tag)
+        self.content.delete_entity(span=span, tag=tag)
 
         self.write_output_and_text_area(cursor_index=current_cursor)
         self.text.tag_add("sel", f'{span.sen_index}.{span.char_start_index}', f'{span.sen_index}.{span.char_end_index}')
@@ -339,11 +344,11 @@ class SpanAnnotatorFrame(Frame):
         allowed, selected_content, selection_start, selection_end = self.adjust_selection()
         if not allowed:
             return BREAK
-        self.type_ahead_entry = AutocompleteEntry(self)
-        self.type_ahead_entry.build(entries=self.labels, no_results_message=TYPE_AHEAD_NO_RESULTS_MESSAGE)
-        self.type_ahead_entry.text_.set(press_key)
-        self.type_ahead_entry.listbox.bind(
-            "<Return>", lambda event_: self.get_data_type_ahead(event_, selection_start, selection_end)
+        self.type_ahead_entity = AutocompleteEntry(self)
+        self.type_ahead_entity.build(entries=self.entity_names, no_results_message=TYPE_AHEAD_NO_RESULTS_MESSAGE)
+        self.type_ahead_entity.text_.set(press_key)
+        self.type_ahead_entity.listbox.bind(
+            "<Return>", lambda event_: self.get_entity_type_ahead(event_, selection_start, selection_end)
         )
 
         return BREAK
@@ -431,14 +436,18 @@ class SpanAnnotatorFrame(Frame):
         """
         row_index_start, col_index_start = [int(x) for x in label_start_index.split(CURSOR_SEP)]
         row_index_end, col_index_end = [int(x) for x in label_end_index.split(CURSOR_SEP)]
-        label_color = self.label_colors[label]
+        label_color = self.entity_colors[label]
         assert row_index_start == row_index_end
-        self.content.add_tag(
-            tag=Tag(label, color=label_color),
-            sen_index=row_index_start,
-            char_start_index=col_index_start,
-            char_end_index=col_index_end,
-        )
+        try:
+            self.content.add_entity(
+                tag=Tag(label, color=label_color, level=self.entity_levels.get(label)),
+                sen_index=row_index_start,
+                char_start_index=col_index_start,
+                char_end_index=col_index_end,
+            )
+        except (TagLevelHierarchyError, NoTagSelectedError) as e:
+            self.log(e.msg, ERROR)
+            return
         self.write_output_and_text_area(cursor_index=f'{row_index_start}.{col_index_end}')
 
     def push_to_history(self):
@@ -457,33 +466,6 @@ class SpanAnnotatorFrame(Frame):
         file_name = f'{self.file_name[:-5]}.bio.conll'
         self.log(f'Writing output to {file_name}')
         towkf(self.content, file_name)
-
-    def highlight(self, event):
-        """highlight a span or de-highlight the highlighted area.
-        :param event: the event key that caused this callback to fire
-        :return:
-        """
-        if self.text.tag_ranges(HIGHLIGHT_COMMAND):
-            self.text.tag_delete(HIGHLIGHT_COMMAND)
-            return BREAK
-        if self.text.tag_ranges(SEL):
-            sel_first = self.text.index(SEL_FIRST)
-            sel_last = self.text.index(SEL_LAST)
-        else:
-            current_row, current_col = [int(x) for x in self.text.index(INSERT).split(CURSOR_SEP)]
-            span_ids = self.content.span_ids_from_char_index(sen_index=current_row, char_index=current_col)
-            if not span_ids:
-                self.log('There is no span for the token you clicked on', ERROR)
-                return BREAK
-            if len(span_ids) > 1:
-                self.log('There are multiple spans for the token you clicked on, select one', ERROR)
-                return BREAK
-            span = self.content.span_from_span_id(span_ids[0])
-            sel_first = f'{current_row}.{span.char_start_index}'
-            sel_last = f'{current_row}.{span.char_end_index}'
-        self.text.tag_add(HIGHLIGHT_COMMAND, sel_first, sel_last)
-        self.text.tag_config(HIGHLIGHT_COMMAND, background=DEFAULT_HIGHLIGHT_COLOR)
-        return BREAK
 
     def show_span_details(self, event):
         """show span info for the token under cursor
@@ -508,10 +490,12 @@ class SpanAnnotatorFrame(Frame):
             if not span_ids:
                 self.log('There is no span for the token you clicked on', ERROR)
                 return BREAK
-        start_col = 1
+        start_col = self.span_info_row_start + 1
         _fnt = Font(family=self.text_font_style, size=15, weight="bold", underline=0)
         for span_id in span_ids:
             span = self.content.span_from_span_id(span_id)
+            if span is None:
+                continue
             span_content = span.content
             for tag in span.tags:
                 entry = SpanEntry(
@@ -525,12 +509,7 @@ class SpanAnnotatorFrame(Frame):
                     font=_fnt,
                 )
                 entry.grid(
-                    padx=10,
-                    pady=5,
-                    row=self.span_info_row_start + start_col,
-                    column=self.text_column + 1,
-                    sticky=W + E + N + S,
-                    columnspan=20,
+                    padx=10, pady=5, row=start_col, column=self.text_column + 1, sticky=W + E + N + S, columnspan=20
                 )
                 entry.insert(0, f'{span_content}/{tag.content}')
                 entry.config(fg=tag.color)
@@ -544,7 +523,8 @@ class SpanAnnotatorFrame(Frame):
         :param event:
         :return:
         """
+        self.push_to_history()
         entry: SpanEntry = event.widget
-        self.content.delete_tag(entry.span, entry.tag)
+        self.content.delete_entity(entry.span, entry.tag)
         self.write_output_and_text_area(cursor_index=entry.current_cursor)
         entry.destroy()
