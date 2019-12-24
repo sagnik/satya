@@ -970,9 +970,7 @@
       "char_start_index": 31,
       "char_end_index": 41,
       "id": "5:4",
-      "tags": [
-        "B-PER"
-      ]
+      "tags": []
     },
     {
       "content": "in",
@@ -981,9 +979,7 @@
       "char_start_index": 42,
       "char_end_index": 44,
       "id": "5:5",
-      "tags": [
-        "I-PER"
-      ]
+      "tags": []
     },
     {
       "content": "1983",
@@ -992,10 +988,7 @@
       "char_start_index": 45,
       "char_end_index": 49,
       "id": "5:6",
-      "tags": [
-        "I-PER",
-        "B-MIDNAME"
-      ]
+      "tags": []
     },
     {
       "content": ",",
@@ -7514,54 +7507,6 @@
       "tags": []
     }
   ],
-  "spans": [
-    {
-      "sen_index": 5,
-      "tok_start_index": 4,
-      "tok_end_index": 6,
-      "content": "University in 1983",
-      "char_start_index": 31,
-      "char_end_index": 49,
-      "tags": [
-        {
-          "content": "PER",
-          "color": "IndianRed1"
-        }
-      ],
-      "id": "5:4:6"
-    },
-    {
-      "sen_index": 5,
-      "tok_start_index": 6,
-      "tok_end_index": 6,
-      "content": "1983",
-      "char_start_index": 45,
-      "char_end_index": 49,
-      "tags": [
-        {
-          "content": "MIDNAME",
-          "color": "MediumPurple1"
-        }
-      ],
-      "id": "5:6:6"
-    }
-  ],
-  "tokens_spans": [
-    [
-      "5:4",
-      "5:4:6"
-    ],
-    [
-      "5:5",
-      "5:4:6"
-    ],
-    [
-      "5:6",
-      "5:4:6"
-    ],
-    [
-      "5:6",
-      "5:6:6"
-    ]
-  ]
+  "spans": [],
+  "tokens_spans": []
 }

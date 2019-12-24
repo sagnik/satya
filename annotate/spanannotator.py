@@ -213,8 +213,7 @@ class SpanAnnotatorFrame(Frame):
         elif file_type == FILE_TYPE_JSON:
             self.content.populate_from_json(json_file=fl)
         elif file_type == FILE_TYPE_CONLL:
-            self.content.populate_from_json(json_file=fl)  # TODO: change this
-            self.file_name = f'{fl[:-4]}.json'
+            raise NotImplementedError('reading from conll not supported yet')  # TODO: change this
         else:
             return BREAK
         self.msg_lbl.config(text=f'File: {os.path.abspath(self.file_name)}')
