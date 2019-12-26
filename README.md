@@ -1,6 +1,6 @@
 ## SATYA: Span Annotation Tool, Yet Another
 
-`SATYA` is a Tkinter based tool for annotating spans in a text document using only keys. It supports keyboard shortcuts and type-ahead functionality.
+`SATYA` is a Tkinter based tool for annotating spans and relations in a text document using only keys. It supports keyboard shortcuts and type-ahead functionality.
 
 ### Installation
 
@@ -81,7 +81,7 @@ relations:
 
 You need to specify entities and relations as dicts and they must have the `name` parameter. The other attrributes for the entities are optional. The `level` param defines a hierarchy for entity names. Eg:  `LOC` has level 1 and `STATE` has level 2. Therefore, in the sentence `Tom lives in Michigan, USA`, you can first label `Michigan, USA` (or `Michigan`)  as `LOC` and then `Michigan` as `STATE` but not in the reverse order. The default label for any entity is 1. The colors, if not provided, are automatically selectedfrom a pallete.
 
-The annotation process starts by opening a `tk` window. By clicking the `open` button you can select a file with tokenized content (see [the caveats section](#caveats)). The content is loaded in the window. You can select a span of the text and label it. The labeling can be done in two ways: if you start typing some label names, a type-ahead/autocomplete window opens up and the label can be selected from there. If you have shortcuts defined, you can press `<ctrl>-<shortcut key>` to select the label. The label will be added to the selected content in the BIO format. For more details, see the [docs](docs/README.md).
+The annotation process starts by opening a `tk` window. By clicking the `open` button you can select a file with tokenized content (see [the caveats section](#caveats)). The content is loaded in the window. You can select a span of the text and label it. The labeling can be done in two ways: if you start typing some label names, a type-ahead/autocomplete window opens up and the entity label can be selected from there. If you have shortcuts defined, you can press `<ctrl>-<shortcut key>` to select the label. The label will be added to the selected content. For more details about annotating entities and relations see the [docs](docs/README.md).
 
 Every change in the text area is saved in a file called `filename.json`. Once you close the annotator window, you can open that file itself in the later annotation sessions. You can click on the `export` button to export the content in the BIO format.
 
