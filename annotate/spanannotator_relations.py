@@ -21,9 +21,14 @@ class RelationEntry(tk.Entry):
 class SpanAnnotatorRelationFrame(SpanAnnotatorFrame):
     def __init__(self, parent, config, **kwargs):
         super().__init__(parent, config, **kwargs)
-        self.special_key_map.update({RELATION_ENTITY_KEY: RELATION_ENTITY_COMMAND})
+        self.special_key_map.update(
+            {
+                RELATION_ENTITY_KEY: RELATION_ENTITY_COMMAND,
+                UN_LABEL_FROM_SPAN_INFO_AREA_KEY: UN_LABEL_FROM_SPAN_INFO_AREA_COMMAND,
+            }
+        )
         self.relationship_spans: List[Span] = []
-        self.relations = config.get(RELATIONS_KEY, [])
+        self.relations = [relation['name'] for relation in config.get(RELATIONS_KEY, [])]
         self.type_ahead_relation = None
 
     def init_ui(self):
@@ -258,3 +263,7 @@ class SpanAnnotatorRelationFrame(SpanAnnotatorFrame):
             self.content.delete_entity(entry.span, entry.tag)
         self.write_output_and_text_area(cursor_index=entry.current_cursor)
         entry.destroy()
+
+    def undo(self, event):
+        super().undo(event)
+        self.relationship_spans = []

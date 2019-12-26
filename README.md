@@ -7,40 +7,83 @@
 ```
 pip install -e .
 ```
-You can run the program as a standalone code: you have to add this directory to your `PYTHONPATH`, cd `annotate` and run `python annotator.py config.yml/json`
+You can run the program as a standalone code: you have to add this directory to your `PYTHONPATH`, cd `annotate` and run `python annotator.py config.yml/json`/
 
 ### Requirements
 
 -  python 3.x (This is tested on python 3.6). If you want to use `yml` config files, install [PyYAML](https://pypi.org/project/PyYAML/).
 
+
 ### Usage
 
-A small screen-capture intro is provided [here](https://youtu.be/50y_7i4x8u4) (this video is not publicly listed).
+#### Span Annotation
 
 ```
 satya <config-file-name.yml/json>
 ```
 
+![span annotation](docs/videos/simple-run-1.gif) 
+
+#### Span-Relation Annotation
+
+
+```
+satya <config-file-name.yml/json> --usage advanced
+```
+
+![span relation annotation](docs/videos/simple-run-2.gif) 
+
+
+```
+usage: SATYA: Span Annotator Tool, Yet Another [-h] [--input INPUT]
+                                               [--usage {default,advanced}]
+                                               config
+
+positional arguments:
+  config                config file to run with
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --input INPUT         input file to load
+  --usage {default,advanced}
+                        span annotator(default)/ span-relationship
+                        annotator(advanced)
+
+```
 
 The sample config file defines the label names and keyboard shortcuts. A sample yml config file looks like:
 
 ```
-label_shortcuts:
-  l: LOC
-  o: ORG
-  p: PER
-labels:
-- PER
-- LOC
-- ORG
-- DATE
-- JOB
+entities:
+- name: LOC
+  shortcut: l
+  color: IndianRed1
+  level: 1
+- name: ORG
+  shortcut: o
+  color: NavyBlue
+- name: DATE
+- name: STATE
+  level: 2
+relations:
+- name: BORN_IN_DATE
+  entities:
+    - start: PER
+      end: DATE
+- name: BORN_IN
+  entities:
+    - start: PER
+      end: LOC
+    - start: PER
+      end: DATE
+
 ```
 
-The `span-annotate` command opens a `tk` window. By clicking the `open` button you can select a file with tokenized content (see [the caveats section](#caveats)). The content is loaded in the window. You can select a span of the text and label it. The labeling can be done in two ways: if you start typing some label names, a type-ahead/autocomplete window opens up and the label can be selected from there. If you have shortcuts defined, you can press `<ctrl>-<shortcut key>` to select the label. The label will be added to the selected content in the BIO format. For more details, see the [docs](docs/README.md).
+You need to specify entities and relations as dicts and they must have the `name` parameter. The other attrributes for the entities are optional. The `level` param defines a hierarchy for entity names. Eg:  `LOC` has level 1 and `STATE` has level 2. Therefore, in the sentence `Tom lives in Michigan, USA`, you can first label `Michigan, USA` (or `Michigan`)  as `LOC` and then `Michigan` as `STATE` but not in the reverse order. The default label for any entity is 1. The colors, if not provided, are automatically selectedfrom a pallete.
 
-This is a WYSIWYG software: every change in the text area is saved in a file called `filename.ann`. Once you close the annotator window, you can open that file itself in the later annotation sessions. You can click on the `export` button
-to export the content in the BIO format.
+The annotation process starts by opening a `tk` window. By clicking the `open` button you can select a file with tokenized content (see [the caveats section](#caveats)). The content is loaded in the window. You can select a span of the text and label it. The labeling can be done in two ways: if you start typing some label names, a type-ahead/autocomplete window opens up and the label can be selected from there. If you have shortcuts defined, you can press `<ctrl>-<shortcut key>` to select the label. The label will be added to the selected content in the BIO format. For more details, see the [docs](docs/README.md).
+
+Every change in the text area is saved in a file called `filename.json`. Once you close the annotator window, you can open that file itself in the later annotation sessions. You can click on the `export` button to export the content in the BIO format.
 
 ### Motivation
 

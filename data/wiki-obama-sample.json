@@ -7,7 +7,9 @@
       "char_start_index": 0,
       "char_end_index": 6,
       "id": "1:0",
-      "tags": []
+      "tags": [
+        "B-PER"
+      ]
     },
     {
       "content": "Hussein",
@@ -16,7 +18,9 @@
       "char_start_index": 7,
       "char_end_index": 14,
       "id": "1:1",
-      "tags": []
+      "tags": [
+        "I-PER"
+      ]
     },
     {
       "content": "Obama",
@@ -25,7 +29,9 @@
       "char_start_index": 15,
       "char_end_index": 20,
       "id": "1:2",
-      "tags": []
+      "tags": [
+        "I-PER"
+      ]
     },
     {
       "content": "II",
@@ -7507,7 +7513,36 @@
       "tags": []
     }
   ],
-  "spans": [],
+  "spans": [
+    {
+      "sen_index": 1,
+      "tok_start_index": 0,
+      "tok_end_index": 2,
+      "content": "Barack Hussein Obama",
+      "char_start_index": 0,
+      "char_end_index": 20,
+      "tags": [
+        {
+          "content": "PER",
+          "color": "MediumPurple1"
+        }
+      ],
+      "id": "1:0:2"
+    }
+  ],
   "relations": [],
-  "tokens_spans": []
+  "tokens_spans": [
+    [
+      "1:0",
+      "1:0:2"
+    ],
+    [
+      "1:1",
+      "1:0:2"
+    ],
+    [
+      "1:2",
+      "1:0:2"
+    ]
+  ]
 }
