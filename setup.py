@@ -12,9 +12,9 @@ def get_version(project_name):
 
 
 class About(object):
-    NAME = 'satya'
-    AUTHOR = 'sagnikrayc'
-    VERSION = get_version('annotate')
+    NAME = "satya"
+    AUTHOR = "sagnikrayc"
+    VERSION = get_version("annotate")
     EMAIL = f"{AUTHOR}@gmail.com"
 
 
@@ -23,6 +23,6 @@ setup(
     version=About.VERSION,
     packages=find_packages(),
     install_requires=[],
-    extras_require={'test': ['pytest']},
-    entry_points={'console_scripts': ['satya = annotate.annotator:main']},
+    extras_require={"test": ["pytest"]},
+    entry_points={"console_scripts": ["satya = annotate.annotator:main"]},
 )

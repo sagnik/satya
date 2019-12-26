@@ -1,0 +1,32 @@
+entities:
+- name: PER
+  shortcut: p
+  color: MediumPurple1 # /etc/X11/rgb.txt
+  level: 1
+- name: LOC
+  shortcut: l
+  color: IndianRed1
+  level: 1
+- name: ORG
+  shortcut: o
+  color: NavyBlue
+- name: MISC
+  level: 1
+- name: DATE
+- name: STATE
+  level: 2
+relations:
+- name: BORN_IN_PLACE
+  entities:
+    - start: PER
+      end: LOC
+- name: BORN_IN_DATE
+  entities:
+    - start: PER
+      end: DATE
+- name: BORN_IN
+  entities:
+    - start: PER
+      end: LOC
+    - start: PER
+      end: DATE
